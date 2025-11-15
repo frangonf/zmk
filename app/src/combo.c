@@ -50,7 +50,7 @@ struct combo_cfg {
     int16_t key_position_len;
     int16_t require_prior_idle_ms;
     int32_t timeout_ms;
-    uint32_t layer_mask;
+    uint64_t layer_mask;
     struct zmk_behavior_binding behavior;
     // if slow release is set, the combo releases when the last key is released.
     // otherwise, the combo releases when the first key is released.
@@ -152,7 +152,7 @@ static bool combo_active_on_layer(const struct combo_cfg *combo, uint8_t layer) 
         return true;
     }
 
-    return combo->layer_mask & BIT(layer);
+    return combo->layer_mask & BIT64(layer);
 }
 
 static bool is_quick_tap(const struct combo_cfg *combo, int64_t timestamp) {
