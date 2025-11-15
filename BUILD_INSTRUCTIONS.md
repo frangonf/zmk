@@ -2,18 +2,39 @@
 
 ## Quick Test Build
 
-### Option 1: Using Nix (Recommended)
+### Option 1: Using Nix (Recommended for this repository)
+
+This repository is set up with Nix build expressions for easy building.
 
 ```bash
 # 1. Install Nix (if not already installed)
 curl -L https://nixos.org/nix/install | sh
+
+# 2. If Nix was just installed, source it in current shell:
 source ~/.nix-profile/etc/profile.d/nix.sh
 
-# 2. Build for Glove80
+# 3. Verify Nix is available (should show a path):
+which nix-build
+
+# 4. Build combined firmware for both halves (easiest!)
 nix-build -A glove80_combined
 
 # The firmware will be at: ./result/glove80.uf2
+# Use this same file for BOTH left and right halves!
+
+# Or build left/right separately:
+nix-build -A glove80_left     # Creates ./result/zmk.uf2 (for left half)
+nix-build -A glove80_right    # Creates ./result/zmk.uf2 (for right half)
 ```
+
+**About sourcing the Nix profile:**
+- `source ~/.nix-profile/etc/profile.d/nix.sh` is only needed:
+  - Right after installing Nix (in the same terminal session)
+  - If you get "command not found" when running `nix-build`
+- NOT needed:
+  - In fresh terminal sessions (after Nix install)
+  - If `which nix-build` shows a path
+- The Nix installer usually adds this to your `~/.bashrc` or `~/.zshrc` automatically
 
 ### Option 2: Using Docker
 
@@ -42,6 +63,8 @@ docker run --rm -v $(pwd):/workspace -w /workspace \
 ```
 
 ### Option 3: Using West (Native Linux/macOS)
+
+**Note:** This method requires more manual setup. Nix handles all dependencies automatically.
 
 ```bash
 # 1. Install dependencies (Ubuntu/Debian)
@@ -76,6 +99,29 @@ west build -s app -b glove80_rh -d build/right
 # - build/left/zephyr/zmk.uf2
 # - build/right/zephyr/zmk.uf2
 ```
+
+## Recommended: Using Nix with Custom Keymap
+
+The Nix build system in this repo makes it super easy:
+
+```bash
+# 1. Copy your test keymap to the default location
+cp glove80-safe-64layer-test.keymap app/boards/arm/glove80/glove80.keymap
+
+# 2. Build (Nix handles all dependencies!)
+nix-build -A glove80_combined
+
+# 3. Flash the single result file to BOTH halves
+# Left half: cp result/glove80.uf2 /media/<user>/GLV80LHBOOT/
+# Right half: cp result/glove80.uf2 /media/<user>/GLV80RHBOOT/
+```
+
+**Why use Nix?**
+- ✅ Zero dependency installation (Nix handles everything)
+- ✅ Reproducible builds (same result every time)
+- ✅ Already configured in this repository
+- ✅ Creates combined firmware (one file for both halves)
+- ✅ No need to install Zephyr SDK, West, or build tools manually
 
 ## Testing with the 64-Layer Test Keymap
 
