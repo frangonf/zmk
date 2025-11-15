@@ -63,26 +63,33 @@ nix-build -A glove80_right   # Creates ./result/zmk.uf2 (right)
 
 ### Step 3: Test the High Layers
 
-Once flashed, test that layers 32-63 work:
+Once flashed, test that layers 32-63 work by typing letters!
 
-| Key to Hold | Layer Activated | What You Should See |
-|-------------|----------------|---------------------|
-| **F1** | Layer 32 | F13-F24 function keys work |
-| **F2** | Layer 40 | Bluetooth controls (pair/switch devices) |
-| **F3** | Layer 50 | Media controls (play/pause, volume) |
-| **F4** | Layer 60 | System keys (Print Screen, Scroll Lock, Insert) |
-| **F5** | Layer 63 | Reset/bootloader access (highest layer!) |
+| Key to Hold | Layer | Letters You'll Type | Also Has |
+|-------------|-------|---------------------|----------|
+| **F1** | 32 | **X's, Y's, Z's** on main rows | F13-F24 in top row |
+| **F2** | 40 | **A's, B's, C's** on main rows | Bluetooth controls in top row |
+| **F3** | 50 | **D's, E's, F's** on main rows | Media controls in top row |
+| **F4** | 60 | **G's, H's, I's** on main rows | System keys in top row |
+| **F5** | 63 | **J's, K's, L's** on main rows | Reset/bootloader in corners |
 
-**How to test:**
-1. Hold F1 → Type where F13-F24 would be → Release F1
-2. Hold F2 → Use Bluetooth controls → Release F2
-3. Hold F3 → Test media keys → Release F3
-4. Hold F4 → Test Print Screen, etc. → Release F4
-5. Hold F5 → Access reset (top-left corner) → Release F5
+**How to test (EASY!):**
+1. Open a text editor
+2. Hold **F1** → Type on QWERTY home row → See **XXXXX** and **YYYYY** appear!
+3. Release F1 → Type normally → See regular letters
+4. Hold **F2** → Type on home row → See **AAAAA** and **BBBBB** appear!
+5. Hold **F3** → Type on home row → See **DDDDD** and **EEEEE** appear!
+6. Hold **F4** → Type on home row → See **GGGGG** and **HHHHH** appear!
+7. Hold **F5** → Type on home row → See **JJJJJ** and **KKKKK** appear!
 
-**If any of these layers work, it PROVES 64-layer support is working!**
+**Pattern:**
+- Left hand keys → First letter (X, A, D, G, J)
+- Right hand keys → Second letter (Y, B, E, H, K)
+- Bottom row left → Third letter (Z, C, F, I, L)
 
-Layers 32-63 are impossible without the 64-bit patch.
+**If you can type different letters by holding F1-F5, it PROVES 64-layer support is working!**
+
+Layers 32-63 are impossible without the 64-bit patch. If you see X's, Y's, Z's when holding F1, you're using layer 32 - proof that high layers work!
 
 ## How &mo (Momentary) Works
 

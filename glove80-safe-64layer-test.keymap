@@ -196,14 +196,15 @@
         // ====================================================================
         // If these layers work, it PROVES the 64-layer patch is functioning!
 
-        // LAYER 32: Function keys F13-F24 (accessed by holding F1 key)
+        // LAYER 32: Test layer with X, Y, Z letters (accessed by holding F1 key)
+        // Type to see X's, Y's, Z's - proves layer 32 is active!
         layer_32 {
             bindings = <
             &kp F13  &kp F14  &kp F15  &kp F16  &kp F17                                                                                                 &kp F18  &kp F19  &kp F20  &kp F21  &kp F22
-            &kp F23  &kp F24  &trans   &trans   &trans   &trans                                                                              &trans   &trans   &trans   &trans   &trans   &trans
-            &trans   &trans   &trans   &trans   &trans   &trans                                                                              &trans   &trans   &trans   &trans   &trans   &trans
-            &trans   &trans   &trans   &trans   &trans   &trans                                                                              &trans   &trans   &trans   &trans   &trans   &trans
-            &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans                    &trans   &trans   &trans   &trans   &trans   &trans
+            &kp F23  &kp F24  &kp X    &kp X    &kp X    &kp X                                                                               &kp Y    &kp Y    &kp Y    &kp Y    &kp Y    &kp Y
+            &trans   &kp X    &kp X    &kp X    &kp X    &kp X                                                                               &kp Y    &kp Y    &kp Y    &kp Y    &kp Y    &trans
+            &trans   &kp Z    &kp Z    &kp Z    &kp Z    &kp Z                                                                               &kp Y    &kp Y    &kp Y    &kp Y    &kp Y    &trans
+            &trans   &kp Z    &kp Z    &kp Z    &kp Z    &kp Z    &trans   &trans   &trans      &trans   &trans   &trans                    &kp Y    &kp Y    &kp Y    &kp Y    &kp Y    &trans
             &trans   &trans   &trans   &trans   &trans            &trans   &trans   &trans      &trans   &trans   &trans                             &trans   &trans   &trans   &trans   &trans
             >;
         };
@@ -217,14 +218,15 @@
         layer_38 { bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>; };
         layer_39 { bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>; };
 
-        // LAYER 40: Bluetooth controls (accessed by holding F2 key)
+        // LAYER 40: Test layer with A, B, C letters + Bluetooth (accessed by holding F2 key)
+        // Type to see A's, B's, C's - proves layer 40 is active!
         layer_40 {
             bindings = <
             &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                                                                     &bt BT_SEL 4  &out OUT_BLE  &out OUT_USB  &trans  &trans
-            &trans      &trans        &trans        &trans        &trans        &trans                                                    &trans   &trans        &trans        &trans        &trans  &trans
-            &trans      &trans        &trans        &trans        &trans        &trans                                                    &trans   &trans        &trans        &trans        &trans  &trans
-            &trans      &trans        &trans        &trans        &trans        &trans                                                    &trans   &trans        &trans        &trans        &trans  &trans
-            &trans      &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans        &trans        &trans        &trans  &trans
+            &trans      &kp A         &kp A         &kp A         &kp A         &kp A                                                     &kp B    &kp B         &kp B         &kp B         &kp B   &trans
+            &trans      &kp A         &kp A         &kp A         &kp A         &kp A                                                     &kp B    &kp B         &kp B         &kp B         &kp B   &trans
+            &trans      &kp C         &kp C         &kp C         &kp C         &kp C                                                     &kp B    &kp B         &kp B         &kp B         &kp B   &trans
+            &trans      &kp C         &kp C         &kp C         &kp C         &kp C   &trans  &trans  &trans    &trans  &trans  &trans  &kp B    &kp B         &kp B         &kp B         &kp B   &trans
             &trans      &trans        &trans        &trans        &trans                &trans  &trans  &trans    &trans  &trans  &trans           &trans        &trans        &trans        &trans  &trans
             >;
         };
@@ -240,14 +242,15 @@
         layer_48 { bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>; };
         layer_49 { bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>; };
 
-        // LAYER 50: Media controls (accessed by holding F3 key)
+        // LAYER 50: Test layer with D, E, F letters + Media (accessed by holding F3 key)
+        // Type to see D's, E's, F's - proves layer 50 is active!
         layer_50 {
             bindings = <
             &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &kp C_PREV                                                                             &kp C_NEXT  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans
-            &trans      &trans        &trans        &trans    &trans      &trans                                                            &trans   &trans        &trans        &trans        &trans  &trans
-            &trans      &trans        &trans        &trans    &trans      &trans                                                            &trans   &trans        &trans        &trans        &trans  &trans
-            &trans      &trans        &trans        &trans    &trans      &trans                                                            &trans   &trans        &trans        &trans        &trans  &trans
-            &trans      &trans        &trans        &trans    &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans   &trans        &trans        &trans        &trans  &trans
+            &trans      &kp D         &kp D         &kp D     &kp D       &kp D                                                             &kp E    &kp E         &kp E         &kp E         &kp E   &trans
+            &trans      &kp D         &kp D         &kp D     &kp D       &kp D                                                             &kp E    &kp E         &kp E         &kp E         &kp E   &trans
+            &trans      &kp F         &kp F         &kp F     &kp F       &kp F                                                             &kp E    &kp E         &kp E         &kp E         &kp E   &trans
+            &trans      &kp F         &kp F         &kp F     &kp F       &kp F   &trans  &trans  &trans    &trans  &trans  &trans         &kp E    &kp E         &kp E         &kp E         &kp E   &trans
             &trans      &trans        &trans        &trans    &trans              &trans  &trans  &trans    &trans  &trans  &trans                  &trans        &trans        &trans        &trans  &trans
             >;
         };
@@ -263,14 +266,15 @@
         layer_58 { bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>; };
         layer_59 { bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>; };
 
-        // LAYER 60: System keys (accessed by holding F4 key)
+        // LAYER 60: Test layer with G, H, I letters + System keys (accessed by holding F4 key)
+        // Type to see G's, H's, I's - proves layer 60 is active!
         layer_60 {
             bindings = <
             &kp PSCRN  &kp SLCK  &kp PAUSE_BREAK  &kp INS  &trans                                                                                   &trans  &trans  &trans  &trans  &trans
-            &trans     &trans    &trans           &trans   &trans   &trans                                                                 &trans   &trans  &trans  &trans  &trans  &trans
-            &trans     &trans    &trans           &trans   &trans   &trans                                                                 &trans   &trans  &trans  &trans  &trans  &trans
-            &trans     &trans    &trans           &trans   &trans   &trans                                                                 &trans   &trans  &trans  &trans  &trans  &trans
-            &trans     &trans    &trans           &trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans              &trans   &trans  &trans  &trans  &trans  &trans
+            &trans     &kp G     &kp G            &kp G    &kp G    &kp G                                                                  &kp H    &kp H   &kp H   &kp H   &kp H   &trans
+            &trans     &kp G     &kp G            &kp G    &kp G    &kp G                                                                  &kp H    &kp H   &kp H   &kp H   &kp H   &trans
+            &trans     &kp I     &kp I            &kp I    &kp I    &kp I                                                                  &kp H    &kp H   &kp H   &kp H   &kp H   &trans
+            &trans     &kp I     &kp I            &kp I    &kp I    &kp I   &trans  &trans  &trans    &trans  &trans  &trans              &kp H    &kp H   &kp H   &kp H   &kp H   &trans
             &trans     &trans    &trans           &trans   &trans           &trans  &trans  &trans    &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -280,14 +284,14 @@
         layer_62 { bindings = <&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans>; };
 
         // LAYER 63: HIGHEST LAYER POSSIBLE! (accessed by holding F5 key)
-        // If this layer works, it definitively proves 64-layer support!
+        // Type to see J's, K's, L's - proves layer 63 (the highest!) is active!
         layer_63 {
             bindings = <
             &sys_reset  &bootloader  &trans  &trans  &trans                                                                                        &trans  &trans  &trans  &bootloader  &sys_reset
-            &trans      &trans       &trans  &trans  &trans  &trans                                                                       &trans   &trans  &trans  &trans  &trans       &trans
-            &trans      &trans       &trans  &trans  &trans  &trans                                                                       &trans   &trans  &trans  &trans  &trans       &trans
-            &trans      &trans       &trans  &trans  &trans  &trans                                                                       &trans   &trans  &trans  &trans  &trans       &trans
-            &trans      &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                    &trans   &trans  &trans  &trans  &trans       &trans
+            &trans      &kp J        &kp J   &kp J   &kp J   &kp J                                                                        &kp K    &kp K   &kp K   &kp K   &kp K        &trans
+            &trans      &kp J        &kp J   &kp J   &kp J   &kp J                                                                        &kp K    &kp K   &kp K   &kp K   &kp K        &trans
+            &trans      &kp L        &kp L   &kp L   &kp L   &kp L                                                                        &kp K    &kp K   &kp K   &kp K   &kp K        &trans
+            &trans      &kp L        &kp L   &kp L   &kp L   &kp L   &trans  &trans  &trans    &trans  &trans  &trans                    &kp K    &kp K   &kp K   &kp K   &kp K        &trans
             &trans      &trans       &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans                             &trans  &trans  &trans  &trans       &trans
             >;
         };
