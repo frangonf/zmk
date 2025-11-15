@@ -23,32 +23,43 @@ The `glove80-safe-64layer-test.keymap` preserves **all factory functionality**:
 # Copy safe keymap over the default
 cp glove80-safe-64layer-test.keymap app/boards/arm/glove80/glove80.keymap
 
-# Build using Docker (easiest method)
-docker run --rm -v $(pwd):/workspace -w /workspace \
-  zmkfirmware/zmk-build-arm:3.5 \
-  /bin/bash -c "west init -l app && west update && \
-                west build -s app -b glove80_lh -d build/left && \
-                west build -s app -b glove80_rh -d build/right"
+# If Nix was just installed or not in PATH, source it:
+source ~/.nix-profile/etc/profile.d/nix.sh
 
-# Firmware files will be at:
-# - build/left/zephyr/zmk.uf2
-# - build/right/zephyr/zmk.uf2
+# Build using Nix (recommended for this repo)
+nix-build -A glove80_combined
+
+# This creates a combined firmware file at:
+# ./result/glove80.uf2
+
+# Or build left/right separately:
+nix-build -A glove80_left    # Creates ./result/zmk.uf2 (left)
+nix-build -A glove80_right   # Creates ./result/zmk.uf2 (right)
 ```
+
+**Note about `source ~/.nix-profile/etc/profile.d/nix.sh`:**
+- Only needed if `nix-build` command is not found
+- Required after installing Nix in the same terminal session
+- Not needed if opening a fresh terminal after Nix install
+- Check with: `which nix-build` (if it shows a path, you're good!)
 
 ### Step 2: Flash to Glove80
 
-1. **Put left half in bootloader mode:**
+**Using combined firmware (simplest):**
+
+1. **Flash left half first:**
    - Hold Magic key (bottom-left palm) + 0 key
    - USB drive "GLV80LHBOOT" appears
+   - Copy: `cp result/glove80.uf2 /media/<user>/GLV80LHBOOT/`
+   - Wait for it to reboot
 
-2. **Copy firmware:**
-   ```bash
-   cp build/left/zephyr/zmk.uf2 /media/<user>/GLV80LHBOOT/
-   ```
-
-3. **Repeat for right half:**
+2. **Flash right half:**
    - Hold Magic key (bottom-right palm) + 0 key
-   - Copy right firmware
+   - USB drive "GLV80RHBOOT" appears
+   - Copy: `cp result/glove80.uf2 /media/<user>/GLV80RHBOOT/`
+   - Wait for it to reboot
+
+**Note:** The combined firmware file works for both halves!
 
 ### Step 3: Test the High Layers
 
