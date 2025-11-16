@@ -12259,8 +12259,8 @@ macros {
 
         layer_Magic {
             bindings = <
-  &bt BT_CLR            &none            &none            &none  &to LAYER_QWERTY_LINUX                                                                         &none   &none   &none   &none  &bt BT_CLR_ALL
-       &to 0            &to 1            &to 2            &to 3            &to 4            &to 5                                                         &to 6   &none   &none   &none   &none           &none
+  &bt BT_CLR            &none            &none            &none            &none                                                                                  &none   &none   &none   &none  &bt BT_CLR_ALL
+       &to 0            &to 1            &to 2            &to 3            &to 4            &to 5                                                         &to 6   &none   &none  &to LAYER_QWERTY_LINUX   &none           &none
        &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                         &none   &none   &none   &none   &none           &none
  &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                         &none   &none   &none   &none   &none     &bootloader
   &sys_reset            &none            &none            &none            &none            &none   &bt_2   &bt_3       &tog 29   &none   &none   &none   &none   &none   &none   &none   &none      &sys_reset
@@ -12615,8 +12615,8 @@ macros {
 
         layer_Magic_LINUX {
             bindings = <
-  &bt BT_CLR            &none            &none            &none       &to LAYER_QWERTY                                                                               &none   &none   &none   &none  &bt BT_CLR_ALL
-      &to 32           &to 33           &to 34           &to 35           &to 36           &to 37                                                        &to 38   &none   &none   &none   &none           &none
+  &bt BT_CLR            &none            &none            &none            &none                                                                                  &none   &none   &none   &none  &bt BT_CLR_ALL
+      &to 32           &to 33           &to 34           &to 35           &to 36           &to 37                                                        &to 38   &none   &none       &to 0   &none           &none
        &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                         &none   &none   &none   &none   &none           &none
  &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                         &none   &none   &none   &none   &none     &bootloader
   &sys_reset            &none            &none            &none            &none            &none   &bt_2   &bt_3  &tog LAYER_Factory_LINUX   &none   &none   &none   &none   &none   &none   &none   &none      &sys_reset

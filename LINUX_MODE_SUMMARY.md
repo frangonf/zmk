@@ -27,22 +27,32 @@ All 32 layers (0-31) have been duplicated as layers 32-63 with:
 ### 3. Mode Switcher Shortcut
 
 **To switch from macOS to Linux mode:**
-- Press: **Magic + F5**
+- Press: **Magic + 9**
 - This activates layer 32 (LAYER_QWERTY_LINUX)
 
 **To switch from Linux to macOS mode:**
-- Press: **Magic + F5** (same shortcut)
+- Press: **Magic + 9** (same shortcut)
 - This returns to layer 0 (LAYER_QWERTY)
 
-The F5 position was chosen because:
-- It's an unusual and rarely-used key combination
-- It's easily accessible on the top row
-- It's symmetric and easy to remember
+The number 9 was chosen because:
+- It follows the same pattern as layout switching (Magic + 0-6 for different layouts)
+- It's consistent with the existing keyboard switcher pattern
+- Easy to remember: Magic + 9 = Linux mode toggle
+
+**Magic Layer Layout:**
+- Magic + 0 = QWERTY (macOS)
+- Magic + 1 = Enthium
+- Magic + 2 = Engrammer
+- Magic + 3 = Engram
+- Magic + 4 = Dvorak
+- Magic + 5 = Colemak
+- Magic + 6 = ColemakDH
+- **Magic + 9 = Linux QWERTY** (toggle)
 
 ### 4. Linux Magic Layer
 The Linux Magic layer (layer 63) has been configured to:
-- Switch between Linux base layers (32-38) instead of macOS layers
-- Return to macOS mode via Magic + F5
+- Switch between Linux base layers (32-38) instead of macOS layers (Magic + 0-6)
+- Return to macOS mode via Magic + 9
 - Maintain all RGB and system functions
 
 ### 5. Underglow RGB Layers

@@ -46,9 +46,19 @@ The key swap between macOS and Linux modes:
 
 ## How to Switch Modes
 
-**Magic + F5** toggles between macOS and Linux mode:
-- From macOS mode → switches to Linux QWERTY (layer 32)
-- From Linux mode → switches back to macOS QWERTY (layer 0)
+**Magic + 9** toggles between macOS and Linux mode:
+- From macOS mode (layers 0-31) → Press **Magic + 9** → switches to Linux QWERTY (layer 32)
+- From Linux mode (layers 32-63) → Press **Magic + 9** → switches back to macOS QWERTY (layer 0)
+
+**Note:** This follows the same pattern as layout switching:
+- Magic + 0 = QWERTY (macOS)
+- Magic + 1 = Enthium
+- Magic + 2 = Engrammer
+- Magic + 3 = Engram
+- Magic + 4 = Dvorak
+- Magic + 5 = Colemak
+- Magic + 6 = ColemakDH
+- **Magic + 9 = Linux QWERTY** (NEW!)
 
 ## Technical Details
 
