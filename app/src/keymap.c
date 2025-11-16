@@ -135,6 +135,11 @@ uint8_t map_layer_id_to_index(zmk_keymap_layer_id_t layer_id) {
 
 #endif // IS_ENABLED(CONFIG_ZMK_KEYMAP_LAYER_REORDERING)
 
+// 64-bit version of BIT macro for layer masks
+#ifndef BIT64
+#define BIT64(n) (1ULL << (n))
+#endif
+
 // 64-bit version of WRITE_BIT for layer state manipulation
 #define WRITE_BIT64(var, bit, set)                                                                 \
     do {                                                                                           \
@@ -145,7 +150,7 @@ uint8_t map_layer_id_to_index(zmk_keymap_layer_id_t layer_id) {
                 _WRITE_BIT64_old_value = ((uint32_t *)&var)[0];                                    \
                 _WRITE_BIT64_new_value = _WRITE_BIT64_old_value;                                   \
                 WRITE_BIT(_WRITE_BIT64_new_value, bit, set);                                       \
-            } while (!atomic_cas((atomic_t *)&var, _WRITE_BIT64_old_value,                         \
+            } while (!atomic_cas((atomic_t *)&(((uint32_t *)&var)[0]), _WRITE_BIT64_old_value,     \
                                  _WRITE_BIT64_new_value));                                         \
         } else {                                                                                   \
             do {                                                                                   \
