@@ -85,6 +85,21 @@ CONFIG_ZMK_RGB_UNDERGLOW_HUE_START=285
 CONFIG_ZMK_RGB_UNDERGLOW_SAT_START=75
 CONFIG_ZMK_RGB_UNDERGLOW_BRT_START=16
 
+# Custom Overrides (Moergo Layout Editor Options)
+# Enable per-layer RGB (PR36 community firmware)
+CONFIG_EXPERIMENTAL_RGB_LAYER=y
+
+# Turn off RGB when idle after 30s to save battery
+CONFIG_ZMK_RGB_UNDERGLOW_AUTO_OFF_IDLE=y
+
+# Enable mouse emulation capability
+# Note: Re-pair your keyboard via Bluetooth after enabling
+CONFIG_ZMK_POINTING=y
+
+# Enable smooth scrolling with hosts that support HID Resolution Multipliers
+# Note: Re-pair your keyboard via Bluetooth after enabling
+CONFIG_ZMK_POINTING_SMOOTH_SCROLLING=y
+
 # The power LED is implemented as a backlight
 # For now, the power LED is acting as a "USB connected" indicator
 CONFIG_ZMK_BACKLIGHT=y
