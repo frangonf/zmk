@@ -8,6 +8,11 @@
 
 #include <zmk/events/position_state_changed.h>
 
+// 64-bit version of BIT macro for layer masks (layers 0-63)
+#ifndef BIT64
+#define BIT64(n) (1ULL << (n))
+#endif
+
 #define ZMK_LAYER_CHILD_LEN_PLUS_ONE(node) 1 +
 #define ZMK_KEYMAP_LAYERS_LEN                                                                      \
     (COND_CODE_1(                                                                                  \
@@ -30,7 +35,7 @@ typedef uint8_t zmk_keymap_layer_id_t;
  */
 typedef uint8_t zmk_keymap_layer_index_t;
 
-typedef uint32_t zmk_keymap_layers_state_t;
+typedef uint64_t zmk_keymap_layers_state_t;
 
 zmk_keymap_layer_id_t zmk_keymap_layer_index_to_id(zmk_keymap_layer_index_t layer_index);
 
