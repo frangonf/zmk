@@ -2850,14 +2850,14 @@ behaviors {
   #define LeftPinky_layer4(key) left_pinky LEFT_PINKY_MOD key
   #define LeftPinky_layer5(key) left_pinky LEFT_PINKY_MOD key
   #define LeftPinky_layer6(key) left_pinky LEFT_PINKY_MOD key
-  /* Linux mode layers (32-38) */
-  #define LeftPinky_layer32(key) left_pinky_layer0_variant LEFT_PINKY_MOD key
-  #define LeftPinky_layer33(key) left_pinky LEFT_PINKY_MOD key
-  #define LeftPinky_layer34(key) left_pinky LEFT_PINKY_MOD key
-  #define LeftPinky_layer35(key) left_pinky LEFT_PINKY_MOD key
-  #define LeftPinky_layer36(key) left_pinky LEFT_PINKY_MOD key
-  #define LeftPinky_layer37(key) left_pinky LEFT_PINKY_MOD key
-  #define LeftPinky_layer38(key) left_pinky LEFT_PINKY_MOD key
+  /* Linux mode layers (32-38) - Swap Ctrl/Cmd for Linux */
+  #define LeftPinky_layer32(key) left_pinky_layer0_variant LGUI key
+  #define LeftPinky_layer33(key) left_pinky LGUI key
+  #define LeftPinky_layer34(key) left_pinky LGUI key
+  #define LeftPinky_layer35(key) left_pinky LGUI key
+  #define LeftPinky_layer36(key) left_pinky LGUI key
+  #define LeftPinky_layer37(key) left_pinky LGUI key
+  #define LeftPinky_layer38(key) left_pinky LGUI key
   #ifndef RIGHT_PINKY_HOLDING_TYPE
   #define RIGHT_PINKY_HOLDING_TYPE PINKY_HOLDING_TYPE
   #endif
@@ -2954,14 +2954,14 @@ behaviors {
   #define RightPinky_layer4(key) right_pinky RIGHT_PINKY_MOD key
   #define RightPinky_layer5(key) right_pinky RIGHT_PINKY_MOD key
   #define RightPinky_layer6(key) right_pinky RIGHT_PINKY_MOD key
-  /* Linux mode layers (32-38) */
-  #define RightPinky_layer32(key) right_pinky_layer0_variant RIGHT_PINKY_MOD key
-  #define RightPinky_layer33(key) right_pinky RIGHT_PINKY_MOD key
-  #define RightPinky_layer34(key) right_pinky RIGHT_PINKY_MOD key
-  #define RightPinky_layer35(key) right_pinky RIGHT_PINKY_MOD key
-  #define RightPinky_layer36(key) right_pinky RIGHT_PINKY_MOD key
-  #define RightPinky_layer37(key) right_pinky RIGHT_PINKY_MOD key
-  #define RightPinky_layer38(key) right_pinky RIGHT_PINKY_MOD key
+  /* Linux mode layers (32-38) - Swap Ctrl/Cmd for Linux */
+  #define RightPinky_layer32(key) right_pinky_layer0_variant LGUI key
+  #define RightPinky_layer33(key) right_pinky LGUI key
+  #define RightPinky_layer34(key) right_pinky LGUI key
+  #define RightPinky_layer35(key) right_pinky LGUI key
+  #define RightPinky_layer36(key) right_pinky LGUI key
+  #define RightPinky_layer37(key) right_pinky LGUI key
+  #define RightPinky_layer38(key) right_pinky LGUI key
   #ifndef LEFT_RINGY_HOLDING_TYPE
   #define LEFT_RINGY_HOLDING_TYPE RINGY_HOLDING_TYPE
   #endif
@@ -3266,14 +3266,14 @@ behaviors {
   #define LeftMiddy_layer4(key) left_middy LEFT_MIDDY_MOD key
   #define LeftMiddy_layer5(key) left_middy LEFT_MIDDY_MOD key
   #define LeftMiddy_layer6(key) left_middy LEFT_MIDDY_MOD key
-  /* Linux mode layers (32-38) */
-  #define LeftMiddy_layer32(key) left_middy_layer0_variant LEFT_MIDDY_MOD key
-  #define LeftMiddy_layer33(key) left_middy LEFT_MIDDY_MOD key
-  #define LeftMiddy_layer34(key) left_middy LEFT_MIDDY_MOD key
-  #define LeftMiddy_layer35(key) left_middy LEFT_MIDDY_MOD key
-  #define LeftMiddy_layer36(key) left_middy LEFT_MIDDY_MOD key
-  #define LeftMiddy_layer37(key) left_middy LEFT_MIDDY_MOD key
-  #define LeftMiddy_layer38(key) left_middy LEFT_MIDDY_MOD key
+  /* Linux mode layers (32-38) - Swap Ctrl/Cmd for Linux */
+  #define LeftMiddy_layer32(key) left_middy_layer0_variant LCTL key
+  #define LeftMiddy_layer33(key) left_middy LCTL key
+  #define LeftMiddy_layer34(key) left_middy LCTL key
+  #define LeftMiddy_layer35(key) left_middy LCTL key
+  #define LeftMiddy_layer36(key) left_middy LCTL key
+  #define LeftMiddy_layer37(key) left_middy LCTL key
+  #define LeftMiddy_layer38(key) left_middy LCTL key
   #ifndef RIGHT_MIDDY_HOLDING_TYPE
   #define RIGHT_MIDDY_HOLDING_TYPE MIDDY_HOLDING_TYPE
   #endif
@@ -3370,14 +3370,14 @@ behaviors {
   #define RightMiddy_layer4(key) right_middy RIGHT_MIDDY_MOD key
   #define RightMiddy_layer5(key) right_middy RIGHT_MIDDY_MOD key
   #define RightMiddy_layer6(key) right_middy RIGHT_MIDDY_MOD key
-  /* Linux mode layers (32-38) */
-  #define RightMiddy_layer32(key) right_middy_layer0_variant RIGHT_MIDDY_MOD key
-  #define RightMiddy_layer33(key) right_middy RIGHT_MIDDY_MOD key
-  #define RightMiddy_layer34(key) right_middy RIGHT_MIDDY_MOD key
-  #define RightMiddy_layer35(key) right_middy RIGHT_MIDDY_MOD key
-  #define RightMiddy_layer36(key) right_middy RIGHT_MIDDY_MOD key
-  #define RightMiddy_layer37(key) right_middy RIGHT_MIDDY_MOD key
-  #define RightMiddy_layer38(key) right_middy RIGHT_MIDDY_MOD key
+  /* Linux mode layers (32-38) - Swap Ctrl/Cmd for Linux */
+  #define RightMiddy_layer32(key) right_middy_layer0_variant LCTL key
+  #define RightMiddy_layer33(key) right_middy LCTL key
+  #define RightMiddy_layer34(key) right_middy LCTL key
+  #define RightMiddy_layer35(key) right_middy LCTL key
+  #define RightMiddy_layer36(key) right_middy LCTL key
+  #define RightMiddy_layer37(key) right_middy LCTL key
+  #define RightMiddy_layer38(key) right_middy LCTL key
   #ifndef LEFT_INDEX_HOLDING_TYPE
   #define LEFT_INDEX_HOLDING_TYPE INDEX_HOLDING_TYPE
   #endif
