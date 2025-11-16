@@ -182,6 +182,24 @@
 #define _FIND_PREV  _C(LS(G))
 
 //
+// Linux-specific shortcuts (use Ctrl instead of Cmd)
+// For use in Linux layers (32-63)
+//
+#define _LINUX_C      LC
+#define _LINUX_UNDO   LC(Z)
+#define _LINUX_CUT    LC(X)
+#define _LINUX_COPY   LC(C)
+#define _LINUX_PASTE  LC(V)
+#define _LINUX_FIND   LC(F)
+#define _LINUX_FIND_NEXT  LC(G)
+#define _LINUX_FIND_PREV  LC(LS(G))
+#define _LINUX_REDO   LC(Y)
+#define _LINUX_HOME   HOME
+#define _LINUX_END    END
+#define _LINUX_EMOJI  LG(DOT)
+#define _LINUX_FILES  LG(E)
+
+//
 // Keymap specific knowledge of the base layer's alpha + ZMK layout
 //
 #if defined(LAYER_Enthium) && LAYER_Enthium == 0
