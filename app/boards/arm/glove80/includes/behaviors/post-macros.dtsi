@@ -219,6 +219,31 @@
       input-processors = <&zip_xy_scaler MOUSE_SCALER_WARP>;
     };
     #endif
+    // Linux mouse layers (layers 55-59)
+    #ifdef LAYER_MouseFine_Linux
+    fine_linux {
+      layers = <LAYER_MouseFine_Linux>;
+      input-processors = <&zip_xy_scaler MOUSE_SCALER_FINE>;
+    };
+    #endif
+    #ifdef LAYER_MouseSlow_Linux
+    slow_linux {
+      layers = <LAYER_MouseSlow_Linux>;
+      input-processors = <&zip_xy_scaler MOUSE_SCALER_SLOW>;
+    };
+    #endif
+    #ifdef LAYER_MouseFast_Linux
+    fast_linux {
+      layers = <LAYER_MouseFast_Linux>;
+      input-processors = <&zip_xy_scaler MOUSE_SCALER_FAST>;
+    };
+    #endif
+    #ifdef LAYER_MouseWarp_Linux
+    warp_linux {
+      layers = <LAYER_MouseWarp_Linux>;
+      input-processors = <&zip_xy_scaler MOUSE_SCALER_WARP>;
+    };
+    #endif
   };
   //
   // Scaling for mouse scrolling, based on @caksoylar's example:
@@ -258,6 +283,31 @@
     #ifdef LAYER_MouseWarp
     warp {
       layers = <LAYER_MouseWarp>;
+      input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_WARP>;
+    };
+    #endif
+    // Linux mouse layers (layers 55-59)
+    #ifdef LAYER_MouseFine_Linux
+    fine_linux {
+      layers = <LAYER_MouseFine_Linux>;
+      input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_FINE>;
+    };
+    #endif
+    #ifdef LAYER_MouseSlow_Linux
+    slow_linux {
+      layers = <LAYER_MouseSlow_Linux>;
+      input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_SLOW>;
+    };
+    #endif
+    #ifdef LAYER_MouseFast_Linux
+    fast_linux {
+      layers = <LAYER_MouseFast_Linux>;
+      input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_FAST>;
+    };
+    #endif
+    #ifdef LAYER_MouseWarp_Linux
+    warp_linux {
+      layers = <LAYER_MouseWarp_Linux>;
       input-processors = <&zip_scroll_scaling_processor MOUSE_SCALER_WARP>;
     };
     #endif
