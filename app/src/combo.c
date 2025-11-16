@@ -50,7 +50,7 @@ struct combo_cfg {
     int16_t key_position_len;
     int16_t require_prior_idle_ms;
     int32_t timeout_ms;
-    uint32_t layer_mask;
+    uint64_t layer_mask;
     struct zmk_behavior_binding behavior;
     // if slow release is set, the combo releases when the last key is released.
     // otherwise, the combo releases when the first key is released.
