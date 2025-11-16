@@ -620,123 +620,6 @@
       };
       #endif
 
-    };
-  };
-  // ==== PER-KEY-RGB <section ends> =====
-
-  #undef RED
-  #undef RED_RGB
-  #undef COR
-  #undef COR_RGB
-  #undef ORN
-  #undef ORN_RGB
-  #undef GDN
-  #undef GDN_RGB
-  #undef GOL
-  #undef GOL_RGB
-  #undef YLW
-  #undef YLW_RGB
-  #undef CHU
-  #undef CHU_RGB
-  #undef GRN
-  #undef GRN_RGB
-  #undef SPG
-  #undef SPG_RGB
-  #undef CYN
-  #undef CYN_RGB
-  #undef AZU
-  #undef AZU_RGB
-  #undef TEA
-  #undef TEA_RGB
-  #undef TUR
-  #undef TUR_RGB
-  #undef BLU
-  #undef BLU_RGB
-  #undef PUR
-  #undef PUR_RGB
-  #undef MAJ
-  #undef MAJ_RGB
-  #undef PNK
-  #undef PNK_RGB
-  #undef WHT
-  #undef WHT_RGB
-  #undef BLK
-  #undef BLK_RGB
-  #undef ___
-  #undef DUG
-  #undef DUG_RGB
-  #undef LAC
-  #undef LAC_RGB
-
-  #undef BSL
-  #undef BNL
-  #undef BCL
-
-  #undef SSL
-  #undef SNL
-  #undef SCL
-
-  #undef FST
-  #undef WRP
-  #undef SLO
-  #undef FIN
-#endif
-
-
-/* Input Listeners */
-
-
-/* System behavior and Macros */
-/ {
-    behaviors {
-        ZMK_TD_LAYER(lower, LAYER_Lower)
-    };
-};
-
-/ {
-    macros {
-        rgb_ug_status_macro: rgb_ug_status_macro {
-            label = "RGB_UG_STATUS";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&rgb_ug RGB_STATUS>;
-        };
-    };
-};
-
-
-/ {
-#ifdef BT_DISC_CMD
-    behaviors {
-        bt_0: bt_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&bt_select_0>, <&bt BT_DISC 0>;
-        };
-        bt_1: bt_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&bt_select_1>, <&bt BT_DISC 1>;
-        };
-        bt_2: bt_2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_2";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&bt_select_2>, <&bt BT_DISC 2>;
-        };
-        bt_3: bt_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BT_3";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&bt_select_3>, <&bt BT_DISC 3>;
-        };
 
       /* Linux mode underglow layers */
 
@@ -1075,6 +958,122 @@
       #endif
 
     };
+  };
+  // ==== PER-KEY-RGB <section ends> =====
+
+  #undef RED
+  #undef RED_RGB
+  #undef COR
+  #undef COR_RGB
+  #undef ORN
+  #undef ORN_RGB
+  #undef GDN
+  #undef GDN_RGB
+  #undef GOL
+  #undef GOL_RGB
+  #undef YLW
+  #undef YLW_RGB
+  #undef CHU
+  #undef CHU_RGB
+  #undef GRN
+  #undef GRN_RGB
+  #undef SPG
+  #undef SPG_RGB
+  #undef CYN
+  #undef CYN_RGB
+  #undef AZU
+  #undef AZU_RGB
+  #undef TEA
+  #undef TEA_RGB
+  #undef TUR
+  #undef TUR_RGB
+  #undef BLU
+  #undef BLU_RGB
+  #undef PUR
+  #undef PUR_RGB
+  #undef MAJ
+  #undef MAJ_RGB
+  #undef PNK
+  #undef PNK_RGB
+  #undef WHT
+  #undef WHT_RGB
+  #undef BLK
+  #undef BLK_RGB
+  #undef ___
+  #undef DUG
+  #undef DUG_RGB
+  #undef LAC
+  #undef LAC_RGB
+
+  #undef BSL
+  #undef BNL
+  #undef BCL
+
+  #undef SSL
+  #undef SNL
+  #undef SCL
+
+  #undef FST
+  #undef WRP
+  #undef SLO
+  #undef FIN
+#endif
+
+
+/* Input Listeners */
+
+
+/* System behavior and Macros */
+/ {
+    behaviors {
+        ZMK_TD_LAYER(lower, LAYER_Lower)
+    };
+};
+
+/ {
+    macros {
+        rgb_ug_status_macro: rgb_ug_status_macro {
+            label = "RGB_UG_STATUS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&rgb_ug RGB_STATUS>;
+        };
+    };
+};
+
+
+/ {
+#ifdef BT_DISC_CMD
+    behaviors {
+        bt_0: bt_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt_select_0>, <&bt BT_DISC 0>;
+        };
+        bt_1: bt_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt_select_1>, <&bt BT_DISC 1>;
+        };
+        bt_2: bt_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt_select_2>, <&bt BT_DISC 2>;
+        };
+        bt_3: bt_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&bt_select_3>, <&bt BT_DISC 3>;
+        };
     macros {
         bt_select_0: bt_select_0 {
             label = "BT_SELECT_0";
