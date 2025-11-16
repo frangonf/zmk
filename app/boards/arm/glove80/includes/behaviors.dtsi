@@ -1,0 +1,22 @@
+/*
+ * Glove80 Custom Behaviors - Modular Structure
+ *
+ * This file includes all custom behaviors split into logical modules
+ * for easier maintenance and navigation.
+ */
+
+/* System behaviors and Bluetooth */
+#include "behaviors/system-bt.dtsi"
+
+/* Configuration definitions and settings */
+#include "behaviors/definitions.dtsi"
+
+/* Home row mods and hold-tap behaviors */
+#include "behaviors/home-row-mods.dtsi"
+
+/* World characters and Emoji - these form a single macros{} block */
+#include "behaviors/world-characters.dtsi"
+#include "behaviors/emoji.dtsi"
+
+/* Post-macros configuration and auto-generated sections */
+#include "behaviors/post-macros.dtsi"
