@@ -1349,6 +1349,288 @@ behaviors {
   #define RightIndex_layer4(key) right_index RIGHT_INDEX_MOD key
   #define RightIndex_layer5(key) right_index RIGHT_INDEX_MOD key
   #define RightIndex_layer6(key) right_index RIGHT_INDEX_MOD key
+
+  //
+  // Linux layers (32-63) - Use Linux modifiers (GACS: Super, Alt, Ctrl, Shift)
+  // Unlike macOS which swaps Ctrl and Super/GUI
+  //
+  #define LINUX_PINKY_MOD LGUI    // Super/Win key for Linux
+  #define LINUX_RINGY_MOD LALT    // Alt (same as macOS)
+  #define LINUX_MIDDY_MOD LCTL    // Ctrl for Linux
+  #define LINUX_INDEX_MOD LSFT    // Shift (same as macOS)
+
+  // Linux layer definitions for LeftPinky (layers 32-63)
+  #define LeftPinky_layer32(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer33(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer34(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer35(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer36(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer37(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer38(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer39(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer40(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer41(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer42(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer43(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer44(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer45(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer46(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer47(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer48(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer49(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer50(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer51(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer52(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer53(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer54(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer55(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer56(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer57(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer58(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer59(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer60(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer61(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer62(key) left_pinky LINUX_PINKY_MOD key
+  #define LeftPinky_layer63(key) left_pinky LINUX_PINKY_MOD key
+
+  // Linux layer definitions for RightPinky (layers 32-63)
+  #define RightPinky_layer32(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer33(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer34(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer35(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer36(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer37(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer38(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer39(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer40(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer41(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer42(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer43(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer44(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer45(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer46(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer47(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer48(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer49(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer50(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer51(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer52(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer53(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer54(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer55(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer56(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer57(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer58(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer59(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer60(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer61(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer62(key) right_pinky LINUX_PINKY_MOD key
+  #define RightPinky_layer63(key) right_pinky LINUX_PINKY_MOD key
+
+  // Linux layer definitions for LeftRingy (layers 32-63)
+  #define LeftRingy_layer32(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer33(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer34(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer35(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer36(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer37(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer38(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer39(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer40(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer41(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer42(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer43(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer44(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer45(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer46(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer47(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer48(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer49(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer50(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer51(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer52(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer53(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer54(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer55(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer56(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer57(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer58(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer59(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer60(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer61(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer62(key) left_ringy LINUX_RINGY_MOD key
+  #define LeftRingy_layer63(key) left_ringy LINUX_RINGY_MOD key
+
+  // Linux layer definitions for RightRingy (layers 32-63)
+  #define RightRingy_layer32(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer33(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer34(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer35(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer36(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer37(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer38(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer39(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer40(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer41(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer42(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer43(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer44(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer45(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer46(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer47(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer48(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer49(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer50(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer51(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer52(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer53(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer54(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer55(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer56(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer57(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer58(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer59(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer60(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer61(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer62(key) right_ringy LINUX_RINGY_MOD key
+  #define RightRingy_layer63(key) right_ringy LINUX_RINGY_MOD key
+
+  // Linux layer definitions for LeftMiddy (layers 32-63)
+  #define LeftMiddy_layer32(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer33(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer34(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer35(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer36(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer37(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer38(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer39(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer40(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer41(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer42(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer43(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer44(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer45(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer46(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer47(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer48(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer49(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer50(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer51(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer52(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer53(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer54(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer55(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer56(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer57(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer58(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer59(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer60(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer61(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer62(key) left_middy LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer63(key) left_middy LINUX_MIDDY_MOD key
+
+  // Linux layer definitions for RightMiddy (layers 32-63)
+  #define RightMiddy_layer32(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer33(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer34(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer35(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer36(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer37(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer38(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer39(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer40(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer41(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer42(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer43(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer44(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer45(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer46(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer47(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer48(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer49(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer50(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer51(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer52(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer53(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer54(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer55(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer56(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer57(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer58(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer59(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer60(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer61(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer62(key) right_middy LINUX_MIDDY_MOD key
+  #define RightMiddy_layer63(key) right_middy LINUX_MIDDY_MOD key
+
+  // Linux layer definitions for LeftIndex (layers 32-63)
+  #define LeftIndex_layer32(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer33(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer34(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer35(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer36(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer37(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer38(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer39(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer40(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer41(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer42(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer43(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer44(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer45(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer46(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer47(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer48(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer49(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer50(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer51(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer52(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer53(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer54(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer55(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer56(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer57(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer58(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer59(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer60(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer61(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer62(key) left_index LINUX_INDEX_MOD key
+  #define LeftIndex_layer63(key) left_index LINUX_INDEX_MOD key
+
+  // Linux layer definitions for RightIndex (layers 32-63)
+  #define RightIndex_layer32(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer33(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer34(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer35(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer36(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer37(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer38(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer39(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer40(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer41(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer42(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer43(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer44(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer45(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer46(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer47(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer48(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer49(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer50(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer51(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer52(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer53(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer54(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer55(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer56(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer57(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer58(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer59(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer60(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer61(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer62(key) right_index LINUX_INDEX_MOD key
+  #define RightIndex_layer63(key) right_index LINUX_INDEX_MOD key
+
   #ifndef LEFT_RINGY_PINKY_HOLDING_TYPE
   #define LEFT_RINGY_PINKY_HOLDING_TYPE LEFT_RINGY_CHORD_HOLDING_TYPE
   #endif
