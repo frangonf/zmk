@@ -33,7 +33,7 @@ struct conditional_layer_cfg {
     int8_t then_layer;
 };
 
-#define IF_LAYER_BIT(node_id, prop, idx) BIT(DT_PROP_BY_IDX(node_id, prop, idx)) |
+#define IF_LAYER_BIT(node_id, prop, idx) BIT64(DT_PROP_BY_IDX(node_id, prop, idx)) |
 
 // Evaluates to conditional_layer_cfg struct initializer.
 #define CONDITIONAL_LAYER_DECL(n)                                                                  \
@@ -92,20 +92,20 @@ static int layer_state_changed_listener(const zmk_event_t *ev) {
         for (int i = 0; i < NUM_CONDITIONAL_LAYER_CFGS; i++) {
             const struct conditional_layer_cfg *cfg = CONDITIONAL_LAYER_CFGS + i;
             zmk_keymap_layers_state_t mask = cfg->if_layers_state_mask;
-            then_layers |= BIT(cfg->then_layer);
+            then_layers |= BIT64(cfg->then_layer);
             max_then_layer = MAX(max_then_layer, cfg->then_layer);
 
             // Activate then-layer if and only if all if-layers are already active. Note that we
             // reevaluate the current layer state for each config since activation of one layer can
             // also trigger activation of another.
             if ((zmk_keymap_layer_state() & mask) == mask) {
-                then_layer_state |= BIT(cfg->then_layer);
+                then_layer_state |= BIT64(cfg->then_layer);
             }
         }
 
         for (uint8_t layer = 0; layer <= max_then_layer; layer++) {
-            if ((BIT(layer) & then_layers) != 0U) {
-                if ((BIT(layer) & then_layer_state) != 0U) {
+            if ((BIT64(layer) & then_layers) != 0U) {
+                if ((BIT64(layer) & then_layer_state) != 0U) {
                     conditional_layer_activate(layer);
                 } else {
                     conditional_layer_deactivate(layer);
