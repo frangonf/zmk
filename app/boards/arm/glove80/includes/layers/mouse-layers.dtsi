@@ -1,0 +1,54 @@
+        layer_Mouse {
+            bindings = <
+  &none                   &none                   &none                &none                    &none                                                                                                                                             &none                &none                    &none                &none      &none
+  &none                   &none                   &none                &none                    &none                   &none                                                                                             &none                   &none                &none                    &none                &none      &none
+  &none                   &none  &msc MOUSE_SCROLL_LEFT         &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT                   &none                                                                                             &none     &sk RIGHT_INDEX_MOD  &sk RIGHT_MIDDY_MOD      &sk RIGHT_RINGY_MOD  &sk RIGHT_PINKY_MOD  &kp K_APP
+  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT       &mmv MOVE_DOWN          &mmv MOVE_RIGHT    &msc MOUSE_SCROLL_UP                                                                              &msc MOUSE_SCROLL_UP     &mo LAYER_MouseFast  &mo LAYER_MouseSlow      &mo LAYER_MouseFine  &mo LAYER_MouseWarp   &mkp MB4
+  &none  &msc MOUSE_SCROLL_DOWN                &kp _CUT            &kp _COPY               &kp _PASTE  &msc MOUSE_SCROLL_DOWN  &mkp MCLK  &kp K_APP  &mkp MB5  &kp _PASTE         &kp _COPY  &kp _PASTE  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_LEFT         &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT            &mkp LCLK   &mkp MB5
+  &none     &mo LAYER_MouseWarp     &mo LAYER_MouseFine  &mo LAYER_MouseSlow      &mo LAYER_MouseFast                          &mkp LCLK  &mkp RCLK  &mkp MB4       &none  &tog LAYER_Mouse       &none                                  &mmv MOVE_LEFT       &mmv MOVE_DOWN          &mmv MOVE_RIGHT            &mkp RCLK  &mkp MCLK
+            >;
+        };
+
+        layer_MouseFine {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_MouseSlow {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_MouseFast {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_MouseWarp {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
