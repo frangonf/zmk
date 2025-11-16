@@ -87,6 +87,40 @@
 #define LAYER_Lower 30
 #define LAYER_Magic 31
 
+/* Linux mode layer definitions (layers 32-63) */
+#define LAYER_QWERTY_LINUX 32
+#define LAYER_Enthium_LINUX 33
+#define LAYER_Engrammer_LINUX 34
+#define LAYER_Engram_LINUX 35
+#define LAYER_Dvorak_LINUX 36
+#define LAYER_Colemak_LINUX 37
+#define LAYER_ColemakDH_LINUX 38
+#define LAYER_Typing_LINUX 39
+#define LAYER_LeftPinky_LINUX 40
+#define LAYER_LeftRingy_LINUX 41
+#define LAYER_LeftMiddy_LINUX 42
+#define LAYER_LeftIndex_LINUX 43
+#define LAYER_RightPinky_LINUX 44
+#define LAYER_RightRingy_LINUX 45
+#define LAYER_RightMiddy_LINUX 46
+#define LAYER_RightIndex_LINUX 47
+#define LAYER_Cursor_LINUX 48
+#define LAYER_Number_LINUX 49
+#define LAYER_Function_LINUX 50
+#define LAYER_Emoji_LINUX 51
+#define LAYER_World_LINUX 52
+#define LAYER_Symbol_LINUX 53
+#define LAYER_System_LINUX 54
+#define LAYER_Mouse_LINUX 55
+#define LAYER_MouseFine_LINUX 56
+#define LAYER_MouseSlow_LINUX 57
+#define LAYER_MouseFast_LINUX 58
+#define LAYER_MouseWarp_LINUX 59
+#define LAYER_Gaming_LINUX 60
+#define LAYER_Factory_LINUX 61
+#define LAYER_Lower_LINUX 62
+#define LAYER_Magic_LINUX 63
+
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
 #define LAYER_Lower 0
@@ -703,6 +737,343 @@
             tapping-term-ms = <200>;
             bindings = <&bt_select_3>, <&bt BT_DISC 3>;
         };
+
+      /* Linux mode underglow layers */
+
+      BaseLayer_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_QWERTY_LINUX>;
+      };
+
+      #ifdef LAYER_LeftPinky_LINUX
+      LeftPinky_LINUX {
+        bindings = <
+          ___ MAJ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_LeftPinky_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_LeftRingy_LINUX
+      LeftRingy_LINUX {
+        bindings = <
+          ___ ___ CYN ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_LeftRingy_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_LeftMiddy_LINUX
+      LeftMiddy_LINUX {
+        bindings = <
+          ___ ___ ___ GRN ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_LeftMiddy_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_LeftIndex_LINUX
+      LeftIndex_LINUX {
+        bindings = <
+          ___ ___ ___ ___ YLW                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_LeftIndex_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_RightIndex_LINUX
+      RightIndex_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             YLW ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_RightIndex_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_RightMiddy_LINUX
+      RightMiddy_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ GRN ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_RightMiddy_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_RightRingy_LINUX
+      RightRingy_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ CYN ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_RightRingy_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_RightPinky_LINUX
+      RightPinky_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ MAJ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          RED ___ ___ ___ ___ ___     LAC ___ ___     ___ ___ LAC     ___ ___ ___ ___ ___ RED
+          ___ ___ ___ ___ LAC         BSL BNL BCL     BLU LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_RightPinky_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Cursor_LINUX
+      Cursor_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ COR COR COR COR ___                                     ___ ___ ___ ___ ___ ___
+          ___ COR COR COR COR GDN                                     GDN COR PUR PUR COR ___
+          YLW MAJ CYN GRN YLW GDN                                     GDN AZU AZU AZU AZU YLW
+          PNK SPG SPG SPG PUR GDN     COR COR ___     SPG SPG SPG     GDN AZU AZU AZU AZU PNK
+          PNK PUR PUR PUR PUR         RED ___ ___     SPG SPG SPG         PUR PUR PUR PUR PNK
+        >;
+        layer-id = <LAYER_Cursor_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Number_LINUX
+      Number_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             GDN GDN GDN GDN GDN
+          ___ COR COR COR COR ___                                     TEA SPG SPG SPG SPG SPG
+          GDN COR COR COR COR GOL                                     TEA GOL GOL GOL SPG SPG
+          YLW MAJ CYN GRN YLW TEA                                     TEA GOL GOL GOL SPG SPG
+          TEA SPG SPG SPG PUR GDN     ___ ___ ___     SPG SPG SPG     TEA GOL GOL GOL SPG SPG
+          ___ PUR PUR PUR PUR         ___ RED ___     SPG SPG GOL         SPG SPG SPG SPG SPG
+        >;
+        layer-id = <LAYER_Number_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Function_LINUX
+      Function_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ COR COR COR COR ___                                     AZU AZU AZU AZU AZU AZU
+          ___ COR COR COR COR GDN                                     GDN PNK PNK PNK PNK PNK
+          YLW MAJ CYN GRN YLW GDN                                     GDN PNK PNK PNK PNK PNK
+          ___ SPG SPG SPG PUR GDN     RED ___ ___     BLU AZU AZU     GDN PNK PNK PNK PNK PNK
+          ___ PUR PUR PUR PUR         ___ ___ ___     BLU AZU AZU         CHU CHU CHU CHU CHU
+        >;
+        layer-id = <LAYER_Function_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Emoji_LINUX
+      Emoji_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             CYN ___ ___ CYN ___
+          ___ ___ ___ ___ ___ ___                                     ___ CYN ___ ___ CYN ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ GDN PNK SPG AZU ___                                     CYN ___ ___ ___ ___ CYN
+          ___ ___ ___ ___ ___ ___     ___ ___ ___     ___ ___ ___     ___ CYN ___ ___ CYN ___
+          ___ ___ ___ ___ RED         YLW ___ ___     ___ ___ ___         ___ CYN CYN ___ ___
+        >;
+        layer-id = <LAYER_Emoji_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Symbol_LINUX
+      Symbol_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          PNK AZU AZU AZU CHU CHU                                     ___ ___ ___ ___ ___ ___
+          AZU PUR AZU AZU CHU GDN                                     PNK YLW GRN CYN MAJ ___
+          GDN GDN SPG BLU GDN GDN                                     PNK COR COR COR COR ___
+          PUR SPG SPG SPG SPG GDN     PUR GDN GDN     ___ ___ ___     PNK COR COR COR COR ___
+          COR BLU PNK PNK BLU         GDN GDN GDN     ___ ___ RED         ___ ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Symbol_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Mouse_LINUX
+      Mouse_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG AZU SPG ___                                     ___ YLW GRN CYN MAJ PUR
+          ___ SPG AZU AZU AZU SPG                                     SPG FST SLO FIN WRP GDN
+	  ___ SPG BLU BLU BLU SPG     GDN PUR GDN     BLU BLU BLU     SPG SPG AZU SPG GDN GDN
+	  ___ WRP FIN SLO FST         GDN GDN GDN     ___ RED ___         AZU AZU AZU GDN GDN
+	>;
+        layer-id = <LAYER_Mouse_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_MouseFast_LINUX
+      MouseFast_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG FST SPG ___                                     ___ YLW GRN CYN MAJ PUR
+          ___ SPG FST FST FST SPG                                     SPG FST FST FST FST GDN
+          ___ SPG BLU BLU BLU SPG     GDN PUR GDN     BLU BLU BLU     SPG SPG FST SPG GDN GDN
+          ___ FST FST FST FST         GDN GDN GDN     ___ RED ___         FST FST FST GDN GDN
+        >;
+        layer-id = <LAYER_MouseFast_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_MouseWarp_LINUX
+      MouseWarp_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG WRP SPG ___                                     ___ YLW GRN CYN MAJ PUR
+          ___ SPG WRP WRP WRP SPG                                     SPG WRP WRP WRP WRP GDN
+          ___ SPG BLU BLU BLU SPG     GDN PUR GDN     BLU BLU BLU     SPG SPG WRP SPG GDN GDN
+          ___ WRP WRP WRP WRP         GDN GDN GDN     ___ RED ___         WRP WRP WRP GDN GDN
+        >;
+        layer-id = <LAYER_MouseWarp_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_MouseSlow_LINUX
+      MouseSlow_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG SLO SPG ___                                     ___ YLW GRN CYN MAJ PUR
+          ___ SPG SLO SLO SLO SPG                                     SPG SLO SLO SLO SLO GDN
+          ___ SPG BLU BLU BLU SPG     GDN PUR GDN     BLU BLU BLU     SPG SPG SLO SPG GDN GDN
+          ___ SLO SLO SLO SLO         GDN GDN GDN     ___ RED ___         SLO SLO SLO GDN GDN
+        >;
+        layer-id = <LAYER_MouseSlow_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_MouseFine_LINUX
+      MouseFine_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG FIN SPG ___                                     ___ YLW GRN CYN MAJ PUR
+          ___ SPG FIN FIN FIN SPG                                     SPG FIN FIN FIN FIN GDN
+          ___ SPG BLU BLU BLU SPG     GDN PUR GDN     BLU BLU BLU     SPG SPG FIN SPG GDN GDN
+          ___ FIN FIN FIN FIN         GDN GDN GDN     ___ RED ___         FIN FIN FIN GDN GDN
+        >;
+        layer-id = <LAYER_MouseFine_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_World_LINUX
+      World_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ SPG AZU AZU AZU ___                                     ___ ___ CYN CYN ___ ___
+          AZU AZU AZU AZU AZU ___                                     ___ YLW GRN GRN YLW ___
+          AZU AZU SPG SPG AZU ___     ___ ___ ___     ___ ___ ___     ___ ___ ___ ___ ___ ___
+          SPG SPG SPG SPG SPG         ___ ___ ___     ___ ___ ___         RED ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_World_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Typing_LINUX
+      Typing_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___     ___ ___ ___     ___ ___ ___     RED ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___         ___ ___ ___     ___ ___ ___         RED ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Typing_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Gaming_LINUX
+      Gaming_LINUX {
+        bindings = <
+          ORN ___ ___ ___ COR                                             TEA TEA TEA TEA TEA
+          ___ GDN GDN GDN GDN GDN                                     TEA TEA TEA TEA TEA TEA
+          ___ GDN GDN GDN GDN GDN                                     ___ ___ ___ ___ ___ TEA
+          ___ COR ___ AZU ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ YLW AZU AZU AZU RED     YLW CYN ___     ORN AZU COR     ___ ___ ___ ___ ___ ___
+          ___ GRN ___ ___ RED         COR GRN COR     AZU AZU AZU         ___ ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Gaming_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Lower_LINUX
+      Lower_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             PNK SPG SPG SPG ___
+          ___ ___ ___ ___ ___ ___                                     PNK GOL GOL GOL SPG SPG
+          ___ ___ ___ ___ ___ ___                                     SPG GOL GOL GOL SPG SPG
+          CYN ___ ___ ___ ___ ___                                     SPG GOL GOL GOL PNK SPG
+          RED ___ ___ ___ ___ ___     RED ___ ___     ___ ___ RED     GOL GOL SPG SPG PNK RED
+          ___ ___ ___ ___ RED         RED RED ___     ___ RED RED         RED ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Lower_LINUX>;
+      };
+      #endif
+
+      #ifdef LAYER_Factory_LINUX
+      Factory_LINUX {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___     ___ ___ RED     ___ ___ ___     ___ ___ ___ ___ ___ ___
+          RED ___ ___ ___ ___         ___ ___ ___     ___ ___ ___         ___ ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Factory_LINUX>;
+      };
+      #endif
+
     };
     macros {
         bt_select_0: bt_select_0 {
@@ -11821,7 +12192,7 @@ macros {
 
         layer_Magic {
             bindings = <
-  &bt BT_CLR            &none            &none            &none            &none                                                                                  &none   &none   &none   &none  &bt BT_CLR_ALL
+  &bt BT_CLR            &none            &none            &none  &to LAYER_QWERTY_LINUX                                                                         &none   &none   &none   &none  &bt BT_CLR_ALL
        &to 0            &to 1            &to 2            &to 3            &to 4            &to 5                                                         &to 6   &none   &none   &none   &none           &none
        &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                         &none   &none   &none   &none   &none           &none
  &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                         &none   &none   &none   &none   &none     &bootloader
@@ -11831,4 +12202,359 @@ macros {
         };
 
     };
+
+        /* Linux mode layers (32-63) - duplicates of macOS layers with Linux key mappings */
+
+        layer_QWERTY_LINUX {
+            bindings = <
+               &kp F1                        &kp F2                        &kp F3                        &kp F4                        &kp F5                                                                                                                                                                                                     &kp F6                         &kp F7                         &kp F8                            &kp F9               &kp F10
+               &kp N0                        &kp N1                        &kp N2                        &kp N3                        &kp N4  &kp N5                                                                                                                                                              &kp N6                         &kp N7                         &kp N8                         &kp N9                           &kp F12               &kp F11
+            &kp GRAVE                         &kp Q                         &kp W                         &kp E                         &kp R   &kp T                                                                                                                                                               &kp Y                          &kp U                          &kp I                          &kp O                             &kp P             &kp MINUS
+            &kp EQUAL  &LeftPinky (A, LAYER_QWERTY_LINUX)  &LeftRingy (S, LAYER_QWERTY_LINUX)  &LeftMiddy (D, LAYER_QWERTY_LINUX)  &LeftIndex (F, LAYER_QWERTY_LINUX)   &kp G                                                                                                                                                               &kp H  &RightIndex (J, LAYER_QWERTY_LINUX)  &RightMiddy (K, LAYER_QWERTY_LINUX)  &RightRingy (L, LAYER_QWERTY_LINUX)  &RightPinky (SEMI, LAYER_QWERTY_LINUX)               &kp SQT
+      &mo LAYER_Lower_LINUX                         &kp Z                         &kp X                         &kp C                         &kp V   &kp B      &thumb LAYER_Function_LINUX ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System_LINUX ENTER   &kp N                          &kp M                      &kp COMMA                        &kp DOT                          &kp FSLH       &mo LAYER_Lower_LINUX
+ &magic LAYER_Magic_LINUX 0                     &kp GRAVE                      &kp LBKT                      &kp RBKT       &thumb LAYER_Emoji_LINUX BSLH          &thumb LAYER_Cursor_LINUX BACKSPACE  &thumb LAYER_Number_LINUX DELETE  &thumb LAYER_Typing_LINUX INSERT  &mo LAYER_Typing_LINUX  &thumb LAYER_Mouse_LINUX TAB  &space LAYER_Symbol_LINUX SPACE             &thumb LAYER_World_LINUX PAGE_UP           &msc MOUSE_SCROLL_UP         &msc MOUSE_SCROLL_DOWN                         &kp PG_DN  &magic LAYER_Magic_LINUX 0
+            >;
+        };
+
+        layer_Enthium_LINUX {
+            bindings = <
+                &none                          &none                          &none                          &none                          &none                                                                                                                                                                                                                   &none                           &none                           &none                           &none                 &none
+                &none                         &kp N1                         &kp N2                         &kp N3                         &kp N4     &kp N5                                                                                                                                                                       &kp N6                          &kp N7                          &kp N8                          &kp N9                          &kp N0                 &none
+                &none                          &kp Z                          &kp Y                          &kp U                          &kp O   &kp SEMI                                                                                                                                                                        &kp Q                           &kp L                           &kp D                           &kp P                           &kp X                 &none
+                &kp W  &LeftPinky (C, LAYER_Enthium_LINUX)  &LeftRingy (I, LAYER_Enthium_LINUX)  &LeftMiddy (E, LAYER_Enthium_LINUX)  &LeftIndex (A, LAYER_Enthium_LINUX)  &kp COMMA                                                                                                                                                                        &kp K  &RightIndex (H, LAYER_Enthium_LINUX)  &RightMiddy (T, LAYER_Enthium_LINUX)  &RightRingy (N, LAYER_Enthium_LINUX)  &RightPinky (S, LAYER_Enthium_LINUX)                 &kp F
+      &mo LAYER_Lower_LINUX                        &kp SQT                      &kp MINUS                      &kp EQUAL                        &kp DOT   &kp FSLH  &thumb LAYER_Function_LINUX ESC             &parang_left               &parang_right                   &kp _HOME                      &kp _END  &thumb LAYER_System_LINUX ENTER   &kp J                           &kp M                           &kp G                           &kp B                           &kp V       &mo LAYER_Lower_LINUX
+ &magic LAYER_Magic_LINUX 0                      &kp GRAVE                       &kp LBKT                       &kp RBKT        &thumb LAYER_Emoji_LINUX BSLH             &thumb LAYER_Cursor_LINUX SPACE  &thumb LAYER_Number_LINUX TAB  &thumb LAYER_Typing_LINUX INSERT  &thumb LAYER_Typing_LINUX DELETE  &thumb LAYER_Mouse_LINUX BACKSPACE      &space LAYER_Symbol_LINUX R              &thumb LAYER_World_LINUX PAGE_UP            &msc MOUSE_SCROLL_UP          &msc MOUSE_SCROLL_DOWN                       &kp PG_DN  &magic LAYER_Magic_LINUX 0
+            >;
+        };
+
+        layer_Engrammer_LINUX {
+            bindings = <
+                &none                            &none                            &none                            &none                            &none                                                                                                                                                                                                              &none                             &none                             &none                             &none                 &none
+                &none                           &kp N1                           &kp N2                           &kp N3                           &kp N4     &kp N5                                                                                                                                                                &kp N6                            &kp N7                            &kp N8                            &kp N9                            &kp N0                 &none
+                &none                            &kp B                            &kp Y                            &kp O                            &kp U    &kp SQT                                                                                                                                                              &kp SEMI                             &kp L                             &kp D                             &kp W                             &kp V                 &kp Z
+            &kp EQUAL  &LeftPinky (C, LAYER_Engrammer_LINUX)  &LeftRingy (I, LAYER_Engrammer_LINUX)  &LeftMiddy (E, LAYER_Engrammer_LINUX)  &LeftIndex (A, LAYER_Engrammer_LINUX)  &kp COMMA                                                                                                                                                               &kp DOT  &RightIndex (H, LAYER_Engrammer_LINUX)  &RightMiddy (T, LAYER_Engrammer_LINUX)  &RightRingy (S, LAYER_Engrammer_LINUX)  &RightPinky (N, LAYER_Engrammer_LINUX)                 &kp Q
+      &mo LAYER_Lower_LINUX                            &kp G                            &kp X                            &kp J                            &kp K  &kp MINUS      &thumb LAYER_Function_LINUX ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System_LINUX ENTER  &kp FSLH                             &kp R                             &kp M                             &kp F                             &kp P       &mo LAYER_Lower_LINUX
+ &magic LAYER_Magic_LINUX 0                        &kp GRAVE                         &kp LBKT                         &kp RBKT          &thumb LAYER_Emoji_LINUX BSLH             &thumb LAYER_Cursor_LINUX BACKSPACE  &thumb LAYER_Number_LINUX DELETE  &thumb LAYER_Typing_LINUX INSERT  &mo LAYER_Typing_LINUX  &thumb LAYER_Mouse_LINUX TAB  &space LAYER_Symbol_LINUX SPACE                  &thumb LAYER_World_LINUX PAGE_UP              &msc MOUSE_SCROLL_UP            &msc MOUSE_SCROLL_DOWN                         &kp PG_DN  &magic LAYER_Magic_LINUX 0
+            >;
+        };
+
+        layer_Engram_LINUX {
+            bindings = <
+                &none                         &none                         &none                         &none                           &none                                                                                                                                                                                                                    &none                          &none                          &none                          &none                 &none
+                &none                    &engram_N1                    &engram_N2                    &engram_N3                      &engram_N4     &engram_N5                                                                                                                                                                 &engram_N6                     &engram_N7                     &engram_N8                     &engram_N9                     &engram_N0                 &none
+                &none                         &kp B                         &kp Y                         &kp O                           &kp U    &engram_SQT                                                                                                                                                                &engram_DQT                          &kp L                          &kp D                          &kp W                          &kp V                 &kp Z
+         &engram_HASH  &LeftPinky (C, LAYER_Engram_LINUX)  &LeftRingy (I, LAYER_Engram_LINUX)  &LeftMiddy (E, LAYER_Engram_LINUX)    &LeftIndex (A, LAYER_Engram_LINUX)  &engram_COMMA                                                                                                                                                                &engram_DOT  &RightIndex (H, LAYER_Engram_LINUX)  &RightMiddy (T, LAYER_Engram_LINUX)  &RightRingy (S, LAYER_Engram_LINUX)  &RightPinky (N, LAYER_Engram_LINUX)                 &kp Q
+      &mo LAYER_Lower_LINUX                         &kp G                         &kp X                         &kp J                           &kp K      &kp MINUS      &thumb LAYER_Function_LINUX ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System_LINUX ENTER  &engram_QMARK                          &kp R                          &kp M                          &kp F                          &kp P       &mo LAYER_Lower_LINUX
+ &magic LAYER_Magic_LINUX 0                  &engram_FSLH                      &kp LBKT                      &kp RBKT  &thumb_engram_AT LAYER_Emoji_LINUX 0                 &thumb LAYER_Cursor_LINUX BACKSPACE  &thumb LAYER_Number_LINUX DELETE  &thumb LAYER_Typing_LINUX INSERT  &mo LAYER_Typing_LINUX  &thumb LAYER_Mouse_LINUX TAB  &space LAYER_Symbol_LINUX SPACE                    &thumb LAYER_World_LINUX PAGE_UP           &msc MOUSE_SCROLL_UP         &msc MOUSE_SCROLL_DOWN                      &kp PG_DN  &magic LAYER_Magic_LINUX 0
+            >;
+        };
+
+        layer_Dvorak_LINUX {
+            bindings = <
+                &none                         &none                         &none                         &none                         &none                                                                                                                                                                                                      &none                          &none                          &none                          &none                 &none
+                &none                        &kp N1                        &kp N2                        &kp N3                        &kp N4  &kp N5                                                                                                                                                              &kp N6                         &kp N7                         &kp N8                         &kp N9                         &kp N0                 &none
+                &none                       &kp SQT                     &kp COMMA                       &kp DOT                         &kp P   &kp Y                                                                                                                                                               &kp F                          &kp G                          &kp C                          &kp R                          &kp L             &kp SLASH
+            &kp EQUAL  &LeftPinky (A, LAYER_Dvorak_LINUX)  &LeftRingy (O, LAYER_Dvorak_LINUX)  &LeftMiddy (E, LAYER_Dvorak_LINUX)  &LeftIndex (U, LAYER_Dvorak_LINUX)   &kp I                                                                                                                                                               &kp D  &RightIndex (H, LAYER_Dvorak_LINUX)  &RightMiddy (T, LAYER_Dvorak_LINUX)  &RightRingy (N, LAYER_Dvorak_LINUX)  &RightPinky (S, LAYER_Dvorak_LINUX)             &kp MINUS
+      &mo LAYER_Lower_LINUX                      &kp SEMI                         &kp Q                         &kp J                         &kp K   &kp X      &thumb LAYER_Function_LINUX ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System_LINUX ENTER   &kp B                          &kp M                          &kp W                          &kp V                          &kp Z       &mo LAYER_Lower_LINUX
+ &magic LAYER_Magic_LINUX 0                     &kp GRAVE                      &kp LBKT                      &kp RBKT       &thumb LAYER_Emoji_LINUX BSLH          &thumb LAYER_Cursor_LINUX BACKSPACE  &thumb LAYER_Number_LINUX DELETE  &thumb LAYER_Typing_LINUX INSERT  &mo LAYER_Typing_LINUX  &thumb LAYER_Mouse_LINUX TAB  &space LAYER_Symbol_LINUX SPACE             &thumb LAYER_World_LINUX PAGE_UP           &msc MOUSE_SCROLL_UP         &msc MOUSE_SCROLL_DOWN                      &kp PG_DN  &magic LAYER_Magic_LINUX 0
+            >;
+        };
+
+        layer_Colemak_LINUX {
+            bindings = <
+                &none                          &none                          &none                          &none                          &none                                                                                                                                                                                                       &none                           &none                           &none                           &none                 &none
+                &none                         &kp N1                         &kp N2                         &kp N3                         &kp N4  &kp N5                                                                                                                                                              &kp N6                          &kp N7                          &kp N8                          &kp N9                          &kp N0                 &none
+                &none                          &kp Q                          &kp W                          &kp F                          &kp P   &kp G                                                                                                                                                               &kp J                           &kp L                           &kp U                           &kp Y                        &kp SEMI             &kp MINUS
+            &kp EQUAL  &LeftPinky (A, LAYER_Colemak_LINUX)  &LeftRingy (R, LAYER_Colemak_LINUX)  &LeftMiddy (S, LAYER_Colemak_LINUX)  &LeftIndex (T, LAYER_Colemak_LINUX)   &kp D                                                                                                                                                               &kp H  &RightIndex (N, LAYER_Colemak_LINUX)  &RightMiddy (E, LAYER_Colemak_LINUX)  &RightRingy (I, LAYER_Colemak_LINUX)  &RightPinky (O, LAYER_Colemak_LINUX)               &kp SQT
+      &mo LAYER_Lower_LINUX                          &kp Z                          &kp X                          &kp C                          &kp V   &kp B      &thumb LAYER_Function_LINUX ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System_LINUX ENTER   &kp K                           &kp M                       &kp COMMA                         &kp DOT                        &kp FSLH       &mo LAYER_Lower_LINUX
+ &magic LAYER_Magic_LINUX 0                      &kp GRAVE                       &kp LBKT                       &kp RBKT        &thumb LAYER_Emoji_LINUX BSLH          &thumb LAYER_Cursor_LINUX BACKSPACE  &thumb LAYER_Number_LINUX DELETE  &crumb LAYER_Typing_LINUX INSERT  &mo LAYER_Typing_LINUX  &thumb LAYER_Mouse_LINUX TAB  &space LAYER_Symbol_LINUX SPACE              &thumb LAYER_World_LINUX PAGE_UP            &msc MOUSE_SCROLL_UP          &msc MOUSE_SCROLL_DOWN                       &kp PG_DN  &magic LAYER_Magic_LINUX 0
+            >;
+        };
+
+        layer_ColemakDH_LINUX {
+            bindings = <
+                &none                            &none                            &none                            &none                            &none                                                                                                                                                                                                         &none                             &none                             &none                             &none                 &none
+                &none                           &kp N1                           &kp N2                           &kp N3                           &kp N4  &kp N5                                                                                                                                                              &kp N6                            &kp N7                            &kp N8                            &kp N9                            &kp N0                 &none
+                &none                            &kp Q                            &kp W                            &kp F                            &kp P   &kp B                                                                                                                                                               &kp J                             &kp L                             &kp U                             &kp Y                          &kp SEMI             &kp MINUS
+            &kp EQUAL  &LeftPinky (A, LAYER_ColemakDH_LINUX)  &LeftRingy (R, LAYER_ColemakDH_LINUX)  &LeftMiddy (S, LAYER_ColemakDH_LINUX)  &LeftIndex (T, LAYER_ColemakDH_LINUX)   &kp G                                                                                                                                                               &kp M  &RightIndex (N, LAYER_ColemakDH_LINUX)  &RightMiddy (E, LAYER_ColemakDH_LINUX)  &RightRingy (I, LAYER_ColemakDH_LINUX)  &RightPinky (O, LAYER_ColemakDH_LINUX)               &kp SQT
+      &mo LAYER_Lower_LINUX                            &kp Z                            &kp X                            &kp C                            &kp D   &kp V      &thumb LAYER_Function_LINUX ESC                &parang_left               &parang_right         &kp _HOME                &kp _END  &thumb LAYER_System_LINUX ENTER   &kp K                             &kp H                         &kp COMMA                           &kp DOT                          &kp FSLH       &mo LAYER_Lower_LINUX
+ &magic LAYER_Magic_LINUX 0                        &kp GRAVE                         &kp LBKT                         &kp RBKT          &thumb LAYER_Emoji_LINUX BSLH          &thumb LAYER_Cursor_LINUX BACKSPACE  &thumb LAYER_Number_LINUX DELETE  &thumb LAYER_Typing_LINUX INSERT  &mo LAYER_Typing_LINUX  &thumb LAYER_Mouse_LINUX TAB  &space LAYER_Symbol_LINUX SPACE                &thumb LAYER_World_LINUX PAGE_UP              &msc MOUSE_SCROLL_UP            &msc MOUSE_SCROLL_DOWN                         &kp PG_DN  &magic LAYER_Magic_LINUX 0
+            >;
+        };
+
+        layer_Typing_LINUX {
+            bindings = <
+ &trans              &trans              &trans              &trans              &trans                                                                                                                         &trans               &trans               &trans               &trans  &trans
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                            &trans               &trans               &trans               &trans               &trans  &trans
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                            &trans               &trans               &trans               &trans               &trans  &trans
+ &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                            &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+ &trans              &trans              &trans              &trans              &trans  &trans  &kp KEY_LH_T1         &trans         &trans         &trans         &trans  &kp KEY_RH_T1  &trans               &trans               &trans               &trans               &trans  &trans
+ &trans              &trans              &trans              &trans     &kp KEY_LH_C2R6          &kp KEY_LH_T4  &kp KEY_LH_T5  &kp KEY_LH_T6  &kp KEY_RH_T6  &kp KEY_RH_T5  &kp KEY_RH_T4              &kp KEY_RH_C2R6               &trans               &trans               &trans  &trans
+            >;
+        };
+
+        layer_LeftPinky_LINUX {
+            bindings = <
+ &left_pinky_tap KEY_LH_C6R1  &left_pinky_tap KEY_LH_C5R1  &left_pinky_tap KEY_LH_C4R1  &left_pinky_tap KEY_LH_C3R1  &left_pinky_tap KEY_LH_C2R1                                                                                                                                                 &trans               &trans               &trans               &trans  &trans
+ &left_pinky_tap KEY_LH_C6R2  &left_pinky_tap KEY_LH_C5R2  &left_pinky_tap KEY_LH_C4R2  &left_pinky_tap KEY_LH_C3R2  &left_pinky_tap KEY_LH_C2R2  &left_pinky_tap KEY_LH_C1R2                                                                                               &trans               &trans               &trans               &trans               &trans  &trans
+ &left_pinky_tap KEY_LH_C6R3  &left_pinky_tap KEY_LH_C5R3  &left_pinky_tap KEY_LH_C4R3  &left_pinky_tap KEY_LH_C3R3  &left_pinky_tap KEY_LH_C2R3  &left_pinky_tap KEY_LH_C1R3                                                                                               &trans               &trans               &trans               &trans               &trans  &trans
+ &left_pinky_tap KEY_LH_C6R4                        &none              &LeftPinkyRingy              &LeftPinkyMiddy              &LeftPinkyIndex  &left_pinky_tap KEY_LH_C1R4                                                                                               &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+                      &trans  &left_pinky_tap KEY_LH_C5R5  &left_pinky_tap KEY_LH_C4R5  &left_pinky_tap KEY_LH_C3R5  &left_pinky_tap KEY_LH_C2R5  &left_pinky_tap KEY_LH_C1R5  &mo LAY_LH_T1  &left_pinky_tap KEY_LH_T2  &left_pinky_tap KEY_LH_T3  &trans  &trans  &trans  &trans               &trans               &trans               &trans               &trans  &trans
+                      &trans  &left_pinky_tap KEY_LH_C5R6  &left_pinky_tap KEY_LH_C4R6  &left_pinky_tap KEY_LH_C3R6              &mo LAY_LH_C2R6                               &mo LAY_LH_T4              &mo LAY_LH_T5              &mo LAY_LH_T6  &trans  &trans  &trans                       &trans               &trans               &trans               &trans  &trans
+            >;
+        };
+
+        layer_LeftRingy_LINUX {
+            bindings = <
+ &left_ringy_tap KEY_LH_C6R1  &left_ringy_tap KEY_LH_C5R1  &left_ringy_tap KEY_LH_C4R1  &left_ringy_tap KEY_LH_C3R1  &left_ringy_tap KEY_LH_C2R1                                                                                                                                                 &trans               &trans               &trans               &trans  &trans
+ &left_ringy_tap KEY_LH_C6R2  &left_ringy_tap KEY_LH_C5R2  &left_ringy_tap KEY_LH_C4R2  &left_ringy_tap KEY_LH_C3R2  &left_ringy_tap KEY_LH_C2R2  &left_ringy_tap KEY_LH_C1R2                                                                                               &trans               &trans               &trans               &trans               &trans  &trans
+ &left_ringy_tap KEY_LH_C6R3  &left_ringy_tap KEY_LH_C5R3  &left_ringy_tap KEY_LH_C4R3  &left_ringy_tap KEY_LH_C3R3  &left_ringy_tap KEY_LH_C2R3  &left_ringy_tap KEY_LH_C1R3                                                                                               &trans               &trans               &trans               &trans               &trans  &trans
+ &left_ringy_tap KEY_LH_C6R4              &LeftRingyPinky                        &none              &LeftRingyMiddy              &LeftRingyIndex  &left_ringy_tap KEY_LH_C1R4                                                                                               &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+                      &trans  &left_ringy_tap KEY_LH_C5R5  &left_ringy_tap KEY_LH_C4R5  &left_ringy_tap KEY_LH_C3R5  &left_ringy_tap KEY_LH_C2R5  &left_ringy_tap KEY_LH_C1R5  &mo LAY_LH_T1  &left_ringy_tap KEY_LH_T2  &left_ringy_tap KEY_LH_T3  &trans  &trans  &trans  &trans               &trans               &trans               &trans               &trans  &trans
+                      &trans  &left_ringy_tap KEY_LH_C5R6  &left_ringy_tap KEY_LH_C4R6  &left_ringy_tap KEY_LH_C3R6              &mo LAY_LH_C2R6                               &mo LAY_LH_T4              &mo LAY_LH_T5              &mo LAY_LH_T6  &trans  &trans  &trans                       &trans               &trans               &trans               &trans  &trans
+            >;
+        };
+
+        layer_LeftMiddy_LINUX {
+            bindings = <
+ &left_middy_tap KEY_LH_C6R1  &left_middy_tap KEY_LH_C5R1  &left_middy_tap KEY_LH_C4R1  &left_middy_tap KEY_LH_C3R1  &left_middy_tap KEY_LH_C2R1                                                                                                                                                 &trans               &trans               &trans               &trans  &trans
+ &left_middy_tap KEY_LH_C6R2  &left_middy_tap KEY_LH_C5R2  &left_middy_tap KEY_LH_C4R2  &left_middy_tap KEY_LH_C3R2  &left_middy_tap KEY_LH_C2R2  &left_middy_tap KEY_LH_C1R2                                                                                               &trans               &trans               &trans               &trans               &trans  &trans
+ &left_middy_tap KEY_LH_C6R3  &left_middy_tap KEY_LH_C5R3  &left_middy_tap KEY_LH_C4R3  &left_middy_tap KEY_LH_C3R3  &left_middy_tap KEY_LH_C2R3  &left_middy_tap KEY_LH_C1R3                                                                                               &trans               &trans               &trans               &trans               &trans  &trans
+ &left_middy_tap KEY_LH_C6R4              &LeftMiddyPinky              &LeftMiddyRingy                        &none              &LeftMiddyIndex  &left_middy_tap KEY_LH_C1R4                                                                                               &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+                      &trans  &left_middy_tap KEY_LH_C5R5  &left_middy_tap KEY_LH_C4R5  &left_middy_tap KEY_LH_C3R5  &left_middy_tap KEY_LH_C2R5  &left_middy_tap KEY_LH_C1R5  &mo LAY_LH_T1  &left_middy_tap KEY_LH_T2  &left_middy_tap KEY_LH_T3  &trans  &trans  &trans  &trans               &trans               &trans               &trans               &trans  &trans
+                      &trans  &left_middy_tap KEY_LH_C5R6  &left_middy_tap KEY_LH_C4R6  &left_middy_tap KEY_LH_C3R6              &mo LAY_LH_C2R6                               &mo LAY_LH_T4              &mo LAY_LH_T5              &mo LAY_LH_T6  &trans  &trans  &trans                       &trans               &trans               &trans               &trans  &trans
+            >;
+        };
+
+        layer_LeftIndex_LINUX {
+            bindings = <
+ &left_index_tap KEY_LH_C6R1  &left_index_tap KEY_LH_C5R1  &left_index_tap KEY_LH_C4R1  &left_index_tap KEY_LH_C3R1  &left_index_tap KEY_LH_C2R1                                                                                                                                                 &trans               &trans               &trans               &trans  &trans
+ &left_index_tap KEY_LH_C6R2  &left_index_tap KEY_LH_C5R2  &left_index_tap KEY_LH_C4R2  &left_index_tap KEY_LH_C3R2  &left_index_tap KEY_LH_C2R2  &left_index_tap KEY_LH_C1R2                                                                                               &trans               &trans               &trans               &trans               &trans  &trans
+ &left_index_tap KEY_LH_C6R3  &left_index_tap KEY_LH_C5R3  &left_index_tap KEY_LH_C4R3  &left_index_tap KEY_LH_C3R3  &left_index_tap KEY_LH_C2R3  &left_index_tap KEY_LH_C1R3                                                                                               &trans               &trans               &trans               &trans               &trans  &trans
+ &left_index_tap KEY_LH_C6R4              &LeftIndexPinky              &LeftIndexRingy              &LeftIndexMiddy                        &none  &left_index_tap KEY_LH_C1R4                                                                                               &trans  &kp RIGHT_INDEX_KEY  &kp RIGHT_MIDDY_KEY  &kp RIGHT_RINGY_KEY  &kp RIGHT_PINKY_KEY  &trans
+                      &trans  &left_index_tap KEY_LH_C5R5  &left_index_tap KEY_LH_C4R5  &left_index_tap KEY_LH_C3R5  &left_index_tap KEY_LH_C2R5  &left_index_tap KEY_LH_C1R5  &mo LAY_LH_T1  &left_index_tap KEY_LH_T2  &left_index_tap KEY_LH_T3  &trans  &trans  &trans  &trans               &trans               &trans               &trans               &trans  &trans
+                      &trans  &left_index_tap KEY_LH_C5R6  &left_index_tap KEY_LH_C4R6  &left_index_tap KEY_LH_C3R6              &mo LAY_LH_C2R6                               &mo LAY_LH_T4              &mo LAY_LH_T5              &mo LAY_LH_T6  &trans  &trans  &trans                       &trans               &trans               &trans               &trans  &trans
+            >;
+        };
+
+        layer_RightPinky_LINUX {
+            bindings = <
+ &trans              &trans              &trans              &trans              &trans                                                                                                                                       &right_pinky_tap KEY_RH_C2R1  &right_pinky_tap KEY_RH_C3R1  &right_pinky_tap KEY_RH_C4R1  &right_pinky_tap KEY_RH_C5R1  &right_pinky_tap KEY_RH_C6R1
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                 &right_pinky_tap KEY_RH_C1R2  &right_pinky_tap KEY_RH_C2R2  &right_pinky_tap KEY_RH_C3R2  &right_pinky_tap KEY_RH_C4R2  &right_pinky_tap KEY_RH_C5R2  &right_pinky_tap KEY_RH_C6R2
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                 &right_pinky_tap KEY_RH_C1R3  &right_pinky_tap KEY_RH_C2R3  &right_pinky_tap KEY_RH_C3R3  &right_pinky_tap KEY_RH_C4R3  &right_pinky_tap KEY_RH_C5R3  &right_pinky_tap KEY_RH_C6R3
+ &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                                 &right_pinky_tap KEY_RH_C1R4              &RightPinkyIndex              &RightPinkyMiddy              &RightPinkyRingy                         &none  &right_pinky_tap KEY_RH_C6R4
+ &trans              &trans              &trans              &trans              &trans  &trans  &trans  &trans  &trans  &right_pinky_tap KEY_RH_T3  &right_pinky_tap KEY_RH_T2  &mo LAY_RH_T1  &right_pinky_tap KEY_RH_C1R5  &right_pinky_tap KEY_RH_C2R5  &right_pinky_tap KEY_RH_C3R5  &right_pinky_tap KEY_RH_C4R5  &right_pinky_tap KEY_RH_C5R5                        &trans
+ &trans              &trans              &trans              &trans              &trans          &trans  &trans  &trans               &mo LAY_RH_T6               &mo LAY_RH_T5  &mo LAY_RH_T4                                             &mo LAY_RH_C2R6  &right_pinky_tap KEY_RH_C3R6  &right_pinky_tap KEY_RH_C4R6  &right_pinky_tap KEY_RH_C5R6                        &trans
+            >;
+        };
+
+        layer_RightRingy_LINUX {
+            bindings = <
+ &trans              &trans              &trans              &trans              &trans                                                                                                                                       &right_ringy_tap KEY_RH_C2R1  &right_ringy_tap KEY_RH_C3R1  &right_ringy_tap KEY_RH_C4R1  &right_ringy_tap KEY_RH_C5R1  &right_ringy_tap KEY_RH_C6R1
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                 &right_ringy_tap KEY_RH_C1R2  &right_ringy_tap KEY_RH_C2R2  &right_ringy_tap KEY_RH_C3R2  &right_ringy_tap KEY_RH_C4R2  &right_ringy_tap KEY_RH_C5R2  &right_ringy_tap KEY_RH_C6R2
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                 &right_ringy_tap KEY_RH_C1R3  &right_ringy_tap KEY_RH_C2R3  &right_ringy_tap KEY_RH_C3R3  &right_ringy_tap KEY_RH_C4R3  &right_ringy_tap KEY_RH_C5R3  &right_ringy_tap KEY_RH_C6R3
+ &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                                 &right_ringy_tap KEY_RH_C1R4              &RightRingyIndex              &RightRingyMiddy                         &none              &RightRingyPinky  &right_ringy_tap KEY_RH_C6R4
+ &trans              &trans              &trans              &trans              &trans  &trans  &trans  &trans  &trans  &right_ringy_tap KEY_RH_T3  &right_ringy_tap KEY_RH_T2  &mo LAY_RH_T1  &right_ringy_tap KEY_RH_C1R5  &right_ringy_tap KEY_RH_C2R5  &right_ringy_tap KEY_RH_C3R5  &right_ringy_tap KEY_RH_C4R5  &right_ringy_tap KEY_RH_C5R5                        &trans
+ &trans              &trans              &trans              &trans              &trans          &trans  &trans  &trans               &mo LAY_RH_T6               &mo LAY_RH_T5  &mo LAY_RH_T4                                             &mo LAY_RH_C2R6  &right_ringy_tap KEY_RH_C3R6  &right_ringy_tap KEY_RH_C4R6  &right_ringy_tap KEY_RH_C5R6                        &trans
+            >;
+        };
+
+        layer_RightMiddy_LINUX {
+            bindings = <
+ &trans              &trans              &trans              &trans              &trans                                                                                                                                       &right_middy_tap KEY_RH_C2R1  &right_middy_tap KEY_RH_C3R1  &right_middy_tap KEY_RH_C4R1  &right_middy_tap KEY_RH_C5R1  &right_middy_tap KEY_RH_C6R1
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                 &right_middy_tap KEY_RH_C1R2  &right_middy_tap KEY_RH_C2R2  &right_middy_tap KEY_RH_C3R2  &right_middy_tap KEY_RH_C4R2  &right_middy_tap KEY_RH_C5R2  &right_middy_tap KEY_RH_C6R2
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                 &right_middy_tap KEY_RH_C1R3  &right_middy_tap KEY_RH_C2R3  &right_middy_tap KEY_RH_C3R3  &right_middy_tap KEY_RH_C4R3  &right_middy_tap KEY_RH_C5R3  &right_middy_tap KEY_RH_C6R3
+ &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                                 &right_middy_tap KEY_RH_C1R4              &RightMiddyIndex                         &none              &RightMiddyRingy              &RightMiddyPinky  &right_middy_tap KEY_RH_C6R4
+ &trans              &trans              &trans              &trans              &trans  &trans  &trans  &trans  &trans  &right_middy_tap KEY_RH_T3  &right_middy_tap KEY_RH_T2  &mo LAY_RH_T1  &right_middy_tap KEY_RH_C1R5  &right_middy_tap KEY_RH_C2R5  &right_middy_tap KEY_RH_C3R5  &right_middy_tap KEY_RH_C4R5  &right_middy_tap KEY_RH_C5R5                        &trans
+ &trans              &trans              &trans              &trans              &trans          &trans  &trans  &trans               &mo LAY_RH_T6               &mo LAY_RH_T5  &mo LAY_RH_T4                                             &mo LAY_RH_C2R6  &right_middy_tap KEY_RH_C3R6  &right_middy_tap KEY_RH_C4R6  &right_middy_tap KEY_RH_C5R6                        &trans
+            >;
+        };
+
+        layer_RightIndex_LINUX {
+            bindings = <
+ &trans              &trans              &trans              &trans              &trans                                                                                                                                       &right_index_tap KEY_RH_C2R1  &right_index_tap KEY_RH_C3R1  &right_index_tap KEY_RH_C4R1  &right_index_tap KEY_RH_C5R1  &right_index_tap KEY_RH_C6R1
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                 &right_index_tap KEY_RH_C1R2  &right_index_tap KEY_RH_C2R2  &right_index_tap KEY_RH_C3R2  &right_index_tap KEY_RH_C4R2  &right_index_tap KEY_RH_C5R2  &right_index_tap KEY_RH_C6R2
+ &trans              &trans              &trans              &trans              &trans  &trans                                                                                                 &right_index_tap KEY_RH_C1R3  &right_index_tap KEY_RH_C2R3  &right_index_tap KEY_RH_C3R3  &right_index_tap KEY_RH_C4R3  &right_index_tap KEY_RH_C5R3  &right_index_tap KEY_RH_C6R3
+ &trans  &kp LEFT_PINKY_KEY  &kp LEFT_RINGY_KEY  &kp LEFT_MIDDY_KEY  &kp LEFT_INDEX_KEY  &trans                                                                                                 &right_index_tap KEY_RH_C1R4                         &none              &RightIndexMiddy              &RightIndexRingy              &RightIndexPinky  &right_index_tap KEY_RH_C6R4
+ &trans              &trans              &trans              &trans              &trans  &trans  &trans  &trans  &trans  &right_index_tap KEY_RH_T3  &right_index_tap KEY_RH_T2  &mo LAY_RH_T1  &right_index_tap KEY_RH_C1R5  &right_index_tap KEY_RH_C2R5  &right_index_tap KEY_RH_C3R5  &right_index_tap KEY_RH_C4R5  &right_index_tap KEY_RH_C5R5                        &trans
+ &trans              &trans              &trans              &trans              &trans          &trans  &trans  &trans               &mo LAY_RH_T6               &mo LAY_RH_T5  &mo LAY_RH_T4                                             &mo LAY_RH_C2R6  &right_index_tap KEY_RH_C3R6  &right_index_tap KEY_RH_C4R6  &right_index_tap KEY_RH_C5R6                        &trans
+            >;
+        };
+
+        layer_Cursor_LINUX {
+            bindings = <
+     &none               &none               &none               &none               &none                                                                                                              &none           &none           &none          &none      &none
+     &none             &kp ESC             &kp INS         &kp LS(TAB)             &kp DEL       &none                                                                                     &none        &none           &none           &none          &none      &none
+     &none             &kp RET           &kp SPACE             &kp TAB            &kp BSPC    &kp _CUT                                                                                  &kp _CUT  &kp LS(TAB)       &kp _UNDO       &kp _REDO        &kp TAB      &none
+ &sk LSHFT  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp _COPY                                                                                  &kp LEFT     &kp DOWN          &kp UP       &kp RIGHT      &kp RIGHT  &sk LSHFT
+ &kp _C(L)         &select_all        &select_line        &select_word           &kp _FIND  &kp _PASTE        &kp LS(TAB)  &kp TAB   &none  &select_none  &extend_line  &extend_word  &kp _PASTE    &kp _HOME       &kp PG_UP       &kp PG_DN       &kp _END  &kp _C(L)
+ &kp _C(K)           &kp _UNDO           &kp _REDO      &kp _FIND_PREV      &kp _FIND_NEXT              &tog LAYER_Cursor_LINUX    &none   &none   &select_all  &select_line  &select_word                &kp _FIND  &kp _FIND_PREV  &kp _FIND_NEXT  &kp LG(LA(F))  &kp _C(K)
+            >;
+        };
+
+        layer_Number_LINUX {
+            bindings = <
+     &none               &none               &none               &none               &none                                                                                          &kp A     &kp B      &kp C      &kp D      &kp E
+     &none             &kp ESC             &kp INS         &kp LS(TAB)             &kp DEL   &none                                                                     &kp PIPE  &kp HASH  &kp DLLR  &kp CARET  &kp TILDE   &kp EXCL
+     &kp E             &kp RET           &kp SPACE             &kp TAB            &kp BSPC  &kp N0                                                                    &kp LS(G)    &kp N7    &kp N8     &kp N9  &kp COLON  &kp PRCNT
+ &sk LSHFT  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp X                                                                        &kp K    &kp N4    &kp N5     &kp N6  &kp MINUS   &kp PLUS
+ &kp UNDER         &select_all        &select_line        &select_word           &kp _FIND   &kp F   &none              &none   &none     &kp LT   &kp GT  &kp COMMA      &kp J    &kp N1    &kp N2     &kp N3   &kp FSLH   &kp STAR
+     &none           &kp _UNDO           &kp _REDO      &kp _FIND_PREV      &kp _FIND_NEXT           &none  &tog LAYER_Number_LINUX   &none  &kp EQUAL  &kp DOT     &kp N0             &kp LPAR  &kp LBKT   &kp RBKT   &kp RPAR     &kp AT
+            >;
+        };
+
+        layer_Function_LINUX {
+            bindings = <
+     &none               &none               &none               &none               &none                                                                                                                     &none         &none         &none          &none           &none
+     &none             &kp ESC             &kp INS         &kp LS(TAB)             &kp DEL       &none                                                                               &kp C_MEDIA_HOME     &kp C_PLAY    &kp C_PREV    &kp C_NEXT     &kp C_STOP     &kp C_EJECT
+     &none             &kp RET           &kp SPACE             &kp TAB            &kp BSPC  &kp K_CALC                                                                                     &kp K_CALC         &kp F7        &kp F8        &kp F9        &kp F10         &kp F13
+ &sk LSHFT  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp K_WWW                                                                                      &kp K_WWW         &kp F4        &kp F5        &kp F6        &kp F11         &kp F14
+     &none         &select_all        &select_line        &select_word           &kp _FIND  &kp _FILES  &tog LAYER_Function_LINUX   &none   &none    &kp C_PP    &kp C_PREV    &kp C_NEXT        &kp _FILES         &kp F1        &kp F2        &kp F3        &kp F12         &kp F15
+     &none           &kp _UNDO           &kp _REDO      &kp _FIND_PREV      &kp _FIND_NEXT                            &none   &none   &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP                    &kp C_BRI_MAX  &kp C_BRI_UP  &kp C_BRI_DN  &kp C_BRI_MIN  &kp C_BRI_AUTO
+            >;
+        };
+
+        layer_Emoji_LINUX {
+            bindings = <
+     &emoji_cloudy      &emoji_mostly_cloudy           &emoji_partly_cloudy        &emoji_mostly_sunny                  &emoji_sunny                                                                                                                                                                                                      &emoji_new_moon      &emoji_moon_crescent         &emoji_moon_quarter         &emoji_moon_gibbous        &emoji_full_moon
+   &emoji_rainbow     &emoji_light_skin_tone  &emoji_medium_light_skin_tone    &emoji_medium_skin_tone  &emoji_medium_dark_skin_tone  &emoji_dark_skin_tone                                                                                                                                                &emoji_theme_party           &emoji_theme_love       &emoji_theme_nature       &emoji_theme_strength         &emoji_theme_effort    &emoji_theme_science
+ &emoji_left_arrow               &emoji_bald                &emoji_red_hair          &emoji_curly_hair             &emoji_white_hair     &emoji_right_arrow                                                                                                                                                 &emoji_face_laugh           &emoji_face_smile          &emoji_face_eyes            &emoji_face_joke            &emoji_face_fear    &emoji_face_surprise
+  &emoji_male_sign  &emoji_hair_style_preset        &emoji_skin_tone_preset  &emoji_gender_sign_preset                     &sk LSHFT     &emoji_female_sign                                                                                                                                          &emoji_gesture_attention     &emoji_gesture_approval  &emoji_gesture_gratitude      &emoji_gesture_anxiety      &emoji_gesture_despair  &emoji_gesture_curious
+    &emoji_old_man                &emoji_man                     &emoji_boy                &emoji_girl                  &emoji_woman       &emoji_old_woman  &emoji_cityscape  &emoji_cityscape_dusk    &emoji_cityscape_night    &emoji_theme_magic    &emoji_theme_space   &emoji_theme_awesome  &emoji_person_tipping_hand  &emoji_person_gesturing_ok      &emoji_person_bowing  &emoji_person_raising_hand  &emoji_person_gesturing_no       &emoji_theme_sigh
+ &emoji_theme_game        &emoji_theme_trend                    &emoji_baby         &emoji_baby_bottle              &tog LAYER_Emoji_LINUX                               &emoji_zwj         &emoji_sunrise  &emoji_sunrise_mountains  &emoji_gesture_hands  &emoji_gesture_point  &emoji_gesture_thumbs                                            &emoji_check                &emoji_100              &emoji_warning                &emoji_cross         &emoji_question
+            >;
+        };
+
+        layer_World_LINUX {
+            bindings = <
+                &none                     &none             &none                 &none                &none                                                                                           &none      &none      &none      &none   &none
+                &none                     &none             &none                 &none                &none                 &none                                                   &none             &none      &none      &none      &none   &none
+                &none                     &none     &world_y_base         &world_u_base        &world_o_base     &world_sign_angle                                                   &none             &none   &sk LALT   &sk RALT      &none   &none
+                &none    &world_consonants_base     &world_i_base         &world_e_base        &world_a_base   &world_sign_exclaim                                                   &none         &sk LSHFT  &sk LCTRL  &sk RCTRL  &sk RSHFT   &none
+ &world_currency_base   &world_quotes_left_base  &world_sign_dash  &world_sign_landmark  &world_sign_ordinal  &world_sign_question   &none   &none   &none   &none   &none   &none   &none             &none      &none      &none      &none   &none
+     &world_sign_base  &world_quotes_right_base             &none                 &none                &none                         &none   &none   &none   &none   &none   &none          &tog LAYER_World_LINUX      &none      &none      &none   &none
+            >;
+        };
+
+        layer_Symbol_LINUX {
+            bindings = <
+     &none      &none      &none      &none     &none                                                                                                         &none                &none                &none                &none   &none
+ &kp GRAVE   &kp LBRC   &kp LBKT   &kp RBKT  &kp RBRC    &kp DOT                                                                         &none                &none                &none                &none                &none   &none
+  &kp EXCL  &kp COMMA   &kp LPAR   &kp RPAR  &kp SEMI  &kp QMARK                                                                     &kp GRAVE  &sk RIGHT_INDEX_MOD  &sk RIGHT_MIDDY_MOD  &sk RIGHT_RINGY_MOD  &sk RIGHT_PINKY_MOD   &none
+  &kp HASH  &kp CARET  &kp EQUAL  &kp UNDER  &kp DLLR   &kp STAR                                                                       &kp DQT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET   &none
+ &kp TILDE     &kp LT   &kp PIPE  &kp MINUS    &kp GT   &kp FSLH   &kp BSLH    &kp DOT  &kp STAR   &none   &none              &none    &kp SQT              &kp DEL          &kp LS(TAB)              &kp INS              &kp ESC   &none
+  &dot_dot   &kp AMPS    &kp SQT    &kp DQT  &kp PLUS             &kp PRCNT  &kp COLON    &kp AT   &none   &none  &tog LAYER_Symbol_LINUX                           &none                &none                &none                &none   &none
+            >;
+        };
+
+        layer_System_LINUX {
+            bindings = <
+  &none            &none            &none            &none               &none                                                                                                                           &none                &none                &none                &none       &none
+  &none            &none            &none            &none               &none            &none                                                                                     &none                &none                &none                &none                &none       &none
+  &none            &none            &none        &kp PSCRN     &kp PAUSE_BREAK  &rgb_ug RGB_TOG                                                                           &rgb_ug RGB_TOG  &sk RIGHT_INDEX_MOD  &sk RIGHT_MIDDY_MOD  &sk RIGHT_RINGY_MOD  &sk RIGHT_PINKY_MOD       &none
+  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI     &rgb_ug RGB_BRI  &rgb_ug RGB_EFF                                                                           &rgb_ug RGB_EFF      &rgb_ug RGB_BRI      &rgb_ug RGB_HUI      &rgb_ug RGB_SAI      &rgb_ug RGB_SPI   &kp _LOCK
+  &none  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD     &rgb_ug RGB_BRD  &rgb_ug RGB_EFR  &kp _LOCK  &kp _SLEEP  &kp _POWER   &none      &none  &tog LAYER_System_LINUX  &rgb_ug RGB_EFR      &rgb_ug RGB_BRD      &rgb_ug RGB_HUD      &rgb_ug RGB_SAD      &rgb_ug RGB_SPD  &kp _SLEEP
+  &none            &none            &none            &none  &linux_magic_sysrq                    &kp SLCK  &kp KP_NUM    &kp CAPS   &none  &kp PSCRN    &kp PAUSE_BREAK                    &linux_magic_sysrq             &kp SLCK           &kp KP_NUM             &kp CAPS  &kp _POWER
+            >;
+        };
+
+        layer_Mouse_LINUX {
+            bindings = <
+  &none                   &none                   &none                &none                    &none                                                                                                                                             &none                &none                    &none                &none      &none
+  &none                   &none                   &none                &none                    &none                   &none                                                                                             &none                   &none                &none                    &none                &none      &none
+  &none                   &none  &msc MOUSE_SCROLL_LEFT         &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT                   &none                                                                                             &none     &sk RIGHT_INDEX_MOD  &sk RIGHT_MIDDY_MOD      &sk RIGHT_RINGY_MOD  &sk RIGHT_PINKY_MOD  &kp K_APP
+  &none    &msc MOUSE_SCROLL_UP          &mmv MOVE_LEFT       &mmv MOVE_DOWN          &mmv MOVE_RIGHT    &msc MOUSE_SCROLL_UP                                                                              &msc MOUSE_SCROLL_UP     &mo LAYER_MouseFast_LINUX  &mo LAYER_MouseSlow_LINUX      &mo LAYER_MouseFine_LINUX  &mo LAYER_MouseWarp_LINUX   &mkp MB4
+  &none  &msc MOUSE_SCROLL_DOWN                &kp _CUT            &kp _COPY               &kp _PASTE  &msc MOUSE_SCROLL_DOWN  &mkp MCLK  &kp K_APP  &mkp MB5  &kp _PASTE         &kp _COPY  &kp _PASTE  &msc MOUSE_SCROLL_DOWN  &msc MOUSE_SCROLL_LEFT         &mmv MOVE_UP  &msc MOUSE_SCROLL_RIGHT            &mkp LCLK   &mkp MB5
+  &none     &mo LAYER_MouseWarp_LINUX     &mo LAYER_MouseFine_LINUX  &mo LAYER_MouseSlow_LINUX      &mo LAYER_MouseFast_LINUX                          &mkp LCLK  &mkp RCLK  &mkp MB4       &none  &tog LAYER_Mouse_LINUX       &none                                  &mmv MOVE_LEFT       &mmv MOVE_DOWN          &mmv MOVE_RIGHT            &mkp RCLK  &mkp MCLK
+            >;
+        };
+
+        layer_MouseFine_LINUX {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_MouseSlow_LINUX {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_MouseFast_LINUX {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_MouseWarp_LINUX {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_Gaming_LINUX {
+            bindings = <
+ &kp ESC      &kp P   &kp O   &kp N  &kp BSPC                                                                                   &kp F1     &kp F2    &kp F3     &kp F4     &kp F5
+   &kp M     &kp N6  &kp N7  &kp N8    &kp N9  &kp N0                                                                &kp F6     &kp F7     &kp F8    &kp F9    &kp F10    &kp F11
+   &kp I     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                                                 &kp Y      &kp U      &kp I     &kp O      &kp P    &kp F12
+   &kp T    &kp TAB   &kp Q   &kp W     &kp E   &kp R                                                                 &kp H      &kp J      &kp K     &kp L   &kp SEMI    &kp SQT
+   &kp G  &kp LSHFT   &kp A   &kp S     &kp D   &kp F  &kp LSHFT   &kp LALT    &kp V   &kp ESC    &kp UP    &kp RET   &kp N      &kp M  &kp COMMA   &kp DOT   &kp FSLH   &kp BSLH
+   &kp B  &kp LCTRL   &kp Z   &kp X     &kp C          &kp SPACE  &kp LCTRL  &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT          &kp MINUS   &kp LBKT  &kp RBKT  &kp EQUAL  &kp GRAVE
+            >;
+        };
+
+        layer_Factory_LINUX {
+            bindings = <
+               &kp F1    &kp F2   &kp F3    &kp F4     &kp F5                                                                                  &kp F6     &kp F7    &kp F8    &kp F9    &kp F10
+            &kp EQUAL    &kp N1   &kp N2    &kp N3     &kp N4  &kp N5                                                                  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
+              &kp TAB     &kp Q    &kp W     &kp E      &kp R   &kp T                                                                   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
+              &kp ESC     &kp A    &kp S     &kp D      &kp F   &kp G                                                                   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+            &kp GRAVE     &kp Z    &kp X     &kp C      &kp V   &kp B  &kp LSHFT  &kp LCTRL    &lower  &kp LGUI  &kp RCTRL  &kp RSHFT   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp PG_UP
+ &magic LAYER_Magic_LINUX 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT           &kp BSPC    &kp DEL  &kp LALT  &kp RALT    &kp RET  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT  &kp PG_DN
+            >;
+        };
+
+        layer_Lower_LINUX {
+            bindings = <
+    &none   &none   &none   &none             &none                                                                                                                           &kp KP_NUM  &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_MINUS            &none
+    &none   &none   &none   &none             &none   &none                                                                                               &kp KP_CLEAR         &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_MINUS         &kp FSLH
+    &none   &none   &none   &none             &none   &none                                                                                                &kp KP_LPAR         &kp KP_N4     &kp KP_N5        &kp KP_N6   &kp KP_PLUS  &kp KP_MULTIPLY
+ &kp RALT   &none   &none   &none             &none   &none                                                                                                &kp KP_RPAR         &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_ENTER     &kp KP_EQUAL
+   &trans   &none   &none   &none             &none   &none  &tog LAYER_Function_LINUX              &none   &none   &none             &none  &tog LAYER_System_LINUX     &kp KP_N0         &kp KP_N0  &kp KP_COMMA       &kp KP_DOT  &kp KP_ENTER           &trans
+    &none   &none   &none   &none  &tog LAYER_Emoji_LINUX            &tog LAYER_Cursor_LINUX  &tog LAYER_Number_LINUX   &none   &none  &tog LAYER_Mouse_LINUX  &tog LAYER_Symbol_LINUX                &tog LAYER_World_LINUX         &none            &none         &none            &none
+            >;
+        };
+
+        layer_Magic_LINUX {
+            bindings = <
+  &bt BT_CLR            &none            &none            &none       &to LAYER_QWERTY                                                                               &none   &none   &none   &none  &bt BT_CLR_ALL
+      &to 32           &to 33           &to 34           &to 35           &to 36           &to 37                                                        &to 38   &none   &none   &none   &none           &none
+       &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                         &none   &none   &none   &none   &none           &none
+ &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                         &none   &none   &none   &none   &none     &bootloader
+  &sys_reset            &none            &none            &none            &none            &none   &bt_2   &bt_3  &tog LAYER_Factory_LINUX   &none   &none   &none   &none   &none   &none   &none   &none      &sys_reset
+       &none            &none            &none            &none            &none                    &bt_0   &bt_1  &out OUT_USB   &none   &none   &none           &none   &none   &none   &none           &none
+            >;
+        };
+
 };
