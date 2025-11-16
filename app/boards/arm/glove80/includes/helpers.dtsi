@@ -33,6 +33,7 @@
 )
 
 /* Automatically generated layer name #define */
+/* macOS layers (0-31) */
 #define LAYER_QWERTY 0
 #define LAYER_Enthium 1
 #define LAYER_Engrammer 2
@@ -65,6 +66,40 @@
 #define LAYER_Factory 29
 #define LAYER_Lower 30
 #define LAYER_Magic 31
+
+/* Linux layers (32-63) */
+#define LAYER_QWERTY_Linux 32
+#define LAYER_Enthium_Linux 33
+#define LAYER_Engrammer_Linux 34
+#define LAYER_Engram_Linux 35
+#define LAYER_Dvorak_Linux 36
+#define LAYER_Colemak_Linux 37
+#define LAYER_ColemakDH_Linux 38
+#define LAYER_Typing_Linux 39
+#define LAYER_LeftPinky_Linux 40
+#define LAYER_LeftRingy_Linux 41
+#define LAYER_LeftMiddy_Linux 42
+#define LAYER_LeftIndex_Linux 43
+#define LAYER_RightPinky_Linux 44
+#define LAYER_RightRingy_Linux 45
+#define LAYER_RightMiddy_Linux 46
+#define LAYER_RightIndex_Linux 47
+#define LAYER_Cursor_Linux 48
+#define LAYER_Number_Linux 49
+#define LAYER_Function_Linux 50
+#define LAYER_Emoji_Linux 51
+#define LAYER_World_Linux 52
+#define LAYER_Symbol_Linux 53
+#define LAYER_System_Linux 54
+#define LAYER_Mouse_Linux 55
+#define LAYER_MouseFine_Linux 56
+#define LAYER_MouseSlow_Linux 57
+#define LAYER_MouseFast_Linux 58
+#define LAYER_MouseWarp_Linux 59
+#define LAYER_Gaming_Linux 60
+#define LAYER_Factory_Linux 61
+#define LAYER_Lower_Linux 62
+#define LAYER_Magic_Linux 63
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
