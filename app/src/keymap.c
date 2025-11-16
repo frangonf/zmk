@@ -64,7 +64,7 @@ static zmk_keymap_layer_id_t _zmk_keymap_layer_default = 0;
 // When a behavior handles a key position "down" event, we record the layer state
 // here so that even if that layer is deactivated before the "up", event, we
 // still send the release event to the behavior in that layer also.
-static uint32_t zmk_keymap_active_behavior_layer[ZMK_KEYMAP_LEN];
+static uint64_t zmk_keymap_active_behavior_layer[ZMK_KEYMAP_LEN];
 
 #if IS_ENABLED(CONFIG_ZMK_KEYMAP_LAYER_REORDERING)
 
@@ -91,7 +91,7 @@ KEYMAP_VAR(zmk_stock_keymap, const, 0)
 static char zmk_keymap_layer_names[ZMK_KEYMAP_LAYERS_LEN][CONFIG_ZMK_KEYMAP_LAYER_NAME_MAX_LEN] = {
     DT_INST_FOREACH_CHILD_SEP(0, LAYER_NAME, (, ))};
 
-static uint32_t changed_layer_names = 0;
+static uint64_t changed_layer_names = 0;
 
 #else
 
@@ -350,7 +350,7 @@ int zmk_keymap_move_layer(zmk_keymap_layer_index_t start_idx, zmk_keymap_layer_i
 }
 
 int zmk_keymap_add_layer(void) {
-    uint32_t seen_layer_ids = 0;
+    uint64_t seen_layer_ids = 0;
     LOG_HEXDUMP_DBG(keymap_layer_orders, ZMK_KEYMAP_LAYERS_LEN, "Order");
 
     for (int index = 0; index < ZMK_KEYMAP_LAYERS_LEN; index++) {
