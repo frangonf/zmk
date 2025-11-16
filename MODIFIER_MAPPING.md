@@ -6,11 +6,9 @@ The keyboard now has OS-specific modifier mappings for macOS (layers 0-31) and L
 
 ## macOS Mode (Layers 0-31)
 
-**Home Row Mods Configuration:**
-- **Pinky fingers** (A/; keys): `Ctrl` (LCTL)
-- **Ring fingers** (S/L keys): `Alt/Option` (LALT)
-- **Middle fingers** (D/K keys): `Cmd/⌘` (LGUI)
-- **Index fingers** (F/J keys): `Shift` (LSFT)
+**Home Row Mods Configuration (QWERTY labels):**
+- Left hand:  **A**=Ctrl, **S**=Alt, **D**=Cmd,  **F**=Shift
+- Right hand: **J**=Shift, **K**=Cmd, **L**=Alt, **;**=Ctrl
 
 **Typical macOS shortcuts work as expected:**
 - `Cmd+C` = Copy (Middle finger + C)
@@ -20,11 +18,9 @@ The keyboard now has OS-specific modifier mappings for macOS (layers 0-31) and L
 
 ## Linux Mode (Layers 32-63)
 
-**Home Row Mods Configuration:**
-- **Pinky fingers** (A/; keys): `Super/Win` (LGUI)
-- **Ring fingers** (S/L keys): `Alt` (LALT)
-- **Middle fingers** (D/K keys): `Ctrl` (LCTL)
-- **Index fingers** (F/J keys): `Shift` (LSFT)
+**Home Row Mods Configuration (QWERTY labels):**
+- Left hand:  **A**=Super, **S**=Alt, **D**=Ctrl, **F**=Shift
+- Right hand: **J**=Shift, **K**=Ctrl, **L**=Alt, **;**=Super
 
 **Typical Linux shortcuts work correctly:**
 - `Ctrl+C` = Copy (Middle finger + C)
@@ -36,16 +32,16 @@ The keyboard now has OS-specific modifier mappings for macOS (layers 0-31) and L
 
 The key swap between macOS and Linux modes:
 
-| Finger | macOS | Linux |
-|--------|-------|-------|
-| Pinky  | Ctrl  | Super/Win |
-| Ring   | Alt   | Alt ✓ |
-| Middle | Cmd   | Ctrl |
-| Index  | Shift | Shift ✓ |
+| Key (QWERTY) | Finger | macOS | Linux |
+|--------------|--------|-------|-------|
+| A / ;        | Pinky  | Ctrl  | Super/Win |
+| S / L        | Ring   | Alt   | Alt ✓ |
+| D / K        | Middle | Cmd   | Ctrl |
+| F / J        | Index  | Shift | Shift ✓ |
 
-**Effect:** 
+**Effect:**
 - Your muscle memory for shortcuts remains the same!
-- Middle finger + C = Copy on both OSes
+- Middle finger (D/K) + C = Copy on both OSes
 - The keyboard automatically sends the correct modifier (Cmd on macOS, Ctrl on Linux)
 
 ## How to Switch Modes
