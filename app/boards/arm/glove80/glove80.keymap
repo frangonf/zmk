@@ -1074,6 +1074,10 @@
             tapping-term-ms = <200>;
             bindings = <&bt_select_3>, <&bt BT_DISC 3>;
         };
+    };
+};
+
+/ {
     macros {
         bt_select_0: bt_select_0 {
             label = "BT_SELECT_0";
