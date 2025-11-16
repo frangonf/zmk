@@ -362,7 +362,7 @@ static void input_handler(const struct input_listener_config *config,
 
 #define CHILD_CONFIG(node, parent) SCOPED_PROCESSOR(node, node, parent)
 
-#define OVERRIDE_LAYER_BIT(node, prop, idx) BIT(DT_PROP_BY_IDX(node, prop, idx))
+#define OVERRIDE_LAYER_BIT(node, prop, idx) BIT64(DT_PROP_BY_IDX(node, prop, idx))
 
 #define IL_OVERRIDE(node, parent)                                                                  \
     {                                                                                              \

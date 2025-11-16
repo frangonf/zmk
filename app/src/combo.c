@@ -66,7 +66,7 @@ struct active_combo {
     struct zmk_position_state_changed_event key_positions_pressed[MAX_COMBO_KEYS];
 };
 
-#define PROP_BIT_AT_IDX(n, prop, idx) BIT(DT_PROP_BY_IDX(n, prop, idx))
+#define PROP_BIT_AT_IDX(n, prop, idx) BIT64(DT_PROP_BY_IDX(n, prop, idx))
 
 #define NODE_PROP_BITMASK(n, prop)                                                                 \
     COND_CODE_1(DT_NODE_HAS_PROP(n, prop),                                                         \
