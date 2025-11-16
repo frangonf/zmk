@@ -14,11 +14,9 @@
 /* Home row mods and hold-tap behaviors */
 #include "behaviors/home-row-mods.dtsi"
 
-/* World characters (Unicode/Compose sequences) */
+/* World characters and Emoji - these form a single macros{} block */
 #include "behaviors/world-characters.dtsi"
-
-/* Emoji definitions */
 #include "behaviors/emoji.dtsi"
 
-/* Auto-generated behaviors and macros */
-#include "behaviors/auto-generated.dtsi"
+/* Post-macros configuration and auto-generated sections */
+#include "behaviors/post-macros.dtsi"

@@ -14,9 +14,9 @@ includes/
 │   ├── system-bt.dtsi           # System behaviors and Bluetooth
 │   ├── definitions.dtsi         # Configuration definitions and settings
 │   ├── home-row-mods.dtsi       # Home row mod and hold-tap behaviors
-│   ├── world-characters.dtsi    # World character definitions (Unicode/Compose)
-│   ├── emoji.dtsi               # Emoji definitions
-│   └── auto-generated.dtsi      # Auto-generated behaviors and macros
+│   ├── world-characters.dtsi    # World character definitions (Unicode/Compose) - Part 1 of macros{}
+│   ├── emoji.dtsi               # Emoji definitions - Part 2 of macros{}
+│   └── post-macros.dtsi         # Post-macros configuration and auto-generated sections
 ├── combos.dtsi                  # Combo definitions
 └── layers/
     ├── base-layers.dtsi         # Base layout layers (QWERTY, Enthium, Engrammer, etc.)
@@ -71,7 +71,7 @@ Home row mod and hold-tap behaviors:
 - Space, sticky key, and mod-tab behaviors
 
 #### behaviors/world-characters.dtsi (4,426 lines)
-World character definitions using Unicode/Compose:
+World character definitions using Unicode/Compose (Part 1 of shared `macros{}` block):
 - Currency symbols (₿, ¢, €, £, ¥, ₹, etc.)
 - Accented vowels (á, é, í, ó, ú, etc.) with upper/lower variants
 - Ligatures (œ, æ, ß, etc.)
@@ -79,9 +79,10 @@ World character definitions using Unicode/Compose:
 - Mathematical symbols (±, ×, ÷, ≈, ≠, etc.)
 - Quotation marks and punctuation variants
 - Supports both Unicode hex input and Compose sequences
+- **Note**: Opens `macros {` block but doesn't close it (continued in emoji.dtsi)
 
-#### behaviors/emoji.dtsi (2,755 lines)
-Emoji definitions:
+#### behaviors/emoji.dtsi (2,463 lines)
+Emoji definitions (Part 2 of shared `macros{}` block):
 - Faces and emotions (😀, 😂, 😍, etc.)
 - Hand gestures (👍, 👎, 👋, etc.)
 - Animals and nature (🐶, 🐱, 🌲, etc.)
@@ -89,9 +90,14 @@ Emoji definitions:
 - Activities and objects (⚽, 🎮, 💻, etc.)
 - Symbols and flags
 - All with platform-specific Unicode sequences
+- **Note**: Continues and closes the `macros {}` block started in world-characters.dtsi
 
-#### behaviors/auto-generated.dtsi (13 lines)
-Placeholder for auto-generated behaviors and macros
+#### behaviors/post-macros.dtsi (305 lines)
+Post-macros configuration and auto-generated sections:
+- Emoji preset configuration (#ifdef blocks for gender, skin tone, hair style)
+- Mouse keys configuration and settings
+- Input processor definitions for mouse scaling
+- Auto-generated macro and behavior placeholders
 
 ### combos.dtsi (176 lines)
 Combo key definitions:
