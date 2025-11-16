@@ -9,7 +9,14 @@ includes/
 ├── README.md                    # This file
 ├── helpers.dtsi                 # Helper macros and layer definitions
 ├── custom-nodes.dtsi            # Custom device-tree nodes (RGB indicators, etc.)
-├── behaviors.dtsi               # All custom behaviors, macros, and world characters
+├── behaviors.dtsi               # Main behaviors include file
+├── behaviors/                   # Modular behaviors directory
+│   ├── system-bt.dtsi           # System behaviors and Bluetooth
+│   ├── definitions.dtsi         # Configuration definitions and settings
+│   ├── home-row-mods.dtsi       # Home row mod and hold-tap behaviors
+│   ├── world-characters.dtsi    # World character definitions (Unicode/Compose)
+│   ├── emoji.dtsi               # Emoji definitions
+│   └── auto-generated.dtsi      # Auto-generated behaviors and macros
 ├── combos.dtsi                  # Combo definitions
 └── layers/
     ├── base-layers.dtsi         # Base layout layers (QWERTY, Enthium, Engrammer, etc.)
@@ -34,16 +41,57 @@ Custom device-tree nodes including:
 - RGB color definitions and macros
 - Underglow layer configurations for all 32 layers
 
-### behaviors.dtsi (10,819 lines)
-The largest file containing:
-- Input listeners
-- System behaviors and macros
-- Bluetooth behaviors (bt_0, bt_1, bt_2, bt_3)
-- Home row mod behaviors for all layers
-- Mod-morph behaviors
-- World character definitions (Unicode/Compose sequences)
-- Sticky key behaviors
-- All custom macros
+### behaviors.dtsi (24 lines)
+Main include file that orchestrates all behavior modules. The actual behaviors are split into:
+
+#### behaviors/system-bt.dtsi (127 lines)
+System behaviors and Bluetooth:
+- Lower layer tap-dance behavior
+- RGB underglow status macro
+- Bluetooth device selection behaviors (bt_0, bt_1, bt_2, bt_3)
+- Bluetooth pairing macros
+
+#### behaviors/definitions.dtsi (1,021 lines)
+Configuration definitions and settings:
+- Key position definitions
+- Operating system configuration (Linux, macOS, Windows)
+- Keyboard shortcuts and OS-specific key mappings
+- Difficulty level settings
+- Home row mod timing configurations
+- Unicode and Compose key sequence settings
+- Mouse keys and scroll settings
+
+#### behaviors/home-row-mods.dtsi (2,477 lines)
+Home row mod and hold-tap behaviors:
+- Miryoku-style home row mods
+- Bilateral enforcement behaviors
+- Finger-specific hold-tap behaviors (Pinky, Ringy, Middy, Index)
+- Layer-specific mod-tap variations
+- Thumb cluster behaviors
+- Space, sticky key, and mod-tab behaviors
+
+#### behaviors/world-characters.dtsi (4,426 lines)
+World character definitions using Unicode/Compose:
+- Currency symbols (₿, ¢, €, £, ¥, ₹, etc.)
+- Accented vowels (á, é, í, ó, ú, etc.) with upper/lower variants
+- Ligatures (œ, æ, ß, etc.)
+- Common symbols (©, ®, ™, §, ¶, etc.)
+- Mathematical symbols (±, ×, ÷, ≈, ≠, etc.)
+- Quotation marks and punctuation variants
+- Supports both Unicode hex input and Compose sequences
+
+#### behaviors/emoji.dtsi (2,755 lines)
+Emoji definitions:
+- Faces and emotions (😀, 😂, 😍, etc.)
+- Hand gestures (👍, 👎, 👋, etc.)
+- Animals and nature (🐶, 🐱, 🌲, etc.)
+- Food and drink (🍕, 🍔, ☕, etc.)
+- Activities and objects (⚽, 🎮, 💻, etc.)
+- Symbols and flags
+- All with platform-specific Unicode sequences
+
+#### behaviors/auto-generated.dtsi (13 lines)
+Placeholder for auto-generated behaviors and macros
 
 ### combos.dtsi (176 lines)
 Combo key definitions:
@@ -112,7 +160,14 @@ To modify a specific layer, edit the corresponding `.dtsi` file in `includes/lay
 Example: To change the QWERTY layout, edit `includes/layers/base-layers.dtsi` and find the `layer_QWERTY` node.
 
 ### Adding New Behaviors
-Add custom behaviors, macros, or hold-taps to `includes/behaviors.dtsi`.
+The behaviors are now modularized for easier maintenance:
+- **System/Bluetooth behaviors**: Edit `includes/behaviors/system-bt.dtsi`
+- **Configuration settings**: Edit `includes/behaviors/definitions.dtsi`
+- **Home row mods**: Edit `includes/behaviors/home-row-mods.dtsi`
+- **World characters**: Edit `includes/behaviors/world-characters.dtsi`
+- **Emoji**: Edit `includes/behaviors/emoji.dtsi`
+
+For example, to add a new world character, edit `includes/behaviors/world-characters.dtsi` and add your UNICODE macro definition.
 
 ### Modifying Combos
 Edit `includes/combos.dtsi` to add, remove, or modify key combinations.
