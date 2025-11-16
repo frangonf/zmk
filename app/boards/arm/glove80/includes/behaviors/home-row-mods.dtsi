@@ -1360,7 +1360,13 @@ behaviors {
   #define LINUX_INDEX_MOD LSFT    // Shift (same as macOS)
 
   // Linux layer definitions for LeftPinky (layers 32-63)
-  #define LeftPinky_layer32(key) left_pinky LINUX_PINKY_MOD key
+  // Layer 32 uses bilateral enforcement for better typing experience
+  #ifdef ENFORCE_BILATERAL
+    #define left_pinky_layer32_variant left_pinky_bilateral
+  #else
+    #define left_pinky_layer32_variant left_pinky
+  #endif
+  #define LeftPinky_layer32(key) left_pinky_layer32_variant LINUX_PINKY_MOD key
   #define LeftPinky_layer33(key) left_pinky LINUX_PINKY_MOD key
   #define LeftPinky_layer34(key) left_pinky LINUX_PINKY_MOD key
   #define LeftPinky_layer35(key) left_pinky LINUX_PINKY_MOD key
@@ -1394,7 +1400,13 @@ behaviors {
   #define LeftPinky_layer63(key) left_pinky LINUX_PINKY_MOD key
 
   // Linux layer definitions for RightPinky (layers 32-63)
-  #define RightPinky_layer32(key) right_pinky LINUX_PINKY_MOD key
+  // Layer 32 uses bilateral enforcement for better typing experience
+  #ifdef ENFORCE_BILATERAL
+    #define right_pinky_layer32_variant right_pinky_bilateral
+  #else
+    #define right_pinky_layer32_variant right_pinky
+  #endif
+  #define RightPinky_layer32(key) right_pinky_layer32_variant LINUX_PINKY_MOD key
   #define RightPinky_layer33(key) right_pinky LINUX_PINKY_MOD key
   #define RightPinky_layer34(key) right_pinky LINUX_PINKY_MOD key
   #define RightPinky_layer35(key) right_pinky LINUX_PINKY_MOD key
@@ -1428,7 +1440,13 @@ behaviors {
   #define RightPinky_layer63(key) right_pinky LINUX_PINKY_MOD key
 
   // Linux layer definitions for LeftRingy (layers 32-63)
-  #define LeftRingy_layer32(key) left_ringy LINUX_RINGY_MOD key
+  // Layer 32 uses bilateral enforcement for better typing experience
+  #ifdef ENFORCE_BILATERAL
+    #define left_ringy_layer32_variant left_ringy_bilateral
+  #else
+    #define left_ringy_layer32_variant left_ringy
+  #endif
+  #define LeftRingy_layer32(key) left_ringy_layer32_variant LINUX_RINGY_MOD key
   #define LeftRingy_layer33(key) left_ringy LINUX_RINGY_MOD key
   #define LeftRingy_layer34(key) left_ringy LINUX_RINGY_MOD key
   #define LeftRingy_layer35(key) left_ringy LINUX_RINGY_MOD key
@@ -1462,7 +1480,13 @@ behaviors {
   #define LeftRingy_layer63(key) left_ringy LINUX_RINGY_MOD key
 
   // Linux layer definitions for RightRingy (layers 32-63)
-  #define RightRingy_layer32(key) right_ringy LINUX_RINGY_MOD key
+  // Layer 32 uses bilateral enforcement for better typing experience
+  #ifdef ENFORCE_BILATERAL
+    #define right_ringy_layer32_variant right_ringy_bilateral
+  #else
+    #define right_ringy_layer32_variant right_ringy
+  #endif
+  #define RightRingy_layer32(key) right_ringy_layer32_variant LINUX_RINGY_MOD key
   #define RightRingy_layer33(key) right_ringy LINUX_RINGY_MOD key
   #define RightRingy_layer34(key) right_ringy LINUX_RINGY_MOD key
   #define RightRingy_layer35(key) right_ringy LINUX_RINGY_MOD key
@@ -1496,7 +1520,13 @@ behaviors {
   #define RightRingy_layer63(key) right_ringy LINUX_RINGY_MOD key
 
   // Linux layer definitions for LeftMiddy (layers 32-63)
-  #define LeftMiddy_layer32(key) left_middy LINUX_MIDDY_MOD key
+  // Layer 32 uses bilateral enforcement for better typing experience
+  #ifdef ENFORCE_BILATERAL
+    #define left_middy_layer32_variant left_middy_bilateral
+  #else
+    #define left_middy_layer32_variant left_middy
+  #endif
+  #define LeftMiddy_layer32(key) left_middy_layer32_variant LINUX_MIDDY_MOD key
   #define LeftMiddy_layer33(key) left_middy LINUX_MIDDY_MOD key
   #define LeftMiddy_layer34(key) left_middy LINUX_MIDDY_MOD key
   #define LeftMiddy_layer35(key) left_middy LINUX_MIDDY_MOD key
@@ -1530,7 +1560,13 @@ behaviors {
   #define LeftMiddy_layer63(key) left_middy LINUX_MIDDY_MOD key
 
   // Linux layer definitions for RightMiddy (layers 32-63)
-  #define RightMiddy_layer32(key) right_middy LINUX_MIDDY_MOD key
+  // Layer 32 uses bilateral enforcement for better typing experience
+  #ifdef ENFORCE_BILATERAL
+    #define right_middy_layer32_variant right_middy_bilateral
+  #else
+    #define right_middy_layer32_variant right_middy
+  #endif
+  #define RightMiddy_layer32(key) right_middy_layer32_variant LINUX_MIDDY_MOD key
   #define RightMiddy_layer33(key) right_middy LINUX_MIDDY_MOD key
   #define RightMiddy_layer34(key) right_middy LINUX_MIDDY_MOD key
   #define RightMiddy_layer35(key) right_middy LINUX_MIDDY_MOD key
@@ -1564,7 +1600,13 @@ behaviors {
   #define RightMiddy_layer63(key) right_middy LINUX_MIDDY_MOD key
 
   // Linux layer definitions for LeftIndex (layers 32-63)
-  #define LeftIndex_layer32(key) left_index LINUX_INDEX_MOD key
+  // Layer 32 uses bilateral enforcement for better typing experience
+  #ifdef ENFORCE_BILATERAL
+    #define left_index_layer32_variant left_index_bilateral
+  #else
+    #define left_index_layer32_variant left_index
+  #endif
+  #define LeftIndex_layer32(key) left_index_layer32_variant LINUX_INDEX_MOD key
   #define LeftIndex_layer33(key) left_index LINUX_INDEX_MOD key
   #define LeftIndex_layer34(key) left_index LINUX_INDEX_MOD key
   #define LeftIndex_layer35(key) left_index LINUX_INDEX_MOD key
@@ -1598,7 +1640,13 @@ behaviors {
   #define LeftIndex_layer63(key) left_index LINUX_INDEX_MOD key
 
   // Linux layer definitions for RightIndex (layers 32-63)
-  #define RightIndex_layer32(key) right_index LINUX_INDEX_MOD key
+  // Layer 32 uses bilateral enforcement for better typing experience
+  #ifdef ENFORCE_BILATERAL
+    #define right_index_layer32_variant right_index_bilateral
+  #else
+    #define right_index_layer32_variant right_index
+  #endif
+  #define RightIndex_layer32(key) right_index_layer32_variant LINUX_INDEX_MOD key
   #define RightIndex_layer33(key) right_index LINUX_INDEX_MOD key
   #define RightIndex_layer34(key) right_index LINUX_INDEX_MOD key
   #define RightIndex_layer35(key) right_index LINUX_INDEX_MOD key
