@@ -57,6 +57,43 @@ behaviors {
   // These settings are defined in definitions.dtsi
 
   //
+  // MACOS_CAGS_EXTEND adds additional Ctrl keys for macOS layers to reduce
+  // pinky strain and provide more flexibility. When enabled, Ctrl is added to:
+  //   LEFT HAND:
+  //     - 'e' key (middle finger, upper row in QWERTY, position 25)
+  //     - 'c' key (middle finger, lower row in QWERTY, position 49)
+  //   RIGHT HAND:
+  //     - 'i' key (middle finger, upper row in QWERTY, position 30)
+  //     - ',' key (middle finger, lower row in QWERTY, position 60)
+  //
+  // These extended Ctrl keys respect bilateral enforcement (if enabled) but
+  // with special exceptions: you can press Ctrl together with the home row
+  // Cmd keys (d at position 37 or k at position 42) to get Ctrl+Cmd combos.
+  // This is useful for macOS shortcuts that require both modifiers.
+  //
+  // Usage: Add the following to your definitions.dtsi file:
+  //   #define MACOS_CAGS_EXTEND
+  //
+  // Then in your keymap, use:
+  //   LEFT HAND:
+  //     LeftMiddyExtendUp(E, 0)      // for the 'e' key on layer 0
+  //     LeftMiddyExtendDown(C, 0)    // for the 'c' key on layer 0
+  //   RIGHT HAND:
+  //     MiddyExtendUp(I, 0)          // for the 'i' key on layer 0
+  //     MiddyExtendDown(COMMA, 0)    // for the ',' key on layer 0
+  //
+  // Layer behavior (0-6 only):
+  //   - Layer 0: Uses bilateral enforcement if ENFORCE_BILATERAL is defined
+  //   - Layers 1-6: Always non-bilateral (allows easier access on other layers)
+  //   - Finger layers (8-15): Not supported - use standard home row mods instead
+  //
+  // IMPORTANT: This feature is designed for macOS layers (0-6) where
+  // MACOS_USE_GACS is not defined (i.e., using CAGS order with swapped
+  // Ctrl and Cmd). It will not work correctly on Linux layers (32-63).
+  //
+  //#define MACOS_CAGS_EXTEND
+
+  //
   // SHIFT_FORGIVENESS taps when home row shift is merely held and released,
   // without any other key having been tapped while the shift was held down.
   // For example, suppose you hold a home row shift key and, before pressing
@@ -967,6 +1004,20 @@ behaviors {
   #define RightRingy_layer4(key) right_ringy RIGHT_RINGY_MOD key
   #define RightRingy_layer5(key) right_ringy RIGHT_RINGY_MOD key
   #define RightRingy_layer6(key) right_ringy RIGHT_RINGY_MOD key
+
+  // Extended Ctrl positions for MACOS_CAGS_EXTEND exception
+  // When MACOS_CAGS_EXTEND is enabled, Cmd keys (D and K) need to recognize
+  // OPPOSITE-HAND extended Ctrl keys to allow Ctrl+Cmd combos
+  // D (left Cmd) recognizes I and COMMA (right extended Ctrl)
+  // K (right Cmd) recognizes E and C (left extended Ctrl)
+  #ifdef MACOS_CAGS_EXTEND
+    #define LEFT_MIDDY_EXTENDED_POSITIONS 25 49   // E and C (left hand extended Ctrl)
+    #define RIGHT_MIDDY_EXTENDED_POSITIONS 30 60  // I and COMMA (right hand extended Ctrl)
+  #else
+    #define LEFT_MIDDY_EXTENDED_POSITIONS
+    #define RIGHT_MIDDY_EXTENDED_POSITIONS
+  #endif
+
   #ifndef LEFT_MIDDY_HOLDING_TYPE
   #define LEFT_MIDDY_HOLDING_TYPE MIDDY_HOLDING_TYPE
   #endif
@@ -982,7 +1033,7 @@ behaviors {
   left_middy: homey_left_middy {
     compatible = "zmk,behavior-hold-tap";
     flavor = LEFT_MIDDY_HOLDING_TYPE;
-    hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
+    hold-trigger-key-positions = <RIGHT_HAND_KEYS RIGHT_MIDDY_EXTENDED_POSITIONS>;
     hold-trigger-on-release; // wait for other home row mods
     tapping-term-ms = <LEFT_MIDDY_HOLDING_TIME>;
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
@@ -999,7 +1050,7 @@ behaviors {
   left_middy_bilateral: homey_left_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
     flavor = LEFT_MIDDY_HOLDING_TYPE;
-    hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
+    hold-trigger-key-positions = <RIGHT_HAND_KEYS RIGHT_MIDDY_EXTENDED_POSITIONS>;
     hold-trigger-on-release; // wait for other home row mods
     tapping-term-ms = <LEFT_MIDDY_HOLDING_TIME>;
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
@@ -1078,7 +1129,7 @@ behaviors {
   right_middy: homey_right_middy {
     compatible = "zmk,behavior-hold-tap";
     flavor = RIGHT_MIDDY_HOLDING_TYPE;
-    hold-trigger-key-positions = <LEFT_HAND_KEYS>;
+    hold-trigger-key-positions = <LEFT_HAND_KEYS LEFT_MIDDY_EXTENDED_POSITIONS>;
     hold-trigger-on-release; // wait for other home row mods
     tapping-term-ms = <RIGHT_MIDDY_HOLDING_TIME>;
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
@@ -1095,7 +1146,7 @@ behaviors {
   right_middy_bilateral: homey_right_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
     flavor = RIGHT_MIDDY_HOLDING_TYPE;
-    hold-trigger-key-positions = <LEFT_HAND_KEYS>;
+    hold-trigger-key-positions = <LEFT_HAND_KEYS LEFT_MIDDY_EXTENDED_POSITIONS>;
     hold-trigger-on-release; // wait for other home row mods
     tapping-term-ms = <RIGHT_MIDDY_HOLDING_TIME>;
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
@@ -1351,6 +1402,229 @@ behaviors {
   #define RightIndex_layer4(key) right_index RIGHT_INDEX_MOD key
   #define RightIndex_layer5(key) right_index RIGHT_INDEX_MOD key
   #define RightIndex_layer6(key) right_index RIGHT_INDEX_MOD key
+
+  //
+  // macOS Extended CAGS Home Row Mods (MACOS_CAGS_EXTEND)
+  // Adds additional Ctrl keys on middle finger upper/lower rows for macOS layers
+  // This reduces pinky strain and provides more flexibility
+  //
+  // BOTH HANDS supported:
+  //   Left: E (pos 25), C (pos 49)
+  //   Right: I (pos 30), COMMA (pos 60)
+  //
+  #ifdef MACOS_CAGS_EXTEND
+    // Extended middle finger Ctrl positions:
+    // Left hand: e (position 25, upper), c (position 49, lower)
+    // Right hand: i (position 30, upper), , (position 60, lower)
+
+    #ifndef MIDDY_EXTEND_HOLDING_TYPE
+    #define MIDDY_EXTEND_HOLDING_TYPE MIDDY_HOLDING_TYPE
+    #endif
+    #ifndef MIDDY_EXTEND_HOLDING_TIME
+    #define MIDDY_EXTEND_HOLDING_TIME MIDDY_HOLDING_TIME
+    #endif
+    #ifndef MIDDY_EXTEND_STREAK_DECAY
+    #define MIDDY_EXTEND_STREAK_DECAY MIDDY_STREAK_DECAY
+    #endif
+    #ifndef MIDDY_EXTEND_REPEAT_DECAY
+    #define MIDDY_EXTEND_REPEAT_DECAY MIDDY_REPEAT_DECAY
+    #endif
+
+    // RIGHT HAND extended Ctrl behaviors (for I and COMMA keys)
+    // Basic extended middy Ctrl behavior (without bilateral enforcement)
+    middy_extend_ctrl: homey_middy_extend_ctrl {
+      compatible = "zmk,behavior-hold-tap";
+      flavor = MIDDY_EXTEND_HOLDING_TYPE;
+      hold-trigger-key-positions = <LEFT_HAND_KEYS>;
+      hold-trigger-on-release; // wait for other home row mods
+      tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
+      quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
+      require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
+      #binding-cells = <2>;
+      bindings = <&kp>, <&kp>;
+    };
+
+    // LEFT HAND extended Ctrl behaviors (for E and C keys)
+    // Basic extended middy Ctrl behavior (without bilateral enforcement)
+    middy_extend_ctrl_left: homey_middy_extend_ctrl_left {
+      compatible = "zmk,behavior-hold-tap";
+      flavor = MIDDY_EXTEND_HOLDING_TYPE;
+      hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
+      hold-trigger-on-release; // wait for other home row mods
+      tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
+      quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
+      require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
+      #binding-cells = <2>;
+      bindings = <&kp>, <&kp>;
+    };
+
+    // RIGHT HAND bilateral enforcement variant for extended middy Ctrl
+    // Uses proven right_pinky_bilateral pattern but with Cmd exceptions and correct hold behavior
+    // This allows Ctrl+Cmd combos with same-hand Cmd keys
+    middy_extend_ctrl_bilateral: homey_middy_extend_ctrl_bilateral {
+      compatible = "zmk,behavior-hold-tap";
+      flavor = RIGHT_PINKY_HOLDING_TYPE;
+      hold-trigger-key-positions = <LEFT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
+      hold-trigger-on-release; // wait for other home row mods
+      tapping-term-ms = <RIGHT_PINKY_HOLDING_TIME>;
+      quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
+      require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
+      #binding-cells = <2>;
+      bindings = <&middy_extend_ctrl_hold>, <&kp>;
+    };
+
+    // LEFT HAND bilateral enforcement variant for extended middy Ctrl
+    // Uses proven left_pinky_bilateral pattern but with Cmd exceptions and correct hold behavior
+    // This allows Ctrl+Cmd combos with same-hand Cmd keys
+    middy_extend_ctrl_bilateral_left: homey_middy_extend_ctrl_bilateral_left {
+      compatible = "zmk,behavior-hold-tap";
+      flavor = LEFT_PINKY_HOLDING_TYPE;
+      hold-trigger-key-positions = <RIGHT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
+      hold-trigger-on-release; // wait for other home row mods
+      tapping-term-ms = <LEFT_PINKY_HOLDING_TIME>;
+      quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
+      require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
+      #binding-cells = <2>;
+      bindings = <&middy_extend_ctrl_hold_left>, <&kp>;
+    };
+
+    // RIGHT HAND hold behavior for bilateral extended Ctrl
+    // Allows Ctrl to be combined with the home row Cmd keys
+    middy_extend_ctrl_hold: homey_middy_extend_ctrl_hold {
+      compatible = "zmk,behavior-macro-one-param";
+      wait-ms = <0>;
+      tap-ms = <0>;
+      #binding-cells = <1>;
+      bindings
+        = <&macro_param_1to1>
+        , <&macro_press &kp MACRO_PLACEHOLDER>
+        , <&macro_pause_for_release>
+        , <&macro_param_1to1>
+        , <&macro_release &kp MACRO_PLACEHOLDER>
+        ;
+    };
+
+    // LEFT HAND hold behavior for bilateral extended Ctrl
+    // Allows Ctrl to be combined with the home row Cmd keys
+    middy_extend_ctrl_hold_left: homey_middy_extend_ctrl_hold_left {
+      compatible = "zmk,behavior-macro-one-param";
+      wait-ms = <0>;
+      tap-ms = <0>;
+      #binding-cells = <1>;
+      bindings
+        = <&macro_param_1to1>
+        , <&macro_press &kp MACRO_PLACEHOLDER>
+        , <&macro_pause_for_release>
+        , <&macro_param_1to1>
+        , <&macro_release &kp MACRO_PLACEHOLDER>
+        ;
+    };
+
+    // Tap behavior for bilateral extended Ctrl
+    // Releases ALL mods when single-handed activation is detected
+    // This enforces bilateral usage by canceling the modifier
+    middy_extend_ctrl_tap: homey_middy_extend_ctrl_tap {
+      compatible = "zmk,behavior-macro-one-param";
+      wait-ms = <0>;
+      tap-ms = <0>;
+      #binding-cells = <1>;
+      bindings
+        = <&macro_release
+            &kp LSFT &kp RSFT
+            &kp LALT &kp RALT
+            &kp LCTL &kp RCTL
+            &kp LGUI &kp RGUI>
+        , <&macro_param_1to1>
+        , <&macro_tap &kp MACRO_PLACEHOLDER>
+        ;
+    };
+
+    // Macros for extended Ctrl keys on macOS layers (0-6)
+    // Following the same pattern as standard home row mods:
+    // - Layer 0 uses bilateral enforcement (if ENFORCE_BILATERAL is defined)
+    // - Layers 1-6 always use non-bilateral variant
+
+    // MiddyExtendUp - for upper row (i in QWERTY, position 30)
+    // RIGHT hand extended Ctrl uses bilateral behavior with Cmd exceptions
+    #define MiddyExtendUp(key, layer_index) MiddyExtendUp_unroll(layer_index) (key)
+    #define MiddyExtendUp_unroll(layer_index) MiddyExtendUp_concat(MiddyExtendUp_layer, layer_index)
+    #define MiddyExtendUp_concat(prefix, layer_index) prefix ## layer_index
+    #ifdef ENFORCE_BILATERAL
+      #define middy_extend_up_layer0_variant middy_extend_ctrl_bilateral
+    #else
+      #define middy_extend_up_layer0_variant middy_extend_ctrl
+    #endif
+    #define MiddyExtendUp_layer0(key) middy_extend_up_layer0_variant LCTL key
+    #define MiddyExtendUp_layer1(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer2(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer3(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer4(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer5(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer6(key) middy_extend_ctrl LCTL key
+
+    // MiddyExtendDown - for lower row (, in QWERTY, position 60)
+    // RIGHT hand extended Ctrl uses bilateral behavior with Cmd exceptions
+    #define MiddyExtendDown(key, layer_index) MiddyExtendDown_unroll(layer_index) (key)
+    #define MiddyExtendDown_unroll(layer_index) MiddyExtendDown_concat(MiddyExtendDown_layer, layer_index)
+    #define MiddyExtendDown_concat(prefix, layer_index) prefix ## layer_index
+    #ifdef ENFORCE_BILATERAL
+      #define middy_extend_down_layer0_variant middy_extend_ctrl_bilateral
+    #else
+      #define middy_extend_down_layer0_variant middy_extend_ctrl
+    #endif
+    #define MiddyExtendDown_layer0(key) middy_extend_down_layer0_variant LCTL key
+    #define MiddyExtendDown_layer1(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer2(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer3(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer4(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer5(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer6(key) middy_extend_ctrl LCTL key
+
+    // LeftMiddyExtendUp - LEFT HAND for upper row (e in QWERTY, position 25)
+    // LEFT hand extended Ctrl uses bilateral behavior with Cmd exceptions
+    #define LeftMiddyExtendUp(key, layer_index) LeftMiddyExtendUp_unroll(layer_index) (key)
+    #define LeftMiddyExtendUp_unroll(layer_index) LeftMiddyExtendUp_concat(LeftMiddyExtendUp_layer, layer_index)
+    #define LeftMiddyExtendUp_concat(prefix, layer_index) prefix ## layer_index
+    #ifdef ENFORCE_BILATERAL
+      #define left_middy_extend_up_layer0_variant middy_extend_ctrl_bilateral_left
+    #else
+      #define left_middy_extend_up_layer0_variant middy_extend_ctrl_left
+    #endif
+    #define LeftMiddyExtendUp_layer0(key) left_middy_extend_up_layer0_variant LCTL key
+    #define LeftMiddyExtendUp_layer1(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendUp_layer2(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendUp_layer3(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendUp_layer4(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendUp_layer5(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendUp_layer6(key) middy_extend_ctrl_left LCTL key
+
+    // LeftMiddyExtendDown - LEFT HAND for lower row (c in QWERTY, position 49)
+    // LEFT hand extended Ctrl uses bilateral behavior with Cmd exceptions
+    #define LeftMiddyExtendDown(key, layer_index) LeftMiddyExtendDown_unroll(layer_index) (key)
+    #define LeftMiddyExtendDown_unroll(layer_index) LeftMiddyExtendDown_concat(LeftMiddyExtendDown_layer, layer_index)
+    #define LeftMiddyExtendDown_concat(prefix, layer_index) prefix ## layer_index
+    #ifdef ENFORCE_BILATERAL
+      #define left_middy_extend_down_layer0_variant middy_extend_ctrl_bilateral_left
+    #else
+      #define left_middy_extend_down_layer0_variant middy_extend_ctrl_left
+    #endif
+    #define LeftMiddyExtendDown_layer0(key) left_middy_extend_down_layer0_variant LCTL key
+    #define LeftMiddyExtendDown_layer1(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendDown_layer2(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendDown_layer3(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendDown_layer4(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendDown_layer5(key) middy_extend_ctrl_left LCTL key
+    #define LeftMiddyExtendDown_layer6(key) middy_extend_ctrl_left LCTL key
+  #endif // MACOS_CAGS_EXTEND
+
+  // Fallback macros when MACOS_CAGS_EXTEND is NOT defined
+  // These ensure base-layers.dtsi compiles even without extended Ctrl support
+  #ifndef MACOS_CAGS_EXTEND
+    #define LeftMiddyExtendUp(key, layer_index) kp key
+    #define LeftMiddyExtendDown(key, layer_index) kp key
+    #define MiddyExtendUp(key, layer_index) kp key
+    #define MiddyExtendDown(key, layer_index) kp key
+  #endif
 
   //
   // Linux layers (32-63) - Use Linux modifiers (GACS: Super, Alt, Ctrl, Shift)

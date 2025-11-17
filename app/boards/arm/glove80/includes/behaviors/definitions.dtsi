@@ -100,6 +100,7 @@
 #define DIFFICULTY_LEVEL  0  // 0:custom, 1:easy -> 5:hard (see below)
 #define ENFORCE_BILATERAL    // cancels single-handed home row mod+tap
 #define ENFORCE_BILATERAL_LINUX  // cancels single-handed home row mod+tap for Linux layers
+#define MACOS_CAGS_EXTEND  // adds extended Ctrl keys on E,C,I,COMMA (macOS only)
 #define ENABLE_MOUSE_KEYS  // requires HID_POINTING override to "y"
 //#define SPACE_FORGIVENESS  // allow lingering taps on the space bar
 //#define THUMB_FORGIVENESS  // allow lingering taps on the thumb keys
