@@ -180,6 +180,7 @@
 #define _FIND       _C(F)
 #define _FIND_NEXT  _C(G)
 #define _FIND_PREV  _C(LS(G))
+#define _REPLACE    LG(LA(F))
 
 //
 // Linux-specific shortcuts (use Ctrl instead of Cmd)
@@ -193,6 +194,7 @@
 #define _LINUX_FIND   LC(F)
 #define _LINUX_FIND_NEXT  LC(G)
 #define _LINUX_FIND_PREV  LC(LS(G))
+#define _LINUX_REPLACE    LC(H)
 #define _LINUX_REDO   LC(Y)
 #define _LINUX_HOME   HOME
 #define _LINUX_END    END
