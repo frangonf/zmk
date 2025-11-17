@@ -48,11 +48,13 @@ behaviors {
   // ENFORCE_BILATERAL cancels out single-handed home row mods activation by
   // releasing any currently pressed mods and replacing them with plain taps.
   //
+  // ENFORCE_BILATERAL_LINUX does the same for Linux layers (32-38).
+  //
   // NOTE: You may still encounter "flashing mods" where an operating system
   // action is triggered by the release of mods, such as LGUI which launches
   // the Windows Start Menu and LALT which opens the Microsoft Office Ribbon.
   //
-  //#define ENFORCE_BILATERAL
+  // These settings are defined in definitions.dtsi
 
   //
   // SHIFT_FORGIVENESS taps when home row shift is merely held and released,
@@ -1764,15 +1766,36 @@ behaviors {
     bindings = <&right_index_hold_linux>, <&kp>;
   };
 
+  // Linux bilateral enforcement variants (controlled by ENFORCE_BILATERAL_LINUX)
+  #ifdef ENFORCE_BILATERAL_LINUX
+    #define left_pinky_linux_variant left_pinky_bilateral_linux
+    #define right_pinky_linux_variant right_pinky_bilateral_linux
+    #define left_ringy_linux_variant left_ringy_bilateral_linux
+    #define right_ringy_linux_variant right_ringy_bilateral_linux
+    #define left_middy_linux_variant left_middy_bilateral_linux
+    #define right_middy_linux_variant right_middy_bilateral_linux
+    #define left_index_linux_variant left_index_bilateral_linux
+    #define right_index_linux_variant right_index_bilateral_linux
+  #else
+    #define left_pinky_linux_variant left_pinky
+    #define right_pinky_linux_variant right_pinky
+    #define left_ringy_linux_variant left_ringy
+    #define right_ringy_linux_variant right_ringy
+    #define left_middy_linux_variant left_middy
+    #define right_middy_linux_variant right_middy
+    #define left_index_linux_variant left_index
+    #define right_index_linux_variant right_index
+  #endif
+
   // Linux layer definitions for LeftPinky (layers 32-63)
-  // Linux base layers (32-38) use Linux-specific bilateral enforcement
-  #define LeftPinky_layer32(key) left_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define LeftPinky_layer33(key) left_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define LeftPinky_layer34(key) left_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define LeftPinky_layer35(key) left_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define LeftPinky_layer36(key) left_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define LeftPinky_layer37(key) left_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define LeftPinky_layer38(key) left_pinky_bilateral_linux LINUX_PINKY_MOD key
+  // Linux base layers (32-38) use conditional bilateral enforcement
+  #define LeftPinky_layer32(key) left_pinky_linux_variant LINUX_PINKY_MOD key
+  #define LeftPinky_layer33(key) left_pinky_linux_variant LINUX_PINKY_MOD key
+  #define LeftPinky_layer34(key) left_pinky_linux_variant LINUX_PINKY_MOD key
+  #define LeftPinky_layer35(key) left_pinky_linux_variant LINUX_PINKY_MOD key
+  #define LeftPinky_layer36(key) left_pinky_linux_variant LINUX_PINKY_MOD key
+  #define LeftPinky_layer37(key) left_pinky_linux_variant LINUX_PINKY_MOD key
+  #define LeftPinky_layer38(key) left_pinky_linux_variant LINUX_PINKY_MOD key
   #define LeftPinky_layer39(key) left_pinky LINUX_PINKY_MOD key
   #define LeftPinky_layer40(key) left_pinky LINUX_PINKY_MOD key
   #define LeftPinky_layer41(key) left_pinky LINUX_PINKY_MOD key
@@ -1800,14 +1823,14 @@ behaviors {
   #define LeftPinky_layer63(key) left_pinky LINUX_PINKY_MOD key
 
   // Linux layer definitions for RightPinky (layers 32-63)
-  // Linux base layers (32-38) use Linux-specific bilateral enforcement
-  #define RightPinky_layer32(key) right_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define RightPinky_layer33(key) right_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define RightPinky_layer34(key) right_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define RightPinky_layer35(key) right_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define RightPinky_layer36(key) right_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define RightPinky_layer37(key) right_pinky_bilateral_linux LINUX_PINKY_MOD key
-  #define RightPinky_layer38(key) right_pinky_bilateral_linux LINUX_PINKY_MOD key
+  // Linux base layers (32-38) use conditional bilateral enforcement
+  #define RightPinky_layer32(key) right_pinky_linux_variant LINUX_PINKY_MOD key
+  #define RightPinky_layer33(key) right_pinky_linux_variant LINUX_PINKY_MOD key
+  #define RightPinky_layer34(key) right_pinky_linux_variant LINUX_PINKY_MOD key
+  #define RightPinky_layer35(key) right_pinky_linux_variant LINUX_PINKY_MOD key
+  #define RightPinky_layer36(key) right_pinky_linux_variant LINUX_PINKY_MOD key
+  #define RightPinky_layer37(key) right_pinky_linux_variant LINUX_PINKY_MOD key
+  #define RightPinky_layer38(key) right_pinky_linux_variant LINUX_PINKY_MOD key
   #define RightPinky_layer39(key) right_pinky LINUX_PINKY_MOD key
   #define RightPinky_layer40(key) right_pinky LINUX_PINKY_MOD key
   #define RightPinky_layer41(key) right_pinky LINUX_PINKY_MOD key
@@ -1835,14 +1858,14 @@ behaviors {
   #define RightPinky_layer63(key) right_pinky LINUX_PINKY_MOD key
 
   // Linux layer definitions for LeftRingy (layers 32-63)
-  // Linux base layers (32-38) use Linux-specific bilateral enforcement
-  #define LeftRingy_layer32(key) left_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define LeftRingy_layer33(key) left_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define LeftRingy_layer34(key) left_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define LeftRingy_layer35(key) left_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define LeftRingy_layer36(key) left_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define LeftRingy_layer37(key) left_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define LeftRingy_layer38(key) left_ringy_bilateral_linux LINUX_RINGY_MOD key
+  // Linux base layers (32-38) use conditional bilateral enforcement
+  #define LeftRingy_layer32(key) left_ringy_linux_variant LINUX_RINGY_MOD key
+  #define LeftRingy_layer33(key) left_ringy_linux_variant LINUX_RINGY_MOD key
+  #define LeftRingy_layer34(key) left_ringy_linux_variant LINUX_RINGY_MOD key
+  #define LeftRingy_layer35(key) left_ringy_linux_variant LINUX_RINGY_MOD key
+  #define LeftRingy_layer36(key) left_ringy_linux_variant LINUX_RINGY_MOD key
+  #define LeftRingy_layer37(key) left_ringy_linux_variant LINUX_RINGY_MOD key
+  #define LeftRingy_layer38(key) left_ringy_linux_variant LINUX_RINGY_MOD key
   #define LeftRingy_layer39(key) left_ringy LINUX_RINGY_MOD key
   #define LeftRingy_layer40(key) left_ringy LINUX_RINGY_MOD key
   #define LeftRingy_layer41(key) left_ringy LINUX_RINGY_MOD key
@@ -1870,14 +1893,14 @@ behaviors {
   #define LeftRingy_layer63(key) left_ringy LINUX_RINGY_MOD key
 
   // Linux layer definitions for RightRingy (layers 32-63)
-  // Linux base layers (32-38) use Linux-specific bilateral enforcement
-  #define RightRingy_layer32(key) right_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define RightRingy_layer33(key) right_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define RightRingy_layer34(key) right_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define RightRingy_layer35(key) right_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define RightRingy_layer36(key) right_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define RightRingy_layer37(key) right_ringy_bilateral_linux LINUX_RINGY_MOD key
-  #define RightRingy_layer38(key) right_ringy_bilateral_linux LINUX_RINGY_MOD key
+  // Linux base layers (32-38) use conditional bilateral enforcement
+  #define RightRingy_layer32(key) right_ringy_linux_variant LINUX_RINGY_MOD key
+  #define RightRingy_layer33(key) right_ringy_linux_variant LINUX_RINGY_MOD key
+  #define RightRingy_layer34(key) right_ringy_linux_variant LINUX_RINGY_MOD key
+  #define RightRingy_layer35(key) right_ringy_linux_variant LINUX_RINGY_MOD key
+  #define RightRingy_layer36(key) right_ringy_linux_variant LINUX_RINGY_MOD key
+  #define RightRingy_layer37(key) right_ringy_linux_variant LINUX_RINGY_MOD key
+  #define RightRingy_layer38(key) right_ringy_linux_variant LINUX_RINGY_MOD key
   #define RightRingy_layer39(key) right_ringy LINUX_RINGY_MOD key
   #define RightRingy_layer40(key) right_ringy LINUX_RINGY_MOD key
   #define RightRingy_layer41(key) right_ringy LINUX_RINGY_MOD key
@@ -1905,14 +1928,14 @@ behaviors {
   #define RightRingy_layer63(key) right_ringy LINUX_RINGY_MOD key
 
   // Linux layer definitions for LeftMiddy (layers 32-63)
-  // Linux base layers (32-38) use Linux-specific bilateral enforcement
-  #define LeftMiddy_layer32(key) left_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define LeftMiddy_layer33(key) left_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define LeftMiddy_layer34(key) left_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define LeftMiddy_layer35(key) left_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define LeftMiddy_layer36(key) left_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define LeftMiddy_layer37(key) left_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define LeftMiddy_layer38(key) left_middy_bilateral_linux LINUX_MIDDY_MOD key
+  // Linux base layers (32-38) use conditional bilateral enforcement
+  #define LeftMiddy_layer32(key) left_middy_linux_variant LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer33(key) left_middy_linux_variant LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer34(key) left_middy_linux_variant LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer35(key) left_middy_linux_variant LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer36(key) left_middy_linux_variant LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer37(key) left_middy_linux_variant LINUX_MIDDY_MOD key
+  #define LeftMiddy_layer38(key) left_middy_linux_variant LINUX_MIDDY_MOD key
   #define LeftMiddy_layer39(key) left_middy LINUX_MIDDY_MOD key
   #define LeftMiddy_layer40(key) left_middy LINUX_MIDDY_MOD key
   #define LeftMiddy_layer41(key) left_middy LINUX_MIDDY_MOD key
@@ -1940,14 +1963,14 @@ behaviors {
   #define LeftMiddy_layer63(key) left_middy LINUX_MIDDY_MOD key
 
   // Linux layer definitions for RightMiddy (layers 32-63)
-  // Linux base layers (32-38) use Linux-specific bilateral enforcement
-  #define RightMiddy_layer32(key) right_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define RightMiddy_layer33(key) right_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define RightMiddy_layer34(key) right_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define RightMiddy_layer35(key) right_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define RightMiddy_layer36(key) right_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define RightMiddy_layer37(key) right_middy_bilateral_linux LINUX_MIDDY_MOD key
-  #define RightMiddy_layer38(key) right_middy_bilateral_linux LINUX_MIDDY_MOD key
+  // Linux base layers (32-38) use conditional bilateral enforcement
+  #define RightMiddy_layer32(key) right_middy_linux_variant LINUX_MIDDY_MOD key
+  #define RightMiddy_layer33(key) right_middy_linux_variant LINUX_MIDDY_MOD key
+  #define RightMiddy_layer34(key) right_middy_linux_variant LINUX_MIDDY_MOD key
+  #define RightMiddy_layer35(key) right_middy_linux_variant LINUX_MIDDY_MOD key
+  #define RightMiddy_layer36(key) right_middy_linux_variant LINUX_MIDDY_MOD key
+  #define RightMiddy_layer37(key) right_middy_linux_variant LINUX_MIDDY_MOD key
+  #define RightMiddy_layer38(key) right_middy_linux_variant LINUX_MIDDY_MOD key
   #define RightMiddy_layer39(key) right_middy LINUX_MIDDY_MOD key
   #define RightMiddy_layer40(key) right_middy LINUX_MIDDY_MOD key
   #define RightMiddy_layer41(key) right_middy LINUX_MIDDY_MOD key
@@ -1975,14 +1998,14 @@ behaviors {
   #define RightMiddy_layer63(key) right_middy LINUX_MIDDY_MOD key
 
   // Linux layer definitions for LeftIndex (layers 32-63)
-  // Linux base layers (32-38) use Linux-specific bilateral enforcement
-  #define LeftIndex_layer32(key) left_index_bilateral_linux LINUX_INDEX_MOD key
-  #define LeftIndex_layer33(key) left_index_bilateral_linux LINUX_INDEX_MOD key
-  #define LeftIndex_layer34(key) left_index_bilateral_linux LINUX_INDEX_MOD key
-  #define LeftIndex_layer35(key) left_index_bilateral_linux LINUX_INDEX_MOD key
-  #define LeftIndex_layer36(key) left_index_bilateral_linux LINUX_INDEX_MOD key
-  #define LeftIndex_layer37(key) left_index_bilateral_linux LINUX_INDEX_MOD key
-  #define LeftIndex_layer38(key) left_index_bilateral_linux LINUX_INDEX_MOD key
+  // Linux base layers (32-38) use conditional bilateral enforcement
+  #define LeftIndex_layer32(key) left_index_linux_variant LINUX_INDEX_MOD key
+  #define LeftIndex_layer33(key) left_index_linux_variant LINUX_INDEX_MOD key
+  #define LeftIndex_layer34(key) left_index_linux_variant LINUX_INDEX_MOD key
+  #define LeftIndex_layer35(key) left_index_linux_variant LINUX_INDEX_MOD key
+  #define LeftIndex_layer36(key) left_index_linux_variant LINUX_INDEX_MOD key
+  #define LeftIndex_layer37(key) left_index_linux_variant LINUX_INDEX_MOD key
+  #define LeftIndex_layer38(key) left_index_linux_variant LINUX_INDEX_MOD key
   #define LeftIndex_layer39(key) left_index LINUX_INDEX_MOD key
   #define LeftIndex_layer40(key) left_index LINUX_INDEX_MOD key
   #define LeftIndex_layer41(key) left_index LINUX_INDEX_MOD key
@@ -2010,14 +2033,14 @@ behaviors {
   #define LeftIndex_layer63(key) left_index LINUX_INDEX_MOD key
 
   // Linux layer definitions for RightIndex (layers 32-63)
-  // Linux base layers (32-38) use Linux-specific bilateral enforcement
-  #define RightIndex_layer32(key) right_index_bilateral_linux LINUX_INDEX_MOD key
-  #define RightIndex_layer33(key) right_index_bilateral_linux LINUX_INDEX_MOD key
-  #define RightIndex_layer34(key) right_index_bilateral_linux LINUX_INDEX_MOD key
-  #define RightIndex_layer35(key) right_index_bilateral_linux LINUX_INDEX_MOD key
-  #define RightIndex_layer36(key) right_index_bilateral_linux LINUX_INDEX_MOD key
-  #define RightIndex_layer37(key) right_index_bilateral_linux LINUX_INDEX_MOD key
-  #define RightIndex_layer38(key) right_index_bilateral_linux LINUX_INDEX_MOD key
+  // Linux base layers (32-38) use conditional bilateral enforcement
+  #define RightIndex_layer32(key) right_index_linux_variant LINUX_INDEX_MOD key
+  #define RightIndex_layer33(key) right_index_linux_variant LINUX_INDEX_MOD key
+  #define RightIndex_layer34(key) right_index_linux_variant LINUX_INDEX_MOD key
+  #define RightIndex_layer35(key) right_index_linux_variant LINUX_INDEX_MOD key
+  #define RightIndex_layer36(key) right_index_linux_variant LINUX_INDEX_MOD key
+  #define RightIndex_layer37(key) right_index_linux_variant LINUX_INDEX_MOD key
+  #define RightIndex_layer38(key) right_index_linux_variant LINUX_INDEX_MOD key
   #define RightIndex_layer39(key) right_index LINUX_INDEX_MOD key
   #define RightIndex_layer40(key) right_index LINUX_INDEX_MOD key
   #define RightIndex_layer41(key) right_index LINUX_INDEX_MOD key
