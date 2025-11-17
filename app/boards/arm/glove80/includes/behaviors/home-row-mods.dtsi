@@ -48,11 +48,13 @@ behaviors {
   // ENFORCE_BILATERAL cancels out single-handed home row mods activation by
   // releasing any currently pressed mods and replacing them with plain taps.
   //
+  // ENFORCE_BILATERAL_LINUX does the same for Linux layers (32-38).
+  //
   // NOTE: You may still encounter "flashing mods" where an operating system
   // action is triggered by the release of mods, such as LGUI which launches
   // the Windows Start Menu and LALT which opens the Microsoft Office Ribbon.
   //
-  //#define ENFORCE_BILATERAL
+  // These settings are defined in definitions.dtsi
 
   //
   // SHIFT_FORGIVENESS taps when home row shift is merely held and released,
