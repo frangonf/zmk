@@ -1465,7 +1465,7 @@ behaviors {
     middy_extend_ctrl_bilateral: homey_middy_extend_ctrl_bilateral {
       compatible = "zmk,behavior-hold-tap";
       flavor = MIDDY_EXTEND_HOLDING_TYPE;
-      hold-trigger-key-positions = <LEFT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
+      hold-trigger-key-positions = <LEFT_HAND_KEYS>; // TEST: removed 37 42 to isolate issue
       hold-trigger-on-release; // wait for other home row mods
       tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
@@ -1481,7 +1481,7 @@ behaviors {
     middy_extend_ctrl_bilateral_left: homey_middy_extend_ctrl_bilateral_left {
       compatible = "zmk,behavior-hold-tap";
       flavor = MIDDY_EXTEND_HOLDING_TYPE;
-      hold-trigger-key-positions = <RIGHT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
+      hold-trigger-key-positions = <RIGHT_HAND_KEYS>; // TEST: removed 37 42 to isolate issue
       hold-trigger-on-release; // wait for other home row mods
       tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
