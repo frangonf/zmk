@@ -1459,7 +1459,7 @@ behaviors {
     };
 
     // RIGHT HAND bilateral enforcement variant for extended middy Ctrl
-    // EXACT copy of right_pinky_bilateral but with Cmd exceptions (positions 37 and 42)
+    // Uses proven right_pinky_bilateral pattern but with Cmd exceptions and correct hold behavior
     // This allows Ctrl+Cmd combos with same-hand Cmd keys
     middy_extend_ctrl_bilateral: homey_middy_extend_ctrl_bilateral {
       compatible = "zmk,behavior-hold-tap";
@@ -1470,11 +1470,11 @@ behaviors {
       quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
       require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&right_pinky_hold>, <&kp>;
+      bindings = <&middy_extend_ctrl_hold>, <&kp>;
     };
 
     // LEFT HAND bilateral enforcement variant for extended middy Ctrl
-    // EXACT copy of left_pinky_bilateral but with Cmd exceptions (positions 37 and 42)
+    // Uses proven left_pinky_bilateral pattern but with Cmd exceptions and correct hold behavior
     // This allows Ctrl+Cmd combos with same-hand Cmd keys
     middy_extend_ctrl_bilateral_left: homey_middy_extend_ctrl_bilateral_left {
       compatible = "zmk,behavior-hold-tap";
@@ -1485,7 +1485,7 @@ behaviors {
       quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
       require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&left_pinky_hold>, <&kp>;
+      bindings = <&middy_extend_ctrl_hold_left>, <&kp>;
     };
 
     // RIGHT HAND hold behavior for bilateral extended Ctrl
