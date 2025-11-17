@@ -1418,11 +1418,12 @@ behaviors {
 
     // Bilateral enforcement variant for extended middy Ctrl
     // This enforces bilateral usage but allows Ctrl+Cmd when both are pressed
-    // Exception: position 31 (k in QWERTY) is included to allow Ctrl+Cmd combo
+    // Exceptions: positions 37 (d) and 42 (k) are the home row Cmd keys
+    // Allowing these enables Ctrl+Cmd combo with either left or right hand Cmd
     middy_extend_ctrl_bilateral: homey_middy_extend_ctrl_bilateral {
       compatible = "zmk,behavior-hold-tap";
       flavor = MIDDY_EXTEND_HOLDING_TYPE;
-      hold-trigger-key-positions = <LEFT_HAND_KEYS 31>; // 31 is 'k' for Cmd
+      hold-trigger-key-positions = <LEFT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
       hold-trigger-on-release; // wait for other home row mods
       tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
