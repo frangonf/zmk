@@ -1470,7 +1470,7 @@ behaviors {
       quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
       require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&right_pinky_hold>, <&kp>;
+      bindings = <&middy_extend_ctrl_hold>, <&kp>;
     };
 
     // LEFT HAND bilateral enforcement variant for extended middy Ctrl
@@ -1485,7 +1485,7 @@ behaviors {
       quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
       require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&left_pinky_hold>, <&kp>;
+      bindings = <&middy_extend_ctrl_hold_left>, <&kp>;
     };
 
     // RIGHT HAND hold behavior for bilateral extended Ctrl
