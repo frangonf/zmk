@@ -5,7 +5,7 @@
      &none             &kp RET           &kp SPACE             &kp TAB            &kp BSPC    &kp _CUT                                                                                  &kp _CUT  &kp LS(TAB)       &kp _UNDO       &kp _REDO        &kp TAB      &none
  &sk LSHFT  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp _COPY                                                                                  &kp LEFT     &kp DOWN          &kp UP       &kp RIGHT      &kp RIGHT  &sk LSHFT
  &kp _C(L)         &select_all        &select_line        &select_word           &kp _FIND  &kp _PASTE        &kp LS(TAB)  &kp TAB   &none  &select_none  &extend_line  &extend_word  &kp _PASTE    &kp _HOME       &kp PG_UP       &kp PG_DN       &kp _END  &kp _C(L)
- &kp _C(K)           &kp _UNDO           &kp _REDO      &kp _FIND_PREV      &kp _FIND_NEXT              &tog LAYER_Cursor    &none   &none   &select_all  &select_line  &select_word                &kp _FIND  &kp _FIND_PREV  &kp _FIND_NEXT  &kp LG(LA(F))  &kp _C(K)
+ &kp _C(K)           &kp _UNDO           &kp _REDO      &kp _FIND_PREV      &kp _FIND_NEXT              &tog LAYER_Cursor    &none   &none   &select_all  &select_line  &select_word                &kp _FIND  &kp _FIND_PREV  &kp _FIND_NEXT  &kp _REPLACE  &kp _C(K)
             >;
         };
 

@@ -12,7 +12,7 @@
      &none             &kp RET           &kp SPACE             &kp TAB            &kp BSPC    &kp _LINUX_CUT                                                                           &kp _LINUX_CUT  &kp LS(TAB)       &kp _LINUX_UNDO       &kp _LINUX_REDO             &kp TAB           &none
  &sk LSHFT  &kp LEFT_PINKY_MOD  &kp LEFT_RINGY_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp _LINUX_COPY                                                                                       &kp LEFT      &kp DOWN             &kp UP            &kp RIGHT          &kp RIGHT      &sk LSHFT
  &kp _LINUX_C(L)         &select_all        &select_line        &select_word     &kp _LINUX_FIND  &kp _LINUX_PASTE        &kp LS(TAB)  &kp TAB   &none  &select_none  &extend_line  &extend_word  &kp _LINUX_PASTE  &kp _LINUX_HOME      &kp PG_UP            &kp PG_DN        &kp _LINUX_END  &kp _LINUX_C(L)
- &kp _LINUX_C(K)     &kp _LINUX_UNDO     &kp _LINUX_REDO  &kp _LINUX_FIND_PREV  &kp _LINUX_FIND_NEXT              &tog LAYER_Cursor_Linux    &none   &none   &select_all  &select_line  &select_word            &kp _LINUX_FIND  &kp _LINUX_FIND_PREV  &kp _LINUX_FIND_NEXT  &kp LG(LA(F))  &kp _LINUX_C(K)
+ &kp _LINUX_C(K)     &kp _LINUX_UNDO     &kp _LINUX_REDO  &kp _LINUX_FIND_PREV  &kp _LINUX_FIND_NEXT              &tog LAYER_Cursor_Linux    &none   &none   &select_all  &select_line  &select_word            &kp _LINUX_FIND  &kp _LINUX_FIND_PREV  &kp _LINUX_FIND_NEXT  &kp _LINUX_REPLACE  &kp _LINUX_C(K)
             >;
         };
 
