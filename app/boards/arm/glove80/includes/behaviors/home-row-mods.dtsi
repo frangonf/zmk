@@ -1457,7 +1457,7 @@ behaviors {
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
       require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&middy_extend_ctrl_hold>, <&kp>;
+      bindings = <&middy_extend_ctrl_hold>, <&middy_extend_ctrl_tap>;
     };
 
     // LEFT HAND bilateral enforcement variant for extended middy Ctrl
@@ -1473,7 +1473,7 @@ behaviors {
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
       require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&middy_extend_ctrl_hold_left>, <&kp>;
+      bindings = <&middy_extend_ctrl_hold_left>, <&middy_extend_ctrl_tap>;
     };
 
     // RIGHT HAND hold behavior for bilateral extended Ctrl
@@ -1509,8 +1509,8 @@ behaviors {
     };
 
     // Tap behavior for bilateral extended Ctrl
-    // Releases all mods except when Cmd (right middy) is pressed
-    // This allows Ctrl+Cmd to work together
+    // Releases ALL mods when single-handed activation is detected
+    // This enforces bilateral usage by canceling the modifier
     middy_extend_ctrl_tap: homey_middy_extend_ctrl_tap {
       compatible = "zmk,behavior-macro-one-param";
       wait-ms = <0>;
@@ -1520,8 +1520,8 @@ behaviors {
         = <&macro_release
             &kp LSFT &kp RSFT
             &kp LALT &kp RALT
-            // Note: We don't release LGUI/RGUI here to allow Ctrl+Cmd combo
-            &kp LCTL>
+            &kp LCTL &kp RCTL
+            &kp LGUI &kp RGUI>
         , <&macro_param_1to1>
         , <&macro_tap &kp MACRO_PLACEHOLDER>
         ;
