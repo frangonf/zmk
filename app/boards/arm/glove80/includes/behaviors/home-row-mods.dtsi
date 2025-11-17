@@ -1459,35 +1459,33 @@ behaviors {
     };
 
     // RIGHT HAND bilateral enforcement variant for extended middy Ctrl
-    // This enforces bilateral usage but allows Ctrl+Cmd when both are pressed
-    // Exceptions: positions 37 (d) and 42 (k) are the home row Cmd keys
-    // Allowing these enables Ctrl+Cmd combo with either left or right hand Cmd
+    // EXACT copy of right_pinky_bilateral but with Cmd exceptions (positions 37 and 42)
+    // This allows Ctrl+Cmd combos with same-hand Cmd keys
     middy_extend_ctrl_bilateral: homey_middy_extend_ctrl_bilateral {
       compatible = "zmk,behavior-hold-tap";
-      flavor = MIDDY_EXTEND_HOLDING_TYPE;
-      hold-trigger-key-positions = <LEFT_HAND_KEYS>; // TEST: removed 37 42 to isolate issue
+      flavor = RIGHT_PINKY_HOLDING_TYPE;
+      hold-trigger-key-positions = <LEFT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
       hold-trigger-on-release; // wait for other home row mods
-      tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
-      quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
-      require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
+      tapping-term-ms = <RIGHT_PINKY_HOLDING_TIME>;
+      quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
+      require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&middy_extend_ctrl_hold>, <&kp>;
+      bindings = <&right_pinky_hold>, <&kp>;
     };
 
     // LEFT HAND bilateral enforcement variant for extended middy Ctrl
-    // This enforces bilateral usage but allows Ctrl+Cmd when both are pressed
-    // Exceptions: positions 37 (d) and 42 (k) are the home row Cmd keys
-    // Allowing these enables Ctrl+Cmd combo with either left or right hand Cmd
+    // EXACT copy of left_pinky_bilateral but with Cmd exceptions (positions 37 and 42)
+    // This allows Ctrl+Cmd combos with same-hand Cmd keys
     middy_extend_ctrl_bilateral_left: homey_middy_extend_ctrl_bilateral_left {
       compatible = "zmk,behavior-hold-tap";
-      flavor = MIDDY_EXTEND_HOLDING_TYPE;
-      hold-trigger-key-positions = <RIGHT_HAND_KEYS>; // TEST: removed 37 42 to isolate issue
+      flavor = LEFT_PINKY_HOLDING_TYPE;
+      hold-trigger-key-positions = <RIGHT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
       hold-trigger-on-release; // wait for other home row mods
-      tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
-      quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
-      require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
+      tapping-term-ms = <LEFT_PINKY_HOLDING_TIME>;
+      quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
+      require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&middy_extend_ctrl_hold_left>, <&kp>;
+      bindings = <&left_pinky_hold>, <&kp>;
     };
 
     // RIGHT HAND hold behavior for bilateral extended Ctrl
@@ -1547,6 +1545,7 @@ behaviors {
     // - Layers 1-6 always use non-bilateral variant
 
     // MiddyExtendUp - for upper row (i in QWERTY, position 30)
+    // RIGHT hand extended Ctrl uses bilateral behavior with Cmd exceptions
     #define MiddyExtendUp(key, layer_index) MiddyExtendUp_unroll(layer_index) (key)
     #define MiddyExtendUp_unroll(layer_index) MiddyExtendUp_concat(MiddyExtendUp_layer, layer_index)
     #define MiddyExtendUp_concat(prefix, layer_index) prefix ## layer_index
@@ -1564,6 +1563,7 @@ behaviors {
     #define MiddyExtendUp_layer6(key) middy_extend_ctrl LCTL key
 
     // MiddyExtendDown - for lower row (, in QWERTY, position 60)
+    // RIGHT hand extended Ctrl uses bilateral behavior with Cmd exceptions
     #define MiddyExtendDown(key, layer_index) MiddyExtendDown_unroll(layer_index) (key)
     #define MiddyExtendDown_unroll(layer_index) MiddyExtendDown_concat(MiddyExtendDown_layer, layer_index)
     #define MiddyExtendDown_concat(prefix, layer_index) prefix ## layer_index
@@ -1581,6 +1581,7 @@ behaviors {
     #define MiddyExtendDown_layer6(key) middy_extend_ctrl LCTL key
 
     // LeftMiddyExtendUp - LEFT HAND for upper row (e in QWERTY, position 25)
+    // LEFT hand extended Ctrl uses bilateral behavior with Cmd exceptions
     #define LeftMiddyExtendUp(key, layer_index) LeftMiddyExtendUp_unroll(layer_index) (key)
     #define LeftMiddyExtendUp_unroll(layer_index) LeftMiddyExtendUp_concat(LeftMiddyExtendUp_layer, layer_index)
     #define LeftMiddyExtendUp_concat(prefix, layer_index) prefix ## layer_index
@@ -1598,6 +1599,7 @@ behaviors {
     #define LeftMiddyExtendUp_layer6(key) middy_extend_ctrl_left LCTL key
 
     // LeftMiddyExtendDown - LEFT HAND for lower row (c in QWERTY, position 49)
+    // LEFT hand extended Ctrl uses bilateral behavior with Cmd exceptions
     #define LeftMiddyExtendDown(key, layer_index) LeftMiddyExtendDown_unroll(layer_index) (key)
     #define LeftMiddyExtendDown_unroll(layer_index) LeftMiddyExtendDown_concat(LeftMiddyExtendDown_layer, layer_index)
     #define LeftMiddyExtendDown_concat(prefix, layer_index) prefix ## layer_index
