@@ -1459,31 +1459,31 @@ behaviors {
     };
 
     // RIGHT HAND bilateral enforcement variant for extended middy Ctrl
-    // Follows standard bilateral pattern: hold-trigger enforces opposite hand
-    // Position exceptions 37,42 allow Ctrl+Cmd combos with home row Cmd keys
+    // EXACT copy of right_pinky_bilateral but with Cmd exceptions (positions 37 and 42)
+    // This allows Ctrl+Cmd combos with same-hand Cmd keys
     middy_extend_ctrl_bilateral: homey_middy_extend_ctrl_bilateral {
       compatible = "zmk,behavior-hold-tap";
-      flavor = MIDDY_EXTEND_HOLDING_TYPE;
+      flavor = RIGHT_PINKY_HOLDING_TYPE;
       hold-trigger-key-positions = <LEFT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
       hold-trigger-on-release; // wait for other home row mods
-      tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
-      quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
-      require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
+      tapping-term-ms = <RIGHT_PINKY_HOLDING_TIME>;
+      quick-tap-ms = <RIGHT_PINKY_REPEAT_DECAY>;
+      require-prior-idle-ms = <RIGHT_PINKY_STREAK_DECAY>;
       #binding-cells = <2>;
       bindings = <&middy_extend_ctrl_hold>, <&kp>;
     };
 
     // LEFT HAND bilateral enforcement variant for extended middy Ctrl
-    // Follows standard bilateral pattern: hold-trigger enforces opposite hand
-    // Position exceptions 37,42 allow Ctrl+Cmd combos with home row Cmd keys
+    // EXACT copy of left_pinky_bilateral but with Cmd exceptions (positions 37 and 42)
+    // This allows Ctrl+Cmd combos with same-hand Cmd keys
     middy_extend_ctrl_bilateral_left: homey_middy_extend_ctrl_bilateral_left {
       compatible = "zmk,behavior-hold-tap";
-      flavor = MIDDY_EXTEND_HOLDING_TYPE;
+      flavor = LEFT_PINKY_HOLDING_TYPE;
       hold-trigger-key-positions = <RIGHT_HAND_KEYS 37 42>; // 37=d (left Cmd), 42=k (right Cmd)
       hold-trigger-on-release; // wait for other home row mods
-      tapping-term-ms = <MIDDY_EXTEND_HOLDING_TIME>;
-      quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
-      require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
+      tapping-term-ms = <LEFT_PINKY_HOLDING_TIME>;
+      quick-tap-ms = <LEFT_PINKY_REPEAT_DECAY>;
+      require-prior-idle-ms = <LEFT_PINKY_STREAK_DECAY>;
       #binding-cells = <2>;
       bindings = <&middy_extend_ctrl_hold_left>, <&kp>;
     };
