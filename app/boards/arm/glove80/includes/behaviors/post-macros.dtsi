@@ -479,39 +479,40 @@
 /* Automatically generated behavior definitions */
 / {
     behaviors {
-        // Tap-dance behaviors for scroll acceleration - macOS
-        // Single tap = 1x (normal), Double tap = 4x (fast), Triple tap = 12x (warp)
+        // Tap-dance behaviors for scroll acceleration
+        // Single tap = normal scroll, Double tap = activate fast layer, Triple tap = activate warp layer
+        // The speed layers have scroll bindings at C3R6/C4R6 which get scaled by input processors
 
-        // macOS Scroll Up tap-dance: 1x -> 4x -> 12x
+        // macOS Scroll Up tap-dance: normal -> fast layer -> warp layer
         td_scroll_up: td_scroll_up {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&msc MOUSE_SCROLL_UP>, <&scroll_up_fast>, <&scroll_up_warp>;
+            bindings = <&msc MOUSE_SCROLL_UP>, <&mo LAYER_MouseFast>, <&mo LAYER_MouseWarp>;
         };
 
-        // macOS Scroll Down tap-dance: 1x -> 4x -> 12x
+        // macOS Scroll Down tap-dance: normal -> fast layer -> warp layer
         td_scroll_down: td_scroll_down {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&msc MOUSE_SCROLL_DOWN>, <&scroll_down_fast>, <&scroll_down_warp>;
+            bindings = <&msc MOUSE_SCROLL_DOWN>, <&mo LAYER_MouseFast>, <&mo LAYER_MouseWarp>;
         };
 
-        // Linux Scroll Up tap-dance: 1x -> 4x -> 12x
+        // Linux Scroll Up tap-dance: normal -> fast layer -> warp layer
         td_scroll_up_linux: td_scroll_up_linux {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&msc MOUSE_SCROLL_UP>, <&scroll_up_fast_linux>, <&scroll_up_warp_linux>;
+            bindings = <&msc MOUSE_SCROLL_UP>, <&mo LAYER_MouseFast_Linux>, <&mo LAYER_MouseWarp_Linux>;
         };
 
-        // Linux Scroll Down tap-dance: 1x -> 4x -> 12x
+        // Linux Scroll Down tap-dance: normal -> fast layer -> warp layer
         td_scroll_down_linux: td_scroll_down_linux {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&msc MOUSE_SCROLL_DOWN>, <&scroll_down_fast_linux>, <&scroll_down_warp_linux>;
+            bindings = <&msc MOUSE_SCROLL_DOWN>, <&mo LAYER_MouseFast_Linux>, <&mo LAYER_MouseWarp_Linux>;
         };
     };
 };
