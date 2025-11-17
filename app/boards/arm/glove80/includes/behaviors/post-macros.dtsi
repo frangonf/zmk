@@ -359,87 +359,119 @@
 /* Automatically generated macro definitions */
 / {
     macros {
-        // Scroll acceleration macros for multi-tap scroll
-        // These macros send multiple scroll events for fast and warp speeds
+        // Scroll acceleration macros using layer activation for continuous speed boost
+        // These macros activate speed layers while the key is held for sustained fast scrolling
 
-        // Scroll Up - Fast (4x)
+        // macOS Scroll Up - Fast (activates MouseFast layer)
         scroll_up_fast: scroll_up_fast {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
-                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo LAYER_MouseFast>
+                , <&macro_tap &msc MOUSE_SCROLL_UP>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo LAYER_MouseFast>
+                ;
         };
 
-        // Scroll Up - Warp (12x)
+        // macOS Scroll Up - Warp (activates MouseWarp layer)
         scroll_up_warp: scroll_up_warp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
-                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
-                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
-                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
-                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
-                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo LAYER_MouseWarp>
+                , <&macro_tap &msc MOUSE_SCROLL_UP>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo LAYER_MouseWarp>
+                ;
         };
 
-        // Scroll Down - Fast (4x)
+        // macOS Scroll Down - Fast (activates MouseFast layer)
         scroll_down_fast: scroll_down_fast {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
-                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo LAYER_MouseFast>
+                , <&macro_tap &msc MOUSE_SCROLL_DOWN>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo LAYER_MouseFast>
+                ;
         };
 
-        // Scroll Down - Warp (12x)
+        // macOS Scroll Down - Warp (activates MouseWarp layer)
         scroll_down_warp: scroll_down_warp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
-                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
-                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
-                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
-                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
-                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo LAYER_MouseWarp>
+                , <&macro_tap &msc MOUSE_SCROLL_DOWN>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo LAYER_MouseWarp>
+                ;
         };
 
-        // Scroll Left - Fast (4x)
-        scroll_left_fast: scroll_left_fast {
+        // Linux Scroll Up - Fast (activates MouseFast_Linux layer)
+        scroll_up_fast_linux: scroll_up_fast_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
-                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo LAYER_MouseFast_Linux>
+                , <&macro_tap &msc MOUSE_SCROLL_UP>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo LAYER_MouseFast_Linux>
+                ;
         };
 
-        // Scroll Left - Warp (12x)
-        scroll_left_warp: scroll_left_warp {
+        // Linux Scroll Up - Warp (activates MouseWarp_Linux layer)
+        scroll_up_warp_linux: scroll_up_warp_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
-                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
-                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
-                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
-                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
-                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo LAYER_MouseWarp_Linux>
+                , <&macro_tap &msc MOUSE_SCROLL_UP>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo LAYER_MouseWarp_Linux>
+                ;
         };
 
-        // Scroll Right - Fast (4x)
-        scroll_right_fast: scroll_right_fast {
+        // Linux Scroll Down - Fast (activates MouseFast_Linux layer)
+        scroll_down_fast_linux: scroll_down_fast_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
-                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo LAYER_MouseFast_Linux>
+                , <&macro_tap &msc MOUSE_SCROLL_DOWN>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo LAYER_MouseFast_Linux>
+                ;
         };
 
-        // Scroll Right - Warp (12x)
-        scroll_right_warp: scroll_right_warp {
+        // Linux Scroll Down - Warp (activates MouseWarp_Linux layer)
+        scroll_down_warp_linux: scroll_down_warp_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
-                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
-                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
-                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
-                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
-                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &mo LAYER_MouseWarp_Linux>
+                , <&macro_tap &msc MOUSE_SCROLL_DOWN>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo LAYER_MouseWarp_Linux>
+                ;
         };
     };
 };
@@ -447,10 +479,10 @@
 /* Automatically generated behavior definitions */
 / {
     behaviors {
-        // Tap-dance behaviors for scroll acceleration
-        // Single tap = 1x, Double tap = 4x, Triple tap = 12x
+        // Tap-dance behaviors for scroll acceleration - macOS
+        // Single tap = 1x (normal), Double tap = 4x (fast), Triple tap = 12x (warp)
 
-        // Scroll Up tap-dance: 1x -> 4x -> 12x
+        // macOS Scroll Up tap-dance: 1x -> 4x -> 12x
         td_scroll_up: td_scroll_up {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -458,7 +490,7 @@
             bindings = <&msc MOUSE_SCROLL_UP>, <&scroll_up_fast>, <&scroll_up_warp>;
         };
 
-        // Scroll Down tap-dance: 1x -> 4x -> 12x
+        // macOS Scroll Down tap-dance: 1x -> 4x -> 12x
         td_scroll_down: td_scroll_down {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -466,20 +498,20 @@
             bindings = <&msc MOUSE_SCROLL_DOWN>, <&scroll_down_fast>, <&scroll_down_warp>;
         };
 
-        // Scroll Left tap-dance: 1x -> 4x -> 12x
-        td_scroll_left: td_scroll_left {
+        // Linux Scroll Up tap-dance: 1x -> 4x -> 12x
+        td_scroll_up_linux: td_scroll_up_linux {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&msc MOUSE_SCROLL_LEFT>, <&scroll_left_fast>, <&scroll_left_warp>;
+            bindings = <&msc MOUSE_SCROLL_UP>, <&scroll_up_fast_linux>, <&scroll_up_warp_linux>;
         };
 
-        // Scroll Right tap-dance: 1x -> 4x -> 12x
-        td_scroll_right: td_scroll_right {
+        // Linux Scroll Down tap-dance: 1x -> 4x -> 12x
+        td_scroll_down_linux: td_scroll_down_linux {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&msc MOUSE_SCROLL_RIGHT>, <&scroll_right_fast>, <&scroll_right_warp>;
+            bindings = <&msc MOUSE_SCROLL_DOWN>, <&scroll_down_fast_linux>, <&scroll_down_warp_linux>;
         };
     };
 };
