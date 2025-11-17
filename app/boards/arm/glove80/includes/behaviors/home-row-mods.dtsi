@@ -1007,7 +1007,9 @@ behaviors {
 
   // Extended Ctrl positions for MACOS_CAGS_EXTEND exception
   // When MACOS_CAGS_EXTEND is enabled, Cmd keys (D and K) need to recognize
-  // extended Ctrl keys to allow Ctrl+Cmd combos without typing the Cmd key letter
+  // OPPOSITE-HAND extended Ctrl keys to allow Ctrl+Cmd combos
+  // D (left Cmd) recognizes I and COMMA (right extended Ctrl)
+  // K (right Cmd) recognizes E and C (left extended Ctrl)
   #ifdef MACOS_CAGS_EXTEND
     #define LEFT_MIDDY_EXTENDED_POSITIONS 25 49   // E and C (left hand extended Ctrl)
     #define RIGHT_MIDDY_EXTENDED_POSITIONS 30 60  // I and COMMA (right hand extended Ctrl)
@@ -1031,7 +1033,7 @@ behaviors {
   left_middy: homey_left_middy {
     compatible = "zmk,behavior-hold-tap";
     flavor = LEFT_MIDDY_HOLDING_TYPE;
-    hold-trigger-key-positions = <RIGHT_HAND_KEYS LEFT_MIDDY_EXTENDED_POSITIONS>;
+    hold-trigger-key-positions = <RIGHT_HAND_KEYS RIGHT_MIDDY_EXTENDED_POSITIONS>;
     hold-trigger-on-release; // wait for other home row mods
     tapping-term-ms = <LEFT_MIDDY_HOLDING_TIME>;
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
@@ -1048,7 +1050,7 @@ behaviors {
   left_middy_bilateral: homey_left_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
     flavor = LEFT_MIDDY_HOLDING_TYPE;
-    hold-trigger-key-positions = <RIGHT_HAND_KEYS LEFT_MIDDY_EXTENDED_POSITIONS>;
+    hold-trigger-key-positions = <RIGHT_HAND_KEYS RIGHT_MIDDY_EXTENDED_POSITIONS>;
     hold-trigger-on-release; // wait for other home row mods
     tapping-term-ms = <LEFT_MIDDY_HOLDING_TIME>;
     quick-tap-ms = <LEFT_MIDDY_REPEAT_DECAY>;
@@ -1127,7 +1129,7 @@ behaviors {
   right_middy: homey_right_middy {
     compatible = "zmk,behavior-hold-tap";
     flavor = RIGHT_MIDDY_HOLDING_TYPE;
-    hold-trigger-key-positions = <LEFT_HAND_KEYS RIGHT_MIDDY_EXTENDED_POSITIONS>;
+    hold-trigger-key-positions = <LEFT_HAND_KEYS LEFT_MIDDY_EXTENDED_POSITIONS>;
     hold-trigger-on-release; // wait for other home row mods
     tapping-term-ms = <RIGHT_MIDDY_HOLDING_TIME>;
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
@@ -1144,7 +1146,7 @@ behaviors {
   right_middy_bilateral: homey_right_middy_bilateral {
     compatible = "zmk,behavior-hold-tap";
     flavor = RIGHT_MIDDY_HOLDING_TYPE;
-    hold-trigger-key-positions = <LEFT_HAND_KEYS RIGHT_MIDDY_EXTENDED_POSITIONS>;
+    hold-trigger-key-positions = <LEFT_HAND_KEYS LEFT_MIDDY_EXTENDED_POSITIONS>;
     hold-trigger-on-release; // wait for other home row mods
     tapping-term-ms = <RIGHT_MIDDY_HOLDING_TIME>;
     quick-tap-ms = <RIGHT_MIDDY_REPEAT_DECAY>;
@@ -1469,7 +1471,7 @@ behaviors {
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
       require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&middy_extend_ctrl_hold>, <&middy_extend_ctrl_tap>;
+      bindings = <&middy_extend_ctrl_hold>, <&kp>;
     };
 
     // LEFT HAND bilateral enforcement variant for extended middy Ctrl
@@ -1485,7 +1487,7 @@ behaviors {
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
       require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&middy_extend_ctrl_hold_left>, <&middy_extend_ctrl_tap>;
+      bindings = <&middy_extend_ctrl_hold_left>, <&kp>;
     };
 
     // RIGHT HAND hold behavior for bilateral extended Ctrl
