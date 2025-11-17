@@ -178,9 +178,11 @@ Example New Layers to Add:
     LAYER_TerminalLinux: Tmux/Screen bindings, shell shortcuts
 
 Impact: Transforms your 64 layers into intelligent context-aware system
-🎯 PRIORITY 3: require-prior-idle-ms (Missing - Eliminates False Activations)
+🎯 PRIORITY 3: require-prior-idle-ms (✅ IMPLEMENTED - Eliminates False Activations)
 
-Status: Not present in your home row mods
+Status: ✅ FULLY IMPLEMENTED
+
+Implementation Location: app/boards/arm/glove80/includes/behaviors/home-row-mods.dtsi (lines 639, 642, 731, 734, 823, 826, 915, 918)
 
 Current Problem: Your bilateral enforcement helps, but fast typing can still trigger holds
 
