@@ -74,6 +74,11 @@ behaviors {
   //   MiddyExtendUp(I, 0)   // for the 'i' key on layer 0
   //   MiddyExtendDown(COMMA, 0)  // for the ',' key on layer 0
   //
+  // Layer behavior (0-6 only):
+  //   - Layer 0: Uses bilateral enforcement if ENFORCE_BILATERAL is defined
+  //   - Layers 1-6: Always non-bilateral (allows easier access on other layers)
+  //   - Finger layers (8-15): Not supported - use standard home row mods instead
+  //
   // IMPORTANT: This feature is designed for macOS layers (0-6) where
   // MACOS_USE_GACS is not defined (i.e., using CAGS order with swapped
   // Ctrl and Cmd). It will not work correctly on Linux layers (32-63).
@@ -1462,14 +1467,43 @@ behaviors {
     };
 
     // Macros for extended Ctrl keys on macOS layers (0-6)
-    // Use bilateral enforcement if ENFORCE_BILATERAL is defined
+    // Following the same pattern as standard home row mods:
+    // - Layer 0 uses bilateral enforcement (if ENFORCE_BILATERAL is defined)
+    // - Layers 1-6 always use non-bilateral variant
+
+    // MiddyExtendUp - for upper row (i in QWERTY, position 30)
+    #define MiddyExtendUp(key, layer_index) MiddyExtendUp_unroll(layer_index) (key)
+    #define MiddyExtendUp_unroll(layer_index) MiddyExtendUp_concat(MiddyExtendUp_layer, layer_index)
+    #define MiddyExtendUp_concat(prefix, layer_index) prefix ## layer_index
     #ifdef ENFORCE_BILATERAL
-      #define MiddyExtendUp(key, layer_index) middy_extend_ctrl_bilateral LCTL key
-      #define MiddyExtendDown(key, layer_index) middy_extend_ctrl_bilateral LCTL key
+      #define middy_extend_up_layer0_variant middy_extend_ctrl_bilateral
     #else
-      #define MiddyExtendUp(key, layer_index) middy_extend_ctrl LCTL key
-      #define MiddyExtendDown(key, layer_index) middy_extend_ctrl LCTL key
+      #define middy_extend_up_layer0_variant middy_extend_ctrl
     #endif
+    #define MiddyExtendUp_layer0(key) middy_extend_up_layer0_variant LCTL key
+    #define MiddyExtendUp_layer1(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer2(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer3(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer4(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer5(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendUp_layer6(key) middy_extend_ctrl LCTL key
+
+    // MiddyExtendDown - for lower row (, in QWERTY, position 60)
+    #define MiddyExtendDown(key, layer_index) MiddyExtendDown_unroll(layer_index) (key)
+    #define MiddyExtendDown_unroll(layer_index) MiddyExtendDown_concat(MiddyExtendDown_layer, layer_index)
+    #define MiddyExtendDown_concat(prefix, layer_index) prefix ## layer_index
+    #ifdef ENFORCE_BILATERAL
+      #define middy_extend_down_layer0_variant middy_extend_ctrl_bilateral
+    #else
+      #define middy_extend_down_layer0_variant middy_extend_ctrl
+    #endif
+    #define MiddyExtendDown_layer0(key) middy_extend_down_layer0_variant LCTL key
+    #define MiddyExtendDown_layer1(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer2(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer3(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer4(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer5(key) middy_extend_ctrl LCTL key
+    #define MiddyExtendDown_layer6(key) middy_extend_ctrl LCTL key
   #endif // MACOS_CAGS_EXTEND
 
   //
