@@ -1617,6 +1617,15 @@ behaviors {
     #define LeftMiddyExtendDown_layer6(key) middy_extend_ctrl_left LCTL key
   #endif // MACOS_CAGS_EXTEND
 
+  // Fallback macros when MACOS_CAGS_EXTEND is NOT defined
+  // These ensure base-layers.dtsi compiles even without extended Ctrl support
+  #ifndef MACOS_CAGS_EXTEND
+    #define LeftMiddyExtendUp(key, layer_index) kp key
+    #define LeftMiddyExtendDown(key, layer_index) kp key
+    #define MiddyExtendUp(key, layer_index) kp key
+    #define MiddyExtendDown(key, layer_index) kp key
+  #endif
+
   //
   // Linux layers (32-63) - Use Linux modifiers (GACS: Super, Alt, Ctrl, Shift)
   // Unlike macOS which swaps Ctrl and Super/GUI
