@@ -1459,8 +1459,8 @@ behaviors {
     };
 
     // RIGHT HAND bilateral enforcement variant for extended middy Ctrl
-    // Uses extended Ctrl timing with Cmd exceptions (positions 37 and 42)
-    // This allows Ctrl+Cmd combos with same-hand Cmd keys
+    // Follows standard bilateral pattern: hold-trigger enforces opposite hand
+    // Position exceptions 37,42 allow Ctrl+Cmd combos with home row Cmd keys
     middy_extend_ctrl_bilateral: homey_middy_extend_ctrl_bilateral {
       compatible = "zmk,behavior-hold-tap";
       flavor = MIDDY_EXTEND_HOLDING_TYPE;
@@ -1470,12 +1470,12 @@ behaviors {
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
       require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&middy_extend_ctrl_hold>, <&middy_extend_ctrl_tap>;
+      bindings = <&middy_extend_ctrl_hold>, <&kp>;
     };
 
     // LEFT HAND bilateral enforcement variant for extended middy Ctrl
-    // Uses extended Ctrl timing with Cmd exceptions (positions 37 and 42)
-    // This allows Ctrl+Cmd combos with same-hand Cmd keys
+    // Follows standard bilateral pattern: hold-trigger enforces opposite hand
+    // Position exceptions 37,42 allow Ctrl+Cmd combos with home row Cmd keys
     middy_extend_ctrl_bilateral_left: homey_middy_extend_ctrl_bilateral_left {
       compatible = "zmk,behavior-hold-tap";
       flavor = MIDDY_EXTEND_HOLDING_TYPE;
@@ -1485,7 +1485,7 @@ behaviors {
       quick-tap-ms = <MIDDY_EXTEND_REPEAT_DECAY>;
       require-prior-idle-ms = <MIDDY_EXTEND_STREAK_DECAY>;
       #binding-cells = <2>;
-      bindings = <&middy_extend_ctrl_hold_left>, <&middy_extend_ctrl_tap>;
+      bindings = <&middy_extend_ctrl_hold_left>, <&kp>;
     };
 
     // RIGHT HAND hold behavior for bilateral extended Ctrl
