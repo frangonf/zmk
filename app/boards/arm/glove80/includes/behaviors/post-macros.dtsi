@@ -55,6 +55,21 @@
 //////////////////////////////////////////////////////////////////////////
 
 //
+// SCROLL ACCELERATION MULTI-TAP CONFIGURATION
+// Defines the scroll multipliers for multi-tap scroll acceleration:
+// - Single tap: 1x scroll (normal speed)
+// - Double tap: 4x scroll (fast speed)
+// - Triple tap: 12x scroll (warp speed)
+//
+#ifndef SCROLL_ACCEL_FAST_MULTIPLIER
+#define SCROLL_ACCEL_FAST_MULTIPLIER 4
+#endif
+
+#ifndef SCROLL_ACCEL_WARP_MULTIPLIER
+#define SCROLL_ACCEL_WARP_MULTIPLIER 12
+#endif
+
+//
 // NATURAL_SCROLLING reverses the directionality of the mouse scroll wheel
 // to support "natural scrolling" in macOS and other desktop environments.
 //
@@ -344,14 +359,127 @@
 /* Automatically generated macro definitions */
 / {
     macros {
+        // Scroll acceleration macros for multi-tap scroll
+        // These macros send multiple scroll events for fast and warp speeds
 
+        // Scroll Up - Fast (4x)
+        scroll_up_fast: scroll_up_fast {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
+                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>;
+        };
+
+        // Scroll Up - Warp (12x)
+        scroll_up_warp: scroll_up_warp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
+                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
+                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
+                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
+                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>,
+                       <&msc MOUSE_SCROLL_UP>, <&msc MOUSE_SCROLL_UP>;
+        };
+
+        // Scroll Down - Fast (4x)
+        scroll_down_fast: scroll_down_fast {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
+                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>;
+        };
+
+        // Scroll Down - Warp (12x)
+        scroll_down_warp: scroll_down_warp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
+                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
+                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
+                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
+                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>,
+                       <&msc MOUSE_SCROLL_DOWN>, <&msc MOUSE_SCROLL_DOWN>;
+        };
+
+        // Scroll Left - Fast (4x)
+        scroll_left_fast: scroll_left_fast {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
+                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>;
+        };
+
+        // Scroll Left - Warp (12x)
+        scroll_left_warp: scroll_left_warp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
+                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
+                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
+                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
+                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>,
+                       <&msc MOUSE_SCROLL_LEFT>, <&msc MOUSE_SCROLL_LEFT>;
+        };
+
+        // Scroll Right - Fast (4x)
+        scroll_right_fast: scroll_right_fast {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
+                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>;
+        };
+
+        // Scroll Right - Warp (12x)
+        scroll_right_warp: scroll_right_warp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
+                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
+                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
+                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
+                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>,
+                       <&msc MOUSE_SCROLL_RIGHT>, <&msc MOUSE_SCROLL_RIGHT>;
+        };
     };
 };
 
 /* Automatically generated behavior definitions */
 / {
     behaviors {
+        // Tap-dance behaviors for scroll acceleration
+        // Single tap = 1x, Double tap = 4x, Triple tap = 12x
 
+        // Scroll Up tap-dance: 1x -> 4x -> 12x
+        td_scroll_up: td_scroll_up {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&msc MOUSE_SCROLL_UP>, <&scroll_up_fast>, <&scroll_up_warp>;
+        };
 
+        // Scroll Down tap-dance: 1x -> 4x -> 12x
+        td_scroll_down: td_scroll_down {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&msc MOUSE_SCROLL_DOWN>, <&scroll_down_fast>, <&scroll_down_warp>;
+        };
+
+        // Scroll Left tap-dance: 1x -> 4x -> 12x
+        td_scroll_left: td_scroll_left {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&msc MOUSE_SCROLL_LEFT>, <&scroll_left_fast>, <&scroll_left_warp>;
+        };
+
+        // Scroll Right tap-dance: 1x -> 4x -> 12x
+        td_scroll_right: td_scroll_right {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&msc MOUSE_SCROLL_RIGHT>, <&scroll_right_fast>, <&scroll_right_warp>;
+        };
     };
 };
