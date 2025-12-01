@@ -48,7 +48,15 @@
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_T2 POS_LH_T5>;
     bindings = <&mod_tab_chord _A_TAB LAYER_Cursor>;
-    layers = <0 1 2 3 4 5 6 32 33 34 35 36 37 38>;
+    layers = <0 1 2 3 4 5 6>;
+  };
+  #endif
+  #if defined(_A_TAB) && defined(LAYER_Cursor_Linux)
+  combo_alt_tab_switcher_left_linux {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_LH_T5>;
+    bindings = <&mod_tab_chord _A_TAB LAYER_Cursor_Linux>;
+    layers = <32 33 34 35 36 37 38>;
   };
   #endif
 
@@ -65,7 +73,15 @@
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_T5 POS_LH_T6>;
     bindings = <&mod_tab_chord _G_TAB LAYER_Cursor>;
-    layers = <0 1 2 3 4 5 6 32 33 34 35 36 37 38>;
+    layers = <0 1 2 3 4 5 6>;
+  };
+  #endif
+  #if defined(_G_TAB) && defined(LAYER_Cursor_Linux)
+  combo_win_tab_switcher_left_linux {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T5 POS_LH_T6>;
+    bindings = <&mod_tab_chord _G_TAB LAYER_Cursor_Linux>;
+    layers = <32 33 34 35 36 37 38>;
   };
   #endif
 
@@ -82,8 +98,17 @@
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_LH_T3 POS_LH_T6>;
     bindings = <&mod_tab_chord LCTL LAYER_Cursor>;
-    layers = <0 1 2 3 4 5 6 32 33 34 35 36 37 38>;
+    layers = <0 1 2 3 4 5 6>;
   };
+
+  #ifdef LAYER_Cursor_Linux
+  combo_ctrl_tab_switcher_left_linux {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T3 POS_LH_T6>;
+    bindings = <&mod_tab_chord LCTL LAYER_Cursor_Linux>;
+    layers = <32 33 34 35 36 37 38>;
+  };
+  #endif
 
   combo_meh_right {
     timeout-ms = <COMBO_FIRING_DECAY>;
@@ -149,12 +174,28 @@
     layers = <0 LAYER_Gaming>;
   };
   #endif
+  #ifdef LAYER_Gaming_Linux
+  combo_gaming_layer_toggle_linux {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_C1R5 POS_LH_C2R6>;
+    bindings = <&tog LAYER_Gaming_Linux>;
+    layers = <32 LAYER_Gaming_Linux>;
+  };
+  #endif
   #ifdef LAYER_Typing
   combo_typing_layer_toggle {
     timeout-ms = <COMBO_FIRING_DECAY>;
     key-positions = <POS_RH_C1R5 POS_RH_C2R6>;
     bindings = <&tog LAYER_Typing>;
     layers = <0 LAYER_Typing>;
+  };
+  #endif
+  #ifdef LAYER_Typing_Linux
+  combo_typing_layer_toggle_linux {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_C1R5 POS_RH_C2R6>;
+    bindings = <&tog LAYER_Typing_Linux>;
+    layers = <32 LAYER_Typing_Linux>;
   };
   #endif
 
