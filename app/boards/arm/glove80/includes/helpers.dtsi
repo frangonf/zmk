@@ -1,6 +1,12 @@
 /*
  * Helper Macros and Layer Definitions for Glove80
  * Based on https://github.com/urob/zmk-helpers/
+ *
+ * UPDATED FOR MAGIC 8 (GACS/CAGS toggle):
+ * - Removed unused base layouts (Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH)
+ * - Removed Gaming layer
+ * - Added GACS-specific layers (25-38)
+ * - Reorganized Linux layers to 39-63
  */
 
 #pragma once
@@ -32,76 +38,83 @@
         bindings = <&mo layer>, <&to layer>; \
 )
 
-/* Automatically generated layer name #define */
-/* macOS layers (0-31) */
-#define LAYER_QWERTY 0
-#define LAYER_Enthium 1
-#define LAYER_Engrammer 2
-#define LAYER_Engram 3
-#define LAYER_Dvorak 4
-#define LAYER_Colemak 5
-#define LAYER_ColemakDH 6
-#define LAYER_Typing 7
-#define LAYER_LeftPinky 8
-#define LAYER_LeftRingy 9
-#define LAYER_LeftMiddy 10
-#define LAYER_LeftIndex 11
-#define LAYER_RightPinky 12
-#define LAYER_RightRingy 13
-#define LAYER_RightMiddy 14
-#define LAYER_RightIndex 15
-#define LAYER_Cursor 16
-#define LAYER_Number 17
-#define LAYER_Function 18
-#define LAYER_Emoji 19
-#define LAYER_World 20
-#define LAYER_Symbol 21
-#define LAYER_System 22
-#define LAYER_Mouse 23
-#define LAYER_MouseFine 24
-#define LAYER_MouseSlow 25
-#define LAYER_MouseFast 26
-#define LAYER_MouseWarp 27
-#define LAYER_Gaming 28
-#define LAYER_Factory 29
-#define LAYER_Lower 30
-#define LAYER_Magic 31
+/* ========================================================================
+ * LAYER DEFINITIONS - QWERTY ONLY, 64-layer Magic 8 organization
+ * ======================================================================== */
 
-/* Linux layers (32-63) */
-#define LAYER_QWERTY_Linux 32
-#define LAYER_Enthium_Linux 33
-#define LAYER_Engrammer_Linux 34
-#define LAYER_Engram_Linux 35
-#define LAYER_Dvorak_Linux 36
-#define LAYER_Colemak_Linux 37
-#define LAYER_ColemakDH_Linux 38
-#define LAYER_Typing_Linux 39
-#define LAYER_LeftPinky_Linux 40
-#define LAYER_LeftRingy_Linux 41
-#define LAYER_LeftMiddy_Linux 42
-#define LAYER_LeftIndex_Linux 43
-#define LAYER_RightPinky_Linux 44
-#define LAYER_RightRingy_Linux 45
-#define LAYER_RightMiddy_Linux 46
-#define LAYER_RightIndex_Linux 47
-#define LAYER_Cursor_Linux 48
-#define LAYER_Number_Linux 49
-#define LAYER_Function_Linux 50
-#define LAYER_Emoji_Linux 51
-#define LAYER_World_Linux 52
-#define LAYER_Symbol_Linux 53
-#define LAYER_System_Linux 54
-#define LAYER_Mouse_Linux 55
-#define LAYER_MouseFine_Linux 56
-#define LAYER_MouseSlow_Linux 57
-#define LAYER_MouseFast_Linux 58
-#define LAYER_MouseWarp_Linux 59
-#define LAYER_Gaming_Linux 60
+/* macOS CAGS layers (0-13) - Ctrl on pinky, Cmd on middle */
+#define LAYER_QWERTY 0
+#define LAYER_Typing 1
+#define LAYER_LeftPinky 2
+#define LAYER_LeftRingy 3
+#define LAYER_LeftMiddy 4
+#define LAYER_LeftIndex 5
+#define LAYER_RightPinky 6
+#define LAYER_RightRingy 7
+#define LAYER_RightMiddy 8
+#define LAYER_RightIndex 9
+#define LAYER_Cursor 10
+#define LAYER_Number 11
+#define LAYER_Function 12
+#define LAYER_Symbol 13
+
+/* macOS SHARED layers (14-24) - Used by both CAGS and GACS */
+#define LAYER_Emoji 14
+#define LAYER_World 15
+#define LAYER_System 16
+#define LAYER_Mouse 17
+#define LAYER_MouseFine 18
+#define LAYER_MouseSlow 19
+#define LAYER_MouseFast 20
+#define LAYER_MouseWarp 21
+#define LAYER_Factory 22
+#define LAYER_Lower 23
+#define LAYER_Magic 24
+
+/* macOS GACS layers (25-38) - Cmd on pinky, Ctrl on middle */
+#define LAYER_QWERTY_GACS 25
+#define LAYER_Typing_GACS 26
+#define LAYER_LeftPinky_GACS 27
+#define LAYER_LeftRingy_GACS 28
+#define LAYER_LeftMiddy_GACS 29
+#define LAYER_LeftIndex_GACS 30
+#define LAYER_RightPinky_GACS 31
+#define LAYER_RightRingy_GACS 32
+#define LAYER_RightMiddy_GACS 33
+#define LAYER_RightIndex_GACS 34
+#define LAYER_Cursor_GACS 35
+#define LAYER_Number_GACS 36
+#define LAYER_Function_GACS 37
+#define LAYER_Symbol_GACS 38
+
+/* Linux GACS layers (39-63) - Super on pinky, Ctrl on middle */
+#define LAYER_QWERTY_Linux 39
+#define LAYER_Typing_Linux 40
+#define LAYER_LeftPinky_Linux 41
+#define LAYER_LeftRingy_Linux 42
+#define LAYER_LeftMiddy_Linux 43
+#define LAYER_LeftIndex_Linux 44
+#define LAYER_RightPinky_Linux 45
+#define LAYER_RightRingy_Linux 46
+#define LAYER_RightMiddy_Linux 47
+#define LAYER_RightIndex_Linux 48
+#define LAYER_Cursor_Linux 49
+#define LAYER_Number_Linux 50
+#define LAYER_Function_Linux 51
+#define LAYER_Emoji_Linux 52
+#define LAYER_World_Linux 53
+#define LAYER_Symbol_Linux 54
+#define LAYER_System_Linux 55
+#define LAYER_Mouse_Linux 56
+#define LAYER_MouseFine_Linux 57
+#define LAYER_MouseSlow_Linux 58
+#define LAYER_MouseFast_Linux 59
+#define LAYER_MouseWarp_Linux 60
 #define LAYER_Factory_Linux 61
 #define LAYER_Lower_Linux 62
 #define LAYER_Magic_Linux 63
 
-/* To deal with the situation where there is no Lower layer, to keep &lower happy */
+/* Backward compatibility - keep old names as aliases where possible */
 #ifndef LAYER_Lower
-#define LAYER_Lower 0
+#define LAYER_Lower 23
 #endif

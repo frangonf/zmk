@@ -10,6 +10,12 @@
  *
  * This file was generated automatically. You may or may not want to
  * edit it directly.
+ *
+ * MODIFIED FOR MAGIC 8 (GACS/CAGS TOGGLE):
+ * - Layers 0-13: macOS CAGS (Ctrl on pinky, Cmd on middle)
+ * - Layers 14-24: macOS SHARED (used by both CAGS and GACS)
+ * - Layers 25-38: macOS GACS (Cmd on pinky, Ctrl on middle)
+ * - Layers 39-63: Linux GACS (Super on pinky, Ctrl on middle)
  */
 
 #include <behaviors.dtsi>
@@ -39,44 +45,68 @@
     keymap {
         compatible = "zmk,keymap";
 
-        /* macOS Layers (0-31) */
+        /* ========================================================================
+         * macOS CAGS Layers (0-13) - Ctrl on pinky, Cmd on middle
+         * ======================================================================== */
 
-        /* Base Layers: QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH */
+        /* Base Layer: QWERTY (layer 0) */
         #include "includes/layers/base-layers.dtsi"
 
-        /* Typing Layer */
+        /* Typing Layer (layer 1) */
         #include "includes/layers/typing-layer.dtsi"
 
-        /* Finger Layers: Left/Right Pinky, Ringy, Middy, Index */
+        /* Finger Layers (layers 2-9): Left/Right Pinky, Ringy, Middy, Index */
         #include "includes/layers/finger-layers.dtsi"
 
-        /* Function Layers: Cursor, Number, Function, Emoji, World, Symbol, System */
+        /* Function Layers (layers 10-13): Cursor, Number, Function, Symbol */
         #include "includes/layers/function-layers.dtsi"
 
-        /* Mouse Layers: Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp */
-        #include "includes/layers/mouse-layers.dtsi"
+        /* ========================================================================
+         * macOS SHARED Layers (14-24) - Used by both CAGS and GACS
+         * ======================================================================== */
 
-        /* Special Layers: Gaming, Factory, Lower, Magic */
+        /* Shared Layers: Emoji, World, System (layers 14-16) */
+        /* Mouse Layers: Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp (layers 17-21) */
+        /* Special Layers: Factory, Lower, Magic (layers 22-24) */
+        #include "includes/layers/mouse-layers.dtsi"
         #include "includes/layers/special-layers.dtsi"
 
-        /* Linux Layers (32-63) */
+        /* ========================================================================
+         * macOS GACS Layers (25-38) - Cmd on pinky, Ctrl on middle
+         * ======================================================================== */
 
-        /* Base Layers: QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH */
+        /* Base Layer: QWERTY_GACS (layer 25) */
+        #include "includes/layers/base-layers-gacs.dtsi"
+
+        /* Typing Layer GACS (layer 26) */
+        #include "includes/layers/typing-layer-gacs.dtsi"
+
+        /* Finger Layers GACS (layers 27-34) */
+        #include "includes/layers/finger-layers-gacs.dtsi"
+
+        /* Function Layers GACS (layers 35-38): Cursor, Number, Function, Symbol */
+        #include "includes/layers/function-layers-gacs.dtsi"
+
+        /* ========================================================================
+         * Linux GACS Layers (39-63) - Super on pinky, Ctrl on middle
+         * ======================================================================== */
+
+        /* Base Layer: QWERTY_Linux (layer 39) */
         #include "includes/layers/base-layers-linux.dtsi"
 
-        /* Typing Layer */
+        /* Typing Layer Linux (layer 40) */
         #include "includes/layers/typing-layer-linux.dtsi"
 
-        /* Finger Layers: Left/Right Pinky, Ringy, Middy, Index */
+        /* Finger Layers Linux (layers 41-48) */
         #include "includes/layers/finger-layers-linux.dtsi"
 
-        /* Function Layers: Cursor, Number, Function, Emoji, World, Symbol, System */
+        /* Function Layers Linux (layers 49-54): Cursor, Number, Function, Emoji, World, Symbol */
+        /* System Layer Linux (layer 55) */
         #include "includes/layers/function-layers-linux.dtsi"
 
-        /* Mouse Layers: Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp */
+        /* Mouse Layers Linux (layers 56-60) */
+        /* Special Layers Linux: Factory, Lower, Magic (layers 61-63) */
         #include "includes/layers/mouse-layers-linux.dtsi"
-
-        /* Special Layers: Gaming, Factory, Lower, Magic */
         #include "includes/layers/special-layers-linux.dtsi"
 
     };
