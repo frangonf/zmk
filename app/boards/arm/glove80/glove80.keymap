@@ -39,9 +39,9 @@
     keymap {
         compatible = "zmk,keymap";
 
-        /* macOS Layers (0-31) */
+        /* macOS Layers (0-24) */
 
-        /* Base Layers: QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH */
+        /* Base Layer: QWERTY */
         #include "includes/layers/base-layers.dtsi"
 
         /* Typing Layer */
@@ -56,12 +56,12 @@
         /* Mouse Layers: Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp */
         #include "includes/layers/mouse-layers.dtsi"
 
-        /* Special Layers: Gaming, Factory, Lower, Magic */
+        /* Special Layers: Factory, Lower, Magic */
         #include "includes/layers/special-layers.dtsi"
 
-        /* Linux Layers (32-63) */
+        /* Linux Layers (25-49) */
 
-        /* Base Layers: QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH */
+        /* Base Layer: QWERTY */
         #include "includes/layers/base-layers-linux.dtsi"
 
         /* Typing Layer */
@@ -76,7 +76,7 @@
         /* Mouse Layers: Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp */
         #include "includes/layers/mouse-layers-linux.dtsi"
 
-        /* Special Layers: Gaming, Factory, Lower, Magic */
+        /* Special Layers: Factory, Lower, Magic */
         #include "includes/layers/special-layers-linux.dtsi"
 
     };
