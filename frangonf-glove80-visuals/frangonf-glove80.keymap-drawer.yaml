@@ -1,0 +1,5155 @@
+layout: {zmk_keyboard: glove80}
+layers:
+  QWERTY:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - F12
+  - F11
+  - '='
+  - Q
+  - W
+  - {t: E, h: Ctrl}
+  - R
+  - T
+  - Y
+  - U
+  - {t: I, h: Ctrl}
+  - O
+  - P
+  - '-'
+  - '`'
+  - {t: A, h: Ctrl}
+  - {t: S, h: Alt}
+  - {t: D, h: Cmd}
+  - {t: F, h: Shift}
+  - G
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Cmd}
+  - {t: L, h: Alt}
+  - {t: ;, h: Ctrl}
+  - ''''
+  - Lower
+  - Z
+  - X
+  - {t: C, h: Ctrl}
+  - V
+  - B
+  - {t: ESC, h: Function}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System}
+  - N
+  - M
+  - {t: ',', h: Ctrl}
+  - .
+  - /
+  - Lower
+  - {t: RGB, h: Magic}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji}
+  - {t: BACKSPACE, h: Cursor}
+  - {t: DELETE, h: Number}
+  - {t: INSERT, h: Typing}
+  - Typing
+  - {t: TAB, h: Mouse}
+  - {t: SPACE, h: Symbol}
+  - {t: PAGE UP, h: World}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp}
+  - {t: RGB, h: Magic}
+  Enthium:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - Z
+  - Y
+  - U
+  - O
+  - ;
+  - Q
+  - L
+  - D
+  - P
+  - X
+  - ''
+  - W
+  - {t: C, h: LCTL}
+  - {t: I, h: LALT}
+  - {t: E, h: LGUI}
+  - {t: A, h: LSFT}
+  - ','
+  - K
+  - {t: H, h: LSFT}
+  - {t: T, h: LGUI}
+  - {t: N, h: LALT}
+  - {t: S, h: LCTL}
+  - F
+  - Lower
+  - ''''
+  - '-'
+  - '='
+  - .
+  - /
+  - {t: ESC, h: Function}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System}
+  - J
+  - M
+  - G
+  - B
+  - V
+  - Lower
+  - {t: RGB, h: Magic}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji}
+  - {t: SPACE, h: Cursor}
+  - {t: TAB, h: Number}
+  - {t: INSERT, h: Typing}
+  - {t: DELETE, h: Typing}
+  - {t: BACKSPACE, h: Mouse}
+  - {t: R, h: Symbol}
+  - {t: PAGE UP, h: World}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp}
+  - {t: RGB, h: Magic}
+  Engrammer:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - B
+  - Y
+  - O
+  - U
+  - ''''
+  - ;
+  - L
+  - D
+  - W
+  - V
+  - Z
+  - '='
+  - {t: C, h: LCTL}
+  - {t: I, h: LALT}
+  - {t: E, h: LGUI}
+  - {t: A, h: LSFT}
+  - ','
+  - .
+  - {t: H, h: LSFT}
+  - {t: T, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: N, h: LCTL}
+  - Q
+  - Lower
+  - G
+  - X
+  - J
+  - K
+  - '-'
+  - {t: ESC, h: Function}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System}
+  - /
+  - R
+  - M
+  - F
+  - P
+  - Lower
+  - {t: RGB, h: Magic}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji}
+  - {t: BACKSPACE, h: Cursor}
+  - {t: DELETE, h: Number}
+  - {t: INSERT, h: Typing}
+  - Typing
+  - {t: TAB, h: Mouse}
+  - {t: SPACE, h: Symbol}
+  - {t: PAGE UP, h: World}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp}
+  - {t: RGB, h: Magic}
+  Engram:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '1', s: '|'}
+  - {t: '2', s: '='}
+  - {t: '3', s: '~'}
+  - {t: '4', s: +}
+  - {t: '5', s: <}
+  - {t: '6', s: '>'}
+  - {t: '7', s: ^}
+  - {t: '8', s: '&'}
+  - {t: '9', s: '%'}
+  - {t: '0', s: '*'}
+  - ''
+  - ''
+  - B
+  - Y
+  - O
+  - U
+  - {t: '''', s: (}
+  - {t: '"', s: )}
+  - L
+  - D
+  - W
+  - V
+  - Z
+  - {t: '#', s: $}
+  - {t: C, h: LCTL}
+  - {t: I, h: LALT}
+  - {t: E, h: LGUI}
+  - {t: A, h: LSFT}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: H, h: LSFT}
+  - {t: T, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: N, h: LCTL}
+  - Q
+  - Lower
+  - G
+  - X
+  - J
+  - K
+  - '-'
+  - {t: ESC, h: Function}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System}
+  - {t: '?', s: '!'}
+  - R
+  - M
+  - F
+  - P
+  - Lower
+  - {t: RGB, h: Magic}
+  - {t: /, s: \}
+  - '['
+  - ']'
+  - {t: '@', h: Emoji, s: '`'}
+  - {t: BACKSPACE, h: Cursor}
+  - {t: DELETE, h: Number}
+  - {t: INSERT, h: Typing}
+  - Typing
+  - {t: TAB, h: Mouse}
+  - {t: SPACE, h: Symbol}
+  - {t: PAGE UP, h: World}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp}
+  - {t: RGB, h: Magic}
+  Dvorak:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - ''''
+  - ','
+  - .
+  - P
+  - Y
+  - F
+  - G
+  - C
+  - R
+  - L
+  - /
+  - '='
+  - {t: A, h: LCTL}
+  - {t: O, h: LALT}
+  - {t: E, h: LGUI}
+  - {t: U, h: LSFT}
+  - I
+  - D
+  - {t: H, h: LSFT}
+  - {t: T, h: LGUI}
+  - {t: N, h: LALT}
+  - {t: S, h: LCTL}
+  - '-'
+  - Lower
+  - ;
+  - Q
+  - J
+  - K
+  - X
+  - {t: ESC, h: Function}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System}
+  - B
+  - M
+  - W
+  - V
+  - Z
+  - Lower
+  - {t: RGB, h: Magic}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji}
+  - {t: BACKSPACE, h: Cursor}
+  - {t: DELETE, h: Number}
+  - {t: INSERT, h: Typing}
+  - Typing
+  - {t: TAB, h: Mouse}
+  - {t: SPACE, h: Symbol}
+  - {t: PAGE UP, h: World}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp}
+  - {t: RGB, h: Magic}
+  Colemak:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - Q
+  - W
+  - F
+  - P
+  - G
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - '-'
+  - '='
+  - {t: A, h: LCTL}
+  - {t: R, h: LALT}
+  - {t: S, h: LGUI}
+  - {t: T, h: LSFT}
+  - D
+  - H
+  - {t: N, h: LSFT}
+  - {t: E, h: LGUI}
+  - {t: I, h: LALT}
+  - {t: O, h: LCTL}
+  - ''''
+  - Lower
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: ESC, h: Function}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System}
+  - K
+  - M
+  - ','
+  - .
+  - /
+  - Lower
+  - {t: RGB, h: Magic}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji}
+  - {t: BACKSPACE, h: Cursor}
+  - {t: DELETE, h: Number}
+  - {t: INSERT, h: Typing}
+  - Typing
+  - {t: TAB, h: Mouse}
+  - {t: SPACE, h: Symbol}
+  - {t: PAGE UP, h: World}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp}
+  - {t: RGB, h: Magic}
+  ColemakDH:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - '-'
+  - '='
+  - {t: A, h: LCTL}
+  - {t: R, h: LALT}
+  - {t: S, h: LGUI}
+  - {t: T, h: LSFT}
+  - G
+  - M
+  - {t: N, h: LSFT}
+  - {t: E, h: LGUI}
+  - {t: I, h: LALT}
+  - {t: O, h: LCTL}
+  - ''''
+  - Lower
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - {t: ESC, h: Function}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System}
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - Lower
+  - {t: RGB, h: Magic}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji}
+  - {t: BACKSPACE, h: Cursor}
+  - {t: DELETE, h: Number}
+  - {t: INSERT, h: Typing}
+  - Typing
+  - {t: TAB, h: Mouse}
+  - {t: SPACE, h: Symbol}
+  - {t: PAGE UP, h: World}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp}
+  - {t: RGB, h: Magic}
+  Typing:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - \
+  - BACKSPACE
+  - DELETE
+  - {t: INSERT, type: held}
+  - '0'
+  - TAB
+  - SPACE
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LeftPinky:
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - ''
+  - {t: S, h: LALT}
+  - {t: D, h: LGUI}
+  - {t: F, h: LSFT}
+  - G
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - Function
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - ']'
+  - Emoji
+  - Cursor
+  - Number
+  - Typing
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LeftRingy:
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - {t: A, h: LCTL}
+  - ''
+  - {t: D, h: LGUI}
+  - {t: F, h: LSFT}
+  - G
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - Function
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - ']'
+  - Emoji
+  - Cursor
+  - Number
+  - Typing
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LeftMiddy:
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - {t: A, h: LCTL}
+  - {t: S, h: LALT}
+  - ''
+  - {t: F, h: LSFT}
+  - G
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - Function
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - ']'
+  - Emoji
+  - Cursor
+  - Number
+  - Typing
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LeftIndex:
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - {t: A, h: LCTL}
+  - {t: S, h: LALT}
+  - {t: D, h: LGUI}
+  - ''
+  - G
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - Function
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - ']'
+  - Emoji
+  - Cursor
+  - Number
+  - Typing
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  RightPinky:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - H
+  - {t: J, h: LSFT}
+  - {t: K, h: LGUI}
+  - {t: L, h: LALT}
+  - ''
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+←
+  - Gui+→
+  - System
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Typing
+  - Mouse
+  - Symbol
+  - World
+  - Scroll ↑
+  - Scroll ↓
+  - PgDn
+  - {t: ▽, type: trans}
+  RightRingy:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - H
+  - {t: J, h: LSFT}
+  - {t: K, h: LGUI}
+  - ''
+  - {t: ;, h: LCTL}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+←
+  - Gui+→
+  - System
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Typing
+  - Mouse
+  - Symbol
+  - World
+  - Scroll ↑
+  - Scroll ↓
+  - PgDn
+  - {t: ▽, type: trans}
+  RightMiddy:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - H
+  - {t: J, h: LSFT}
+  - ''
+  - {t: L, h: LALT}
+  - {t: ;, h: LCTL}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+←
+  - Gui+→
+  - System
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Typing
+  - Mouse
+  - Symbol
+  - World
+  - Scroll ↑
+  - Scroll ↓
+  - PgDn
+  - {t: ▽, type: trans}
+  RightIndex:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - H
+  - ''
+  - {t: K, h: LGUI}
+  - {t: L, h: LALT}
+  - {t: ;, h: LCTL}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+←
+  - Gui+→
+  - System
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Typing
+  - Mouse
+  - Symbol
+  - World
+  - Scroll ↑
+  - Scroll ↓
+  - PgDn
+  - {t: ▽, type: trans}
+  Cursor:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - INS
+  - Sft+TAB
+  - DEL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RET
+  - SPACE
+  - TAB
+  - BSPC
+  - Gui+X
+  - Gui+X
+  - Sft+TAB
+  - Gui+Z
+  - Gui+Sft+Z
+  - TAB
+  - ''
+  - {t: LSHFT, h: sticky}
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
+  - Gui+C
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - RIGHT
+  - {t: LSHFT, h: sticky}
+  - Gui+L
+  - Gui+A
+  - {t: Sel Line →, s: Sel Line ←}
+  - {t: Sel Word →, s: Sel Word ←}
+  - Gui+F
+  - Gui+V
+  - Sft+TAB
+  - TAB
+  - ''
+  - Sel Off
+  - {t: Extend →, s: Extend ←}
+  - {t: Word →, s: Word ←}
+  - Gui+V
+  - Gui+LEFT
+  - PG UP
+  - PG DN
+  - Gui+RIGHT
+  - Gui+L
+  - Gui+K
+  - Gui+Z
+  - Gui+Sft+Z
+  - Gui+Sft+G
+  - Gui+G
+  - {t: Cursor, h: toggle, type: held}
+  - ''
+  - ''
+  - Gui+A
+  - {t: Sel Line →, s: Sel Line ←}
+  - {t: Sel Word →, s: Sel Word ←}
+  - Gui+F
+  - Gui+Sft+G
+  - Gui+G
+  - Gui+Alt+F
+  - Gui+K
+  Number:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - A
+  - B
+  - C
+  - D
+  - E
+  - ''
+  - ESC
+  - INS
+  - Sft+TAB
+  - DEL
+  - ''
+  - '|'
+  - '#'
+  - $
+  - ^
+  - '~'
+  - '!'
+  - E
+  - RET
+  - SPACE
+  - TAB
+  - BSPC
+  - '0'
+  - Sft+G
+  - '7'
+  - '8'
+  - '9'
+  - ':'
+  - '%'
+  - {t: LSHFT, h: sticky}
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
+  - X
+  - K
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - +
+  - _
+  - Gui+A
+  - {t: Sel Line →, s: Sel Line ←}
+  - {t: Sel Word →, s: Sel Word ←}
+  - Gui+F
+  - F
+  - ''
+  - ''
+  - ''
+  - <
+  - '>'
+  - ','
+  - J
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - '*'
+  - ''
+  - Gui+Z
+  - Gui+Sft+Z
+  - Gui+Sft+G
+  - Gui+G
+  - ''
+  - {t: Number, h: toggle, type: held}
+  - ''
+  - '='
+  - .
+  - '0'
+  - (
+  - '['
+  - ']'
+  - )
+  - '@'
+  Function:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - INS
+  - Sft+TAB
+  - DEL
+  - ''
+  - MEDIA HOME
+  - PLAY
+  - PREV
+  - NEXT
+  - STOP
+  - EJECT
+  - ''
+  - RET
+  - SPACE
+  - TAB
+  - BSPC
+  - CALC
+  - CALC
+  - F7
+  - F8
+  - F9
+  - F10
+  - F13
+  - {t: LSHFT, h: sticky}
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
+  - WWW
+  - WWW
+  - F4
+  - F5
+  - F6
+  - F11
+  - F14
+  - ''
+  - Gui+A
+  - {t: Sel Line →, s: Sel Line ←}
+  - {t: Sel Word →, s: Sel Word ←}
+  - Gui+F
+  - Sft+Alt+M
+  - {t: Function, h: toggle, type: held}
+  - ''
+  - ''
+  - PP
+  - PREV
+  - NEXT
+  - Sft+Alt+M
+  - F1
+  - F2
+  - F3
+  - F12
+  - F15
+  - ''
+  - Gui+Z
+  - Gui+Sft+Z
+  - Gui+Sft+G
+  - Gui+G
+  - ''
+  - ''
+  - ''
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - BRI MAX
+  - BRI UP
+  - BRI DN
+  - BRI MIN
+  - BRI AUTO
+  Emoji:
+  - {t: Cloudy, s: Cloudy}
+  - {t: Mostly Cloud, s: Mostly Cloud}
+  - {t: Partly Cloud, s: Partly Cloud}
+  - {t: Mostly Sun, s: Mostly Sun}
+  - {t: Sunny, s: Sunny}
+  - {t: New Moon, s: New Moon}
+  - {t: Wan Cres, s: Wax Cres}
+  - {t: Last Quarter, s: 1st Quarter}
+  - {t: Wan Gibb, s: Wax Gibb}
+  - {t: Full Moon, s: Full Moon}
+  - {t: Rainbow, s: Rainbow}
+  - {t: Skin 1, s: Skin 1}
+  - {t: Skin 2, s: Skin 2}
+  - {t: Skin 3, s: Skin 3}
+  - {t: Skin 4, s: Skin 4}
+  - {t: Skin 5, s: Skin 5}
+  - {t: Tada, s: Party}
+  - {t: Heart, s: Love Face}
+  - {t: Fire, s: Water}
+  - {t: Muscle, s: Lifting}
+  - {t: Person Climbing, s: Juggle}
+  - {t: Nerd, s: Lab Coat}
+  - {t: ←, s: ←}
+  - {t: Bald, s: Bald}
+  - {t: Red Hair, s: Red Hair}
+  - {t: Curly Hair, s: Curly Hair}
+  - {t: White Hair, s: White Hair}
+  - {t: →, s: →}
+  - {t: Joy, s: Rofl}
+  - {t: Smile, s: Frown}
+  - {t: Star Struck, s: Love Struck}
+  - {t: Wink, s: Tongue}
+  - {t: Scared, s: Scream}
+  - {t: Shocked Face, s: Dizzy}
+  - {t: ♂, s: ♂}
+  - Hair
+  - Skin
+  - Gender
+  - {t: LSHFT, h: sticky}
+  - {t: ♀, s: ♀}
+  - {t: Snap Fingers, s: Wave}
+  - {t: Ok Hand, s: Cool}
+  - {t: Pray, s: Saluting Face}
+  - {t: Sweat Smile, s: Cold Sweat}
+  - {t: Disappointed, s: Cry}
+  - {t: Thinking, s: Monocle Face}
+  - {t: Old Man, s: Old Man}
+  - {t: Man, s: Man}
+  - {t: Boy, s: Boy}
+  - {t: Girl, s: Girl}
+  - {t: Woman, s: Woman}
+  - {t: Old Woman, s: Old Woman}
+  - {t: City, s: City}
+  - {t: City Dusk, s: City Dusk}
+  - {t: City Night, s: City Night}
+  - {t: Magic Wand, s: Wizard}
+  - {t: Rocket, s: Astronaut}
+  - {t: Sparkles, s: Shine}
+  - {t: Tip Hand, s: Tip Hand}
+  - {t: OK Gesture, s: OK Gesture}
+  - {t: Bow, s: Bow}
+  - {t: Raise Hand, s: Raise Hand}
+  - {t: No Gesture, s: No Gesture}
+  - {t: Shrug, s: Sigh}
+  - {t: Dart, s: Dice}
+  - {t: Trend ↑, s: Trend ↓}
+  - {t: Baby, s: Baby}
+  - {t: Baby Bottle, s: Baby Bottle}
+  - {t: Emoji, h: toggle, type: held}
+  - {t: ZWJ, s: ZWJ}
+  - {t: Sunrise, s: Sunrise}
+  - {t: Sunrise Mt, s: Sunrise Mt}
+  - {t: Raised Hands, s: Clap}
+  - {t: Point Up, s: Point You}
+  - {t: Thumbs Up, s: Thumbs Down}
+  - {t: Check, s: Check}
+  - {t: '100', s: '100'}
+  - {t: Warn, s: Warn}
+  - {t: Cross, s: Cross}
+  - {t: Question, s: Question}
+  World:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ý, s: ÿ}
+  - {t: ú, s: ü}
+  - {t: ó, s: õ}
+  - {t: °, s: π}
+  - ''
+  - ''
+  - {t: LALT, h: sticky}
+  - {t: RALT, h: sticky}
+  - ''
+  - ''
+  - ''
+  - {t: ç, s: ß}
+  - {t: í, s: ï}
+  - {t: é, s: œ}
+  - {t: á, s: ã}
+  - {t: ¡, s: '!'}
+  - ''
+  - {t: LSHFT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: RCTRL, h: sticky}
+  - {t: RSHFT, h: sticky}
+  - ''
+  - {t: $, s: ¥}
+  - {t: «, s: 「}
+  - {t: —, s: –}
+  - {t: §, s: ¶}
+  - {t: º, s: ª}
+  - {t: ¿, s: '?'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ©, s: ™}
+  - {t: », s: 」}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: World, h: toggle, type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  Symbol:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '`'
+  - '{'
+  - '['
+  - ']'
+  - '}'
+  - .
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '!'
+  - ','
+  - (
+  - )
+  - ;
+  - '?'
+  - '`'
+  - {t: LSFT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTL, h: sticky}
+  - ''
+  - '#'
+  - ^
+  - '='
+  - _
+  - $
+  - '*'
+  - '"'
+  - BSPC
+  - TAB
+  - SPACE
+  - RET
+  - ''
+  - '~'
+  - <
+  - '|'
+  - '-'
+  - '>'
+  - /
+  - \
+  - .
+  - '*'
+  - ''
+  - ''
+  - ''
+  - ''''
+  - DEL
+  - Sft+TAB
+  - INS
+  - ESC
+  - ''
+  - ..
+  - '&'
+  - ''''
+  - '"'
+  - +
+  - '%'
+  - ':'
+  - '@'
+  - ''
+  - ''
+  - {t: Symbol, h: toggle, type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  System:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PSCRN
+  - PAUSE BREAK
+  - RGB TOG
+  - RGB TOG
+  - {t: LSFT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTL, h: sticky}
+  - ''
+  - ''
+  - RGB SPI
+  - RGB SAI
+  - RGB HUI
+  - RGB BRI
+  - RGB EFF
+  - RGB EFF
+  - RGB BRI
+  - RGB HUI
+  - RGB SAI
+  - RGB SPI
+  - Gui+Ctl+Q
+  - ''
+  - RGB SPD
+  - RGB SAD
+  - RGB HUD
+  - RGB BRD
+  - RGB EFR
+  - Gui+Ctl+Q
+  - SLEEP
+  - POWER
+  - ''
+  - ''
+  - {t: System, h: toggle, type: held}
+  - RGB EFR
+  - RGB BRD
+  - RGB HUD
+  - RGB SAD
+  - RGB SPD
+  - SLEEP
+  - ''
+  - ''
+  - ''
+  - ''
+  - SysRq
+  - SLCK
+  - KP NUM
+  - CAPS
+  - ''
+  - PSCRN
+  - PAUSE BREAK
+  - SysRq
+  - SLCK
+  - KP NUM
+  - CAPS
+  - POWER
+  Mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Move ↑
+  - Scroll →
+  - ''
+  - ''
+  - {t: LSFT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTL, h: sticky}
+  - APP
+  - ''
+  - Scroll ↑
+  - Move ←
+  - Move ↓
+  - Move →
+  - Scroll ↑
+  - Scroll ↑
+  - MouseFast
+  - MouseSlow
+  - MouseFine
+  - MouseWarp
+  - MB4
+  - ''
+  - Scroll ↓
+  - Gui+X
+  - Gui+C
+  - Gui+V
+  - Scroll ↓
+  - M Click
+  - APP
+  - MB5
+  - Gui+V
+  - Gui+C
+  - Gui+V
+  - Scroll ↓
+  - Scroll ←
+  - Move ↑
+  - Scroll →
+  - L Click
+  - MB5
+  - ''
+  - MouseWarp
+  - MouseFine
+  - MouseSlow
+  - MouseFast
+  - L Click
+  - R Click
+  - MB4
+  - ''
+  - {t: Mouse, h: toggle, type: held}
+  - ''
+  - Move ←
+  - Move ↓
+  - Move →
+  - R Click
+  - M Click
+  MouseFine:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MouseSlow:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MouseFast:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MouseWarp:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Scroll ↑
+  - Scroll ↓
+  - {type: held}
+  - {t: ▽, type: trans}
+  Gaming: [ESC, P, O, N, BSPC, F1, F2, F3, F4, F5, M, '6', '7', '8', '9', '0', F6, F7, F8, F9, F10, F11, I, '1', '2', '3', '4', '5', Y, U, I, O, P, F12, T, TAB, Q,
+    W, E, R, H, J, K, L, ;, '''', G, LSHFT, A, S, D, F, LSHFT, LALT, V, ESC, UP, RET, N, M, ',', ., /, \, B, LCTRL, Z, X, C, SPACE, LCTRL, RET, LEFT, DOWN, RIGHT,
+    '-', '[', ']', '=', '`']
+  Factory:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - ESC
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - '`'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - LSHFT
+  - LCTRL
+  - Lower
+  - LGUI
+  - RCTRL
+  - RSHFT
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - PG UP
+  - {t: RGB, h: Magic}
+  - HOME
+  - END
+  - LEFT
+  - RIGHT
+  - BSPC
+  - DEL
+  - LALT
+  - RALT
+  - RET
+  - SPACE
+  - UP
+  - DOWN
+  - '['
+  - ']'
+  - PG DN
+  Lower:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP NUM
+  - KP SLASH
+  - KP MULTIPLY
+  - KP MINUS
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP CLEAR
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MINUS
+  - /
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP LPAR
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
+  - KP MULTIPLY
+  - RALT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP RPAR
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP ENTER
+  - KP EQUAL
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Function, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: System, h: toggle}
+  - KP 0
+  - KP 0
+  - KP COMMA
+  - KP DOT
+  - KP ENTER
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Emoji, h: toggle}
+  - {t: Cursor, h: toggle}
+  - {t: Number, h: toggle}
+  - ''
+  - ''
+  - {t: Mouse, h: toggle}
+  - {t: Symbol, h: toggle}
+  - {t: World, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  Magic:
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR ALL
+  - {t: QWERTY, h: toggle}
+  - {t: Enthium, h: toggle}
+  - {t: Engrammer, h: toggle}
+  - {t: Engram, h: toggle}
+  - {t: Dvorak, h: toggle}
+  - {t: Colemak, h: toggle}
+  - {t: ColemakDH, h: toggle}
+  - ''
+  - ''
+  - {t: QWERTY_Linux, h: toggle}
+  - ''
+  - ''
+  - ''
+  - RGB SPI
+  - RGB SAI
+  - RGB HUI
+  - RGB BRI
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - RGB SPD
+  - RGB SAD
+  - RGB HUD
+  - RGB BRD
+  - RGB EFF
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 2
+  - BT 3
+  - {t: Factory, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 0
+  - BT 1
+  - OUT USB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  QWERTY_Linux:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - F12
+  - F11
+  - '='
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - '`'
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Shift}
+  - G
+  - H
+  - {t: J, h: Shift}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: ;, h: Gui}
+  - ''''
+  - Lower_Linux
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: ESC, h: Function_Linux}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System_Linux}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Lower_Linux
+  - {t: RGB, h: Magic_Linux}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji_Linux}
+  - {t: BACKSPACE, h: Cursor_Linux}
+  - {t: DELETE, h: Number_Linux}
+  - {t: INSERT, h: Typing_Linux}
+  - Typing_Linux
+  - {t: TAB, h: Mouse_Linux}
+  - {t: SPACE, h: Symbol_Linux}
+  - {t: PAGE UP, h: World_Linux}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp_Linux}
+  - {t: RGB, h: Magic_Linux}
+  Enthium_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - Z
+  - Y
+  - U
+  - O
+  - ;
+  - Q
+  - L
+  - D
+  - P
+  - X
+  - ''
+  - W
+  - {t: C, h: Gui}
+  - {t: I, h: Alt}
+  - {t: E, h: Ctrl}
+  - {t: A, h: Shift}
+  - ','
+  - K
+  - {t: H, h: Shift}
+  - {t: T, h: Ctrl}
+  - {t: N, h: Alt}
+  - {t: S, h: Gui}
+  - F
+  - Lower_Linux
+  - ''''
+  - '-'
+  - '='
+  - .
+  - /
+  - {t: ESC, h: Function_Linux}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System_Linux}
+  - J
+  - M
+  - G
+  - B
+  - V
+  - Lower_Linux
+  - {t: RGB, h: Magic_Linux}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji_Linux}
+  - {t: SPACE, h: Cursor_Linux}
+  - {t: TAB, h: Number_Linux}
+  - {t: INSERT, h: Typing_Linux}
+  - {t: DELETE, h: Typing_Linux}
+  - {t: BACKSPACE, h: Mouse_Linux}
+  - {t: R, h: Symbol_Linux}
+  - {t: PAGE UP, h: World_Linux}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp_Linux}
+  - {t: RGB, h: Magic_Linux}
+  Engrammer_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - B
+  - Y
+  - O
+  - U
+  - ''''
+  - ;
+  - L
+  - D
+  - W
+  - V
+  - Z
+  - '='
+  - {t: C, h: Gui}
+  - {t: I, h: Alt}
+  - {t: E, h: Ctrl}
+  - {t: A, h: Shift}
+  - ','
+  - .
+  - {t: H, h: Shift}
+  - {t: T, h: Ctrl}
+  - {t: S, h: Alt}
+  - {t: N, h: Gui}
+  - Q
+  - Lower_Linux
+  - G
+  - X
+  - J
+  - K
+  - '-'
+  - {t: ESC, h: Function_Linux}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System_Linux}
+  - /
+  - R
+  - M
+  - F
+  - P
+  - Lower_Linux
+  - {t: RGB, h: Magic_Linux}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji_Linux}
+  - {t: BACKSPACE, h: Cursor_Linux}
+  - {t: DELETE, h: Number_Linux}
+  - {t: INSERT, h: Typing_Linux}
+  - Typing_Linux
+  - {t: TAB, h: Mouse_Linux}
+  - {t: SPACE, h: Symbol_Linux}
+  - {t: PAGE UP, h: World_Linux}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp_Linux}
+  - {t: RGB, h: Magic_Linux}
+  Engram_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '1', s: '|'}
+  - {t: '2', s: '='}
+  - {t: '3', s: '~'}
+  - {t: '4', s: +}
+  - {t: '5', s: <}
+  - {t: '6', s: '>'}
+  - {t: '7', s: ^}
+  - {t: '8', s: '&'}
+  - {t: '9', s: '%'}
+  - {t: '0', s: '*'}
+  - ''
+  - ''
+  - B
+  - Y
+  - O
+  - U
+  - {t: '''', s: (}
+  - {t: '"', s: )}
+  - L
+  - D
+  - W
+  - V
+  - Z
+  - {t: '#', s: $}
+  - {t: C, h: Gui}
+  - {t: I, h: Alt}
+  - {t: E, h: Ctrl}
+  - {t: A, h: Shift}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: H, h: Shift}
+  - {t: T, h: Ctrl}
+  - {t: S, h: Alt}
+  - {t: N, h: Gui}
+  - Q
+  - Lower_Linux
+  - G
+  - X
+  - J
+  - K
+  - '-'
+  - {t: ESC, h: Function_Linux}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System_Linux}
+  - {t: '?', s: '!'}
+  - R
+  - M
+  - F
+  - P
+  - Lower_Linux
+  - {t: RGB, h: Magic_Linux}
+  - {t: /, s: \}
+  - '['
+  - ']'
+  - {t: '@', h: Emoji_Linux, s: '`'}
+  - {t: BACKSPACE, h: Cursor_Linux}
+  - {t: DELETE, h: Number_Linux}
+  - {t: INSERT, h: Typing_Linux}
+  - Typing_Linux
+  - {t: TAB, h: Mouse_Linux}
+  - {t: SPACE, h: Symbol_Linux}
+  - {t: PAGE UP, h: World_Linux}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp_Linux}
+  - {t: RGB, h: Magic_Linux}
+  Dvorak_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - ''''
+  - ','
+  - .
+  - P
+  - Y
+  - F
+  - G
+  - C
+  - R
+  - L
+  - /
+  - '='
+  - {t: A, h: Gui}
+  - {t: O, h: Alt}
+  - {t: E, h: Ctrl}
+  - {t: U, h: Shift}
+  - I
+  - D
+  - {t: H, h: Shift}
+  - {t: T, h: Ctrl}
+  - {t: N, h: Alt}
+  - {t: S, h: Gui}
+  - '-'
+  - Lower_Linux
+  - ;
+  - Q
+  - J
+  - K
+  - X
+  - {t: ESC, h: Function_Linux}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System_Linux}
+  - B
+  - M
+  - W
+  - V
+  - Z
+  - Lower_Linux
+  - {t: RGB, h: Magic_Linux}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji_Linux}
+  - {t: BACKSPACE, h: Cursor_Linux}
+  - {t: DELETE, h: Number_Linux}
+  - {t: INSERT, h: Typing_Linux}
+  - Typing_Linux
+  - {t: TAB, h: Mouse_Linux}
+  - {t: SPACE, h: Symbol_Linux}
+  - {t: PAGE UP, h: World_Linux}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp_Linux}
+  - {t: RGB, h: Magic_Linux}
+  Colemak_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - Q
+  - W
+  - F
+  - P
+  - G
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - '-'
+  - '='
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - D
+  - H
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - ''''
+  - Lower_Linux
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: ESC, h: Function_Linux}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System_Linux}
+  - K
+  - M
+  - ','
+  - .
+  - /
+  - Lower_Linux
+  - {t: RGB, h: Magic_Linux}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji_Linux}
+  - {t: BACKSPACE, h: Cursor_Linux}
+  - {t: DELETE, h: Number_Linux}
+  - {t: INSERT, h: Typing_Linux}
+  - Typing_Linux
+  - {t: TAB, h: Mouse_Linux}
+  - {t: SPACE, h: Symbol_Linux}
+  - {t: PAGE UP, h: World_Linux}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp_Linux}
+  - {t: RGB, h: Magic_Linux}
+  ColemakDH_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - '-'
+  - '='
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - ''''
+  - Lower_Linux
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - {t: ESC, h: Function_Linux}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - Gui+LEFT
+  - Gui+RIGHT
+  - {t: ENTER, h: System_Linux}
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - Lower_Linux
+  - {t: RGB, h: Magic_Linux}
+  - '`'
+  - '['
+  - ']'
+  - {t: \, h: Emoji_Linux}
+  - {t: BACKSPACE, h: Cursor_Linux}
+  - {t: DELETE, h: Number_Linux}
+  - {t: INSERT, h: Typing_Linux}
+  - Typing_Linux
+  - {t: TAB, h: Mouse_Linux}
+  - {t: SPACE, h: Symbol_Linux}
+  - {t: PAGE UP, h: World_Linux}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: PG DN, h: MouseWarp_Linux}
+  - {t: RGB, h: Magic_Linux}
+  Typing_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - \
+  - BACKSPACE
+  - DELETE
+  - {t: INSERT, type: held}
+  - '0'
+  - TAB
+  - SPACE
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LeftPinky_Linux:
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - ''
+  - {t: S, h: LALT}
+  - {t: D, h: LGUI}
+  - {t: F, h: LSFT}
+  - G
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - Function
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - ']'
+  - Emoji
+  - Cursor
+  - Number
+  - Typing
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LeftRingy_Linux:
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - {t: A, h: LCTL}
+  - ''
+  - {t: D, h: LGUI}
+  - {t: F, h: LSFT}
+  - G
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - Function
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - ']'
+  - Emoji
+  - Cursor
+  - Number
+  - Typing
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LeftMiddy_Linux:
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - {t: A, h: LCTL}
+  - {t: S, h: LALT}
+  - ''
+  - {t: F, h: LSFT}
+  - G
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - Function
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - ']'
+  - Emoji
+  - Cursor
+  - Number
+  - Typing
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  LeftIndex_Linux:
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - {t: A, h: LCTL}
+  - {t: S, h: LALT}
+  - {t: D, h: LGUI}
+  - ''
+  - G
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - Function
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - ']'
+  - Emoji
+  - Cursor
+  - Number
+  - Typing
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  RightPinky_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - H
+  - {t: J, h: LSFT}
+  - {t: K, h: LGUI}
+  - {t: L, h: LALT}
+  - ''
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+←
+  - Gui+→
+  - System
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Typing
+  - Mouse
+  - Symbol
+  - World
+  - Scroll ↑
+  - Scroll ↓
+  - PgDn
+  - {t: ▽, type: trans}
+  RightRingy_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - H
+  - {t: J, h: LSFT}
+  - {t: K, h: LGUI}
+  - ''
+  - {t: ;, h: LCTL}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+←
+  - Gui+→
+  - System
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Typing
+  - Mouse
+  - Symbol
+  - World
+  - Scroll ↑
+  - Scroll ↓
+  - PgDn
+  - {t: ▽, type: trans}
+  RightMiddy_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - H
+  - {t: J, h: LSFT}
+  - ''
+  - {t: L, h: LALT}
+  - {t: ;, h: LCTL}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+←
+  - Gui+→
+  - System
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Typing
+  - Mouse
+  - Symbol
+  - World
+  - Scroll ↑
+  - Scroll ↓
+  - PgDn
+  - {t: ▽, type: trans}
+  RightIndex_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - Tap
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - H
+  - ''
+  - {t: K, h: LGUI}
+  - {t: L, h: LALT}
+  - {t: ;, h: LCTL}
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+←
+  - Gui+→
+  - System
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Typing
+  - Mouse
+  - Symbol
+  - World
+  - Scroll ↑
+  - Scroll ↓
+  - PgDn
+  - {t: ▽, type: trans}
+  Cursor_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - INS
+  - Sft+TAB
+  - DEL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RET
+  - SPACE
+  - TAB
+  - BSPC
+  - Ctl+X
+  - Ctl+X
+  - Sft+TAB
+  - Ctl+Z
+  - Ctl+Y
+  - TAB
+  - ''
+  - {t: LSHFT, h: sticky}
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
+  - Ctl+C
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - RIGHT
+  - {t: LSHFT, h: sticky}
+  - Ctl+L
+  - Gui+A
+  - {t: Sel Line →, s: Sel Line ←}
+  - {t: Sel Word →, s: Sel Word ←}
+  - Ctl+F
+  - Ctl+V
+  - Sft+TAB
+  - TAB
+  - ''
+  - Sel Off
+  - {t: Extend →, s: Extend ←}
+  - {t: Word →, s: Word ←}
+  - Ctl+V
+  - HOME
+  - PG UP
+  - PG DN
+  - END
+  - Ctl+L
+  - Ctl+K
+  - Ctl+Z
+  - Ctl+Y
+  - Ctl+Sft+G
+  - Ctl+G
+  - {t: Cursor_Linux, h: toggle, type: held}
+  - ''
+  - ''
+  - Gui+A
+  - {t: Sel Line →, s: Sel Line ←}
+  - {t: Sel Word →, s: Sel Word ←}
+  - Ctl+F
+  - Ctl+Sft+G
+  - Ctl+G
+  - Ctl+H
+  - Ctl+K
+  Number_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - A
+  - B
+  - C
+  - D
+  - E
+  - ''
+  - ESC
+  - INS
+  - Sft+TAB
+  - DEL
+  - ''
+  - '|'
+  - '#'
+  - $
+  - ^
+  - '~'
+  - '!'
+  - E
+  - RET
+  - SPACE
+  - TAB
+  - BSPC
+  - '0'
+  - Sft+G
+  - '7'
+  - '8'
+  - '9'
+  - ':'
+  - '%'
+  - {t: LSHFT, h: sticky}
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
+  - X
+  - K
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - +
+  - _
+  - Gui+A
+  - {t: Sel Line →, s: Sel Line ←}
+  - {t: Sel Word →, s: Sel Word ←}
+  - Ctl+F
+  - F
+  - ''
+  - ''
+  - ''
+  - <
+  - '>'
+  - ','
+  - J
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - '*'
+  - ''
+  - Ctl+Z
+  - Ctl+Y
+  - Ctl+Sft+G
+  - Ctl+G
+  - ''
+  - {t: Number_Linux, h: toggle, type: held}
+  - ''
+  - '='
+  - .
+  - '0'
+  - (
+  - '['
+  - ']'
+  - )
+  - '@'
+  Function_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - INS
+  - Sft+TAB
+  - DEL
+  - ''
+  - MEDIA HOME
+  - PLAY
+  - PREV
+  - NEXT
+  - STOP
+  - EJECT
+  - ''
+  - RET
+  - SPACE
+  - TAB
+  - BSPC
+  - CALC
+  - CALC
+  - F7
+  - F8
+  - F9
+  - F10
+  - F13
+  - {t: LSHFT, h: sticky}
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
+  - WWW
+  - WWW
+  - F4
+  - F5
+  - F6
+  - F11
+  - F14
+  - ''
+  - Gui+A
+  - {t: Sel Line →, s: Sel Line ←}
+  - {t: Sel Word →, s: Sel Word ←}
+  - Ctl+F
+  - Gui+E
+  - {t: Function_Linux, h: toggle, type: held}
+  - ''
+  - ''
+  - PP
+  - PREV
+  - NEXT
+  - Gui+E
+  - F1
+  - F2
+  - F3
+  - F12
+  - F15
+  - ''
+  - Ctl+Z
+  - Ctl+Y
+  - Ctl+Sft+G
+  - Ctl+G
+  - ''
+  - ''
+  - ''
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - BRI MAX
+  - BRI UP
+  - BRI DN
+  - BRI MIN
+  - BRI AUTO
+  Emoji_Linux:
+  - {t: Cloudy, s: Cloudy}
+  - {t: Mostly Cloud, s: Mostly Cloud}
+  - {t: Partly Cloud, s: Partly Cloud}
+  - {t: Mostly Sun, s: Mostly Sun}
+  - {t: Sunny, s: Sunny}
+  - {t: New Moon, s: New Moon}
+  - {t: Wan Cres, s: Wax Cres}
+  - {t: Last Quarter, s: 1st Quarter}
+  - {t: Wan Gibb, s: Wax Gibb}
+  - {t: Full Moon, s: Full Moon}
+  - {t: Rainbow, s: Rainbow}
+  - {t: Skin 1, s: Skin 1}
+  - {t: Skin 2, s: Skin 2}
+  - {t: Skin 3, s: Skin 3}
+  - {t: Skin 4, s: Skin 4}
+  - {t: Skin 5, s: Skin 5}
+  - {t: Tada, s: Party}
+  - {t: Heart, s: Love Face}
+  - {t: Fire, s: Water}
+  - {t: Muscle, s: Lifting}
+  - {t: Person Climbing, s: Juggle}
+  - {t: Nerd, s: Lab Coat}
+  - {t: ←, s: ←}
+  - {t: Bald, s: Bald}
+  - {t: Red Hair, s: Red Hair}
+  - {t: Curly Hair, s: Curly Hair}
+  - {t: White Hair, s: White Hair}
+  - {t: →, s: →}
+  - {t: Joy, s: Rofl}
+  - {t: Smile, s: Frown}
+  - {t: Star Struck, s: Love Struck}
+  - {t: Wink, s: Tongue}
+  - {t: Scared, s: Scream}
+  - {t: Shocked Face, s: Dizzy}
+  - {t: ♂, s: ♂}
+  - Hair
+  - Skin
+  - Gender
+  - {t: LSHFT, h: sticky}
+  - {t: ♀, s: ♀}
+  - {t: Snap Fingers, s: Wave}
+  - {t: Ok Hand, s: Cool}
+  - {t: Pray, s: Saluting Face}
+  - {t: Sweat Smile, s: Cold Sweat}
+  - {t: Disappointed, s: Cry}
+  - {t: Thinking, s: Monocle Face}
+  - {t: Old Man, s: Old Man}
+  - {t: Man, s: Man}
+  - {t: Boy, s: Boy}
+  - {t: Girl, s: Girl}
+  - {t: Woman, s: Woman}
+  - {t: Old Woman, s: Old Woman}
+  - {t: City, s: City}
+  - {t: City Dusk, s: City Dusk}
+  - {t: City Night, s: City Night}
+  - {t: Magic Wand, s: Wizard}
+  - {t: Rocket, s: Astronaut}
+  - {t: Sparkles, s: Shine}
+  - {t: Tip Hand, s: Tip Hand}
+  - {t: OK Gesture, s: OK Gesture}
+  - {t: Bow, s: Bow}
+  - {t: Raise Hand, s: Raise Hand}
+  - {t: No Gesture, s: No Gesture}
+  - {t: Shrug, s: Sigh}
+  - {t: Dart, s: Dice}
+  - {t: Trend ↑, s: Trend ↓}
+  - {t: Baby, s: Baby}
+  - {t: Baby Bottle, s: Baby Bottle}
+  - {t: Emoji_Linux, h: toggle, type: held}
+  - {t: ZWJ, s: ZWJ}
+  - {t: Sunrise, s: Sunrise}
+  - {t: Sunrise Mt, s: Sunrise Mt}
+  - {t: Raised Hands, s: Clap}
+  - {t: Point Up, s: Point You}
+  - {t: Thumbs Up, s: Thumbs Down}
+  - {t: Check, s: Check}
+  - {t: '100', s: '100'}
+  - {t: Warn, s: Warn}
+  - {t: Cross, s: Cross}
+  - {t: Question, s: Question}
+  World_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ý, s: ÿ}
+  - {t: ú, s: ü}
+  - {t: ó, s: õ}
+  - {t: °, s: π}
+  - ''
+  - ''
+  - {t: LALT, h: sticky}
+  - {t: RALT, h: sticky}
+  - ''
+  - ''
+  - ''
+  - {t: ç, s: ß}
+  - {t: í, s: ï}
+  - {t: é, s: œ}
+  - {t: á, s: ã}
+  - {t: ¡, s: '!'}
+  - ''
+  - {t: LSHFT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: RCTRL, h: sticky}
+  - {t: RSHFT, h: sticky}
+  - ''
+  - {t: $, s: ¥}
+  - {t: «, s: 「}
+  - {t: —, s: –}
+  - {t: §, s: ¶}
+  - {t: º, s: ª}
+  - {t: ¿, s: '?'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ©, s: ™}
+  - {t: », s: 」}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: World_Linux, h: toggle, type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  Symbol_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '`'
+  - '{'
+  - '['
+  - ']'
+  - '}'
+  - .
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '!'
+  - ','
+  - (
+  - )
+  - ;
+  - '?'
+  - '`'
+  - {t: LSFT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTL, h: sticky}
+  - ''
+  - '#'
+  - ^
+  - '='
+  - _
+  - $
+  - '*'
+  - '"'
+  - BSPC
+  - TAB
+  - SPACE
+  - RET
+  - ''
+  - '~'
+  - <
+  - '|'
+  - '-'
+  - '>'
+  - /
+  - \
+  - .
+  - '*'
+  - ''
+  - ''
+  - ''
+  - ''''
+  - DEL
+  - Sft+TAB
+  - INS
+  - ESC
+  - ''
+  - ..
+  - '&'
+  - ''''
+  - '"'
+  - +
+  - '%'
+  - ':'
+  - '@'
+  - ''
+  - ''
+  - {t: Symbol_Linux, h: toggle, type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  System_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PSCRN
+  - PAUSE BREAK
+  - RGB TOG
+  - RGB TOG
+  - {t: LSFT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTL, h: sticky}
+  - ''
+  - ''
+  - RGB SPI
+  - RGB SAI
+  - RGB HUI
+  - RGB BRI
+  - RGB EFF
+  - RGB EFF
+  - RGB BRI
+  - RGB HUI
+  - RGB SAI
+  - RGB SPI
+  - Gui+Ctl+Q
+  - ''
+  - RGB SPD
+  - RGB SAD
+  - RGB HUD
+  - RGB BRD
+  - RGB EFR
+  - Gui+Ctl+Q
+  - SLEEP
+  - POWER
+  - ''
+  - ''
+  - {t: System_Linux, h: toggle, type: held}
+  - RGB EFR
+  - RGB BRD
+  - RGB HUD
+  - RGB SAD
+  - RGB SPD
+  - SLEEP
+  - ''
+  - ''
+  - ''
+  - ''
+  - SysRq
+  - SLCK
+  - KP NUM
+  - CAPS
+  - ''
+  - PSCRN
+  - PAUSE BREAK
+  - SysRq
+  - SLCK
+  - KP NUM
+  - CAPS
+  - POWER
+  Mouse_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Move ↑
+  - Scroll →
+  - ''
+  - ''
+  - {t: LSFT, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTL, h: sticky}
+  - APP
+  - ''
+  - Scroll ↑
+  - Move ←
+  - Move ↓
+  - Move →
+  - Scroll ↑
+  - Scroll ↑
+  - MouseFast_Linux
+  - MouseSlow_Linux
+  - MouseFine_Linux
+  - MouseWarp_Linux
+  - MB4
+  - ''
+  - Scroll ↓
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Scroll ↓
+  - M Click
+  - APP
+  - MB5
+  - Ctl+V
+  - Ctl+C
+  - Ctl+V
+  - Scroll ↓
+  - Scroll ←
+  - Move ↑
+  - Scroll →
+  - L Click
+  - MB5
+  - ''
+  - MouseWarp_Linux
+  - MouseFine_Linux
+  - MouseSlow_Linux
+  - MouseFast_Linux
+  - L Click
+  - R Click
+  - MB4
+  - ''
+  - {t: Mouse_Linux, h: toggle, type: held}
+  - ''
+  - Move ←
+  - Move ↓
+  - Move →
+  - R Click
+  - M Click
+  MouseFine_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MouseSlow_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MouseFast_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Scroll ↑
+  - Scroll ↓
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  MouseWarp_Linux:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Scroll ↑
+  - Scroll ↓
+  - {type: held}
+  - {t: ▽, type: trans}
+  Gaming_Linux: [ESC, P, O, N, BSPC, F1, F2, F3, F4, F5, M, '6', '7', '8', '9', '0', F6, F7, F8, F9, F10, F11, I, '1', '2', '3', '4', '5', Y, U, I, O, P, F12, T,
+    TAB, Q, W, E, R, H, J, K, L, ;, '''', G, LSHFT, A, S, D, F, LSHFT, LALT, V, ESC, UP, RET, N, M, ',', ., /, \, B, LCTRL, Z, X, C, SPACE, LCTRL, RET, LEFT, DOWN,
+    RIGHT, '-', '[', ']', '=', '`']
+  Factory_Linux:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - ESC
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - '`'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - LSHFT
+  - LCTRL
+  - Lower
+  - LGUI
+  - RCTRL
+  - RSHFT
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - PG UP
+  - {t: RGB, h: Magic_Linux}
+  - HOME
+  - END
+  - LEFT
+  - RIGHT
+  - BSPC
+  - DEL
+  - LALT
+  - RALT
+  - RET
+  - SPACE
+  - UP
+  - DOWN
+  - '['
+  - ']'
+  - PG DN
+  Lower_Linux:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP NUM
+  - KP SLASH
+  - KP MULTIPLY
+  - KP MINUS
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP CLEAR
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MINUS
+  - /
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP LPAR
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
+  - KP MULTIPLY
+  - RALT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP RPAR
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP ENTER
+  - KP EQUAL
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Function_Linux, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: System_Linux, h: toggle}
+  - KP 0
+  - KP 0
+  - KP COMMA
+  - KP DOT
+  - KP ENTER
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: Emoji_Linux, h: toggle}
+  - {t: Cursor_Linux, h: toggle}
+  - {t: Number_Linux, h: toggle}
+  - ''
+  - ''
+  - {t: Mouse_Linux, h: toggle}
+  - {t: Symbol_Linux, h: toggle}
+  - {t: World_Linux, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  Magic_Linux:
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR ALL
+  - {t: QWERTY_Linux, h: toggle}
+  - {t: Enthium_Linux, h: toggle}
+  - {t: Engrammer_Linux, h: toggle}
+  - {t: Engram_Linux, h: toggle}
+  - {t: Dvorak_Linux, h: toggle}
+  - {t: Colemak_Linux, h: toggle}
+  - {t: ColemakDH_Linux, h: toggle}
+  - ''
+  - ''
+  - {t: QWERTY, h: toggle}
+  - ''
+  - ''
+  - ''
+  - RGB SPI
+  - RGB SAI
+  - RGB HUI
+  - RGB BRI
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - RGB SPD
+  - RGB SAD
+  - RGB HUD
+  - RGB BRD
+  - RGB EFF
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 2
+  - BT 3
+  - {t: Factory_Linux, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 0
+  - BT 1
+  - OUT USB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+combos:
+- p: [53, 54]
+  k: {t: GLOBE, h: sticky}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [56, 55]
+  k: {t: GLOBE, h: sticky}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [52, 53]
+  k: {t: RALT, h: sticky}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [57, 56]
+  k: {t: RALT, h: sticky}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [53, 70]
+  k: Gui+Tab
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [56, 73]
+  k: Gui+Alt+Ctl+LSHFT
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [70, 71]
+  k: Alt+Tab
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [73, 72]
+  k: Ctl+LSHFT
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [54, 71]
+  k: Ctl+Tab
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [55, 72]
+  k: Alt+Ctl+LSHFT
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [52, 69]
+  k: {t: Shift, h: LSFT}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH, Typing]
+- p: [57, 74]
+  k: {t: Shift, h: RSFT}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH, Typing]
+- p: [69, 70]
+  k: CapsW
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [74, 73]
+  k: CapsW
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [52, 70]
+  k: CAPSLOCK
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [57, 73]
+  k: CAPSLOCK
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [51, 68]
+  k: {t: Gaming, h: toggle}
+  l: [QWERTY, Gaming]
+- p: [58, 75]
+  k: {t: Typing, h: toggle}
+  l: [QWERTY, Typing]
+- p: [52, 53, 54]
+  k: {t: QWERTY, h: toggle}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH, Typing, LeftPinky, LeftRingy, LeftMiddy, LeftIndex, RightPinky, RightRingy, RightMiddy, RightIndex,
+    Cursor, Number, Function, Emoji, World, Symbol, System, Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp, Gaming, Factory, Lower]
+- p: [57, 56, 55]
+  k: {t: QWERTY, h: toggle}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH, Typing, LeftPinky, LeftRingy, LeftMiddy, LeftIndex, RightPinky, RightRingy, RightMiddy, RightIndex,
+    Cursor, Number, Function, Emoji, World, Symbol, System, Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp, Gaming, Factory, Lower]
+- p: [53, 54]
+  k: {t: GLOBE, h: sticky}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [56, 55]
+  k: {t: GLOBE, h: sticky}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [52, 53]
+  k: {t: RALT, h: sticky}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [57, 56]
+  k: {t: RALT, h: sticky}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [53, 70]
+  k: Gui+Tab
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [56, 73]
+  k: Gui+Alt+Ctl+LSHFT
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [70, 71]
+  k: Alt+Tab
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [73, 72]
+  k: Ctl+LSHFT
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [54, 71]
+  k: Ctl+Tab
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [55, 72]
+  k: Alt+Ctl+LSHFT
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [52, 69]
+  k: {t: Shift, h: LSFT}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH, Typing]
+- p: [57, 74]
+  k: {t: Shift, h: RSFT}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH, Typing]
+- p: [69, 70]
+  k: CapsW
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [74, 73]
+  k: CapsW
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [52, 70]
+  k: CAPSLOCK
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [57, 73]
+  k: CAPSLOCK
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH]
+- p: [51, 68]
+  k: {t: Gaming, h: toggle}
+  l: [QWERTY, Gaming]
+- p: [58, 75]
+  k: {t: Typing, h: toggle}
+  l: [QWERTY, Typing]
+- p: [52, 53, 54]
+  k: {t: QWERTY, h: toggle}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH, Typing, LeftPinky, LeftRingy, LeftMiddy, LeftIndex, RightPinky, RightRingy, RightMiddy, RightIndex,
+    Cursor, Number, Function, Emoji, World, Symbol, System, Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp, Gaming, Factory, Lower]
+- p: [57, 56, 55]
+  k: {t: QWERTY, h: toggle}
+  l: [QWERTY, Enthium, Engrammer, Engram, Dvorak, Colemak, ColemakDH, Typing, LeftPinky, LeftRingy, LeftMiddy, LeftIndex, RightPinky, RightRingy, RightMiddy, RightIndex,
+    Cursor, Number, Function, Emoji, World, Symbol, System, Mouse, MouseFine, MouseSlow, MouseFast, MouseWarp, Gaming, Factory, Lower]

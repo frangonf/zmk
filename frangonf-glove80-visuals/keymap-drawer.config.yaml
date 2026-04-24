@@ -1,0 +1,422 @@
+draw_config:
+  n_columns: 4
+  shrink_wide_legends: 12
+  footer_text: Generated from app/boards/arm/glove80/glove80.keymap via keymap-drawer
+parse_config:
+  raw_binding_map:
+    '&': '&'
+    '&bootloader': Boot
+    '&bt_0': BT 0
+    '&bt_1': BT 1
+    '&bt_2': BT 2
+    '&bt_3': BT 3
+    '&caps_word': CapsW
+    '&dot_dot': ..
+    '&emoji_100_macro': '100'
+    '&emoji_astronaut_macro': Astronaut
+    '&emoji_baby_bottle_macro': Baby Bottle
+    '&emoji_baby_macro': Baby
+    '&emoji_bald_macro': Bald
+    '&emoji_boy_macro': Boy
+    '&emoji_check_macro': Check
+    '&emoji_cityscape_dusk_macro': City Dusk
+    '&emoji_cityscape_macro': City
+    '&emoji_cityscape_night_macro': City Night
+    '&emoji_cloudy_macro': Cloudy
+    '&emoji_cold_sweat_macro': Cold Sweat
+    '&emoji_cross_macro': Cross
+    '&emoji_curly_hair_macro': Curly Hair
+    '&emoji_dark_skin_tone_macro': Skin 5
+    '&emoji_disappointed_macro': Disappointed
+    '&emoji_face_fear_scared_macro': Scared
+    '&emoji_face_fear_scream_macro': Scream
+    '&emoji_face_joke_tongue_macro': Tongue
+    '&emoji_face_joke_wink_macro': Wink
+    '&emoji_face_smile_down_macro': Frown
+    '&emoji_face_smile_up_macro': Smile
+    '&emoji_face_surprise_dizzy_macro': Dizzy
+    '&emoji_female_sign_macro': ♀
+    '&emoji_fire_macro': Fire
+    '&emoji_first_quarter_moon_macro': 1st Quarter
+    '&emoji_full_moon_macro': Full Moon
+    '&emoji_gender_sign_preset': Gender
+    '&emoji_gesture_approval_cool_macro': Cool
+    '&emoji_gesture_attention_wave_macro': Wave
+    '&emoji_gesture_despair_cry_macro': Cry
+    '&emoji_gesture_hands_clap_macro': Clap
+    '&emoji_gesture_point_you_macro': Point You
+    '&emoji_gesture_thumbs_down_macro': Thumbs Down
+    '&emoji_girl_macro': Girl
+    '&emoji_hair_style_preset': Hair
+    '&emoji_joy_macro': Joy
+    '&emoji_lab_coat_macro': Lab Coat
+    '&emoji_last_quarter_moon_macro': Last Quarter
+    '&emoji_left_arrow_macro': ←
+    '&emoji_light_skin_tone_macro': Skin 1
+    '&emoji_love_struck_macro': Love Struck
+    '&emoji_male_sign_macro': ♂
+    '&emoji_man_macro': Man
+    '&emoji_medium_dark_skin_tone_macro': Skin 4
+    '&emoji_medium_light_skin_tone_macro': Skin 2
+    '&emoji_medium_skin_tone_macro': Skin 3
+    '&emoji_monocle_face_macro': Monocle Face
+    '&emoji_mostly_cloudy_macro': Mostly Cloud
+    '&emoji_mostly_sunny_macro': Mostly Sun
+    '&emoji_muscle_macro': Muscle
+    '&emoji_nerd_macro': Nerd
+    '&emoji_new_moon_macro': New Moon
+    '&emoji_ok_hand_macro': Ok Hand
+    '&emoji_old_man_macro': Old Man
+    '&emoji_old_woman_macro': Old Woman
+    '&emoji_partly_cloudy_macro': Partly Cloud
+    '&emoji_person_bowing_macro': Bow
+    '&emoji_person_climbing_macro': Person Climbing
+    '&emoji_person_gesturing_no_macro': No Gesture
+    '&emoji_person_gesturing_ok_macro': OK Gesture
+    '&emoji_person_raising_hand_macro': Raise Hand
+    '&emoji_person_shrugging_macro': Shrug
+    '&emoji_person_tipping_hand_macro': Tip Hand
+    '&emoji_point_up_macro': Point Up
+    '&emoji_pray_macro': Pray
+    '&emoji_question_macro': Question
+    '&emoji_rainbow_macro': Rainbow
+    '&emoji_raised_hands_macro': Raised Hands
+    '&emoji_red_hair_macro': Red Hair
+    '&emoji_right_arrow_macro': →
+    '&emoji_rocket_macro': Rocket
+    '&emoji_rofl_macro': Rofl
+    '&emoji_saluting_face_macro': Saluting Face
+    '&emoji_shocked_face_macro': Shocked Face
+    '&emoji_skin_tone_preset': Skin
+    '&emoji_snap_fingers_macro': Snap Fingers
+    '&emoji_sparkles_macro': Sparkles
+    '&emoji_star_struck_macro': Star Struck
+    '&emoji_sunny_macro': Sunny
+    '&emoji_sunrise_macro': Sunrise
+    '&emoji_sunrise_mountains_macro': Sunrise Mt
+    '&emoji_sweat_smile_macro': Sweat Smile
+    '&emoji_tada_macro': Tada
+    '&emoji_theme_awesome_shine_macro': Shine
+    '&emoji_theme_effort_juggle_macro': Juggle
+    '&emoji_theme_game_dart_macro': Dart
+    '&emoji_theme_game_dice_macro': Dice
+    '&emoji_theme_love_face_macro': Love Face
+    '&emoji_theme_love_heart_macro': Heart
+    '&emoji_theme_magic_wand_macro': Magic Wand
+    '&emoji_theme_magic_wizard_macro': Wizard
+    '&emoji_theme_nature_water_macro': Water
+    '&emoji_theme_party_face_macro': Party
+    '&emoji_theme_sigh_fail_macro': Sigh
+    '&emoji_theme_strength_lifting_macro': Lifting
+    '&emoji_theme_trend_down_macro': Trend ↓
+    '&emoji_theme_trend_up_macro': Trend ↑
+    '&emoji_thinking_macro': Thinking
+    '&emoji_thumbs_up_macro': Thumbs Up
+    '&emoji_waning_crescent_moon_macro': Wan Cres
+    '&emoji_waning_gibbous_moon_macro': Wan Gibb
+    '&emoji_warning_macro': Warn
+    '&emoji_waxing_crescent_moon_macro': Wax Cres
+    '&emoji_waxing_gibbous_moon_macro': Wax Gibb
+    '&emoji_white_hair_macro': White Hair
+    '&emoji_woman_macro': Woman
+    '&emoji_zwj_macro': ZWJ
+    '&extend_line_left': Extend ←
+    '&extend_line_right': Extend →
+    '&extend_word_left': Word ←
+    '&extend_word_right': Word →
+    '&left_index_hold LSFT': Shift
+    '&left_index_hold_linux LSFT': Shift
+    '&left_index_tap': Tap
+    '&left_index_tap A': A
+    '&left_index_tap B': B
+    '&left_index_tap C': C
+    '&left_index_tap D': D
+    '&left_index_tap E': E
+    '&left_index_tap EQUAL': '='
+    '&left_index_tap G': G
+    '&left_index_tap GRAVE': '`'
+    '&left_index_tap LBKT': '['
+    '&left_index_tap LPAR': (
+    '&left_index_tap N1': '1'
+    '&left_index_tap N2': '2'
+    '&left_index_tap N3': '3'
+    '&left_index_tap N4': '4'
+    '&left_index_tap N5': '5'
+    '&left_index_tap Q': Q
+    '&left_index_tap R': R
+    '&left_index_tap RBKT': ']'
+    '&left_index_tap RPAR': )
+    '&left_index_tap S': S
+    '&left_index_tap T': T
+    '&left_index_tap V': V
+    '&left_index_tap W': W
+    '&left_index_tap X': X
+    '&left_index_tap Z': Z
+    '&left_middy_hold LGUI': Cmd
+    '&left_middy_hold_linux LCTL': Ctrl
+    '&left_middy_tap': Tap
+    '&left_middy_tap A': A
+    '&left_middy_tap B': B
+    '&left_middy_tap C': C
+    '&left_middy_tap E': E
+    '&left_middy_tap EQUAL': '='
+    '&left_middy_tap F': F
+    '&left_middy_tap G': G
+    '&left_middy_tap GRAVE': '`'
+    '&left_middy_tap LBKT': '['
+    '&left_middy_tap LPAR': (
+    '&left_middy_tap N1': '1'
+    '&left_middy_tap N2': '2'
+    '&left_middy_tap N3': '3'
+    '&left_middy_tap N4': '4'
+    '&left_middy_tap N5': '5'
+    '&left_middy_tap Q': Q
+    '&left_middy_tap R': R
+    '&left_middy_tap RBKT': ']'
+    '&left_middy_tap RPAR': )
+    '&left_middy_tap S': S
+    '&left_middy_tap T': T
+    '&left_middy_tap V': V
+    '&left_middy_tap W': W
+    '&left_middy_tap X': X
+    '&left_middy_tap Z': Z
+    '&left_pinky_hold LCTL': Ctrl
+    '&left_pinky_hold_linux LGUI': Gui
+    '&left_pinky_tap': Tap
+    '&left_pinky_tap B': B
+    '&left_pinky_tap C': C
+    '&left_pinky_tap D': D
+    '&left_pinky_tap E': E
+    '&left_pinky_tap EQUAL': '='
+    '&left_pinky_tap F': F
+    '&left_pinky_tap G': G
+    '&left_pinky_tap GRAVE': '`'
+    '&left_pinky_tap LBKT': '['
+    '&left_pinky_tap LPAR': (
+    '&left_pinky_tap N1': '1'
+    '&left_pinky_tap N2': '2'
+    '&left_pinky_tap N3': '3'
+    '&left_pinky_tap N4': '4'
+    '&left_pinky_tap N5': '5'
+    '&left_pinky_tap Q': Q
+    '&left_pinky_tap R': R
+    '&left_pinky_tap RBKT': ']'
+    '&left_pinky_tap RPAR': )
+    '&left_pinky_tap S': S
+    '&left_pinky_tap T': T
+    '&left_pinky_tap V': V
+    '&left_pinky_tap W': W
+    '&left_pinky_tap X': X
+    '&left_pinky_tap Z': Z
+    '&left_ringy_hold LALT': Alt
+    '&left_ringy_hold_linux LALT': Alt
+    '&left_ringy_tap': Tap
+    '&left_ringy_tap A': A
+    '&left_ringy_tap B': B
+    '&left_ringy_tap C': C
+    '&left_ringy_tap D': D
+    '&left_ringy_tap E': E
+    '&left_ringy_tap EQUAL': '='
+    '&left_ringy_tap F': F
+    '&left_ringy_tap G': G
+    '&left_ringy_tap GRAVE': '`'
+    '&left_ringy_tap LBKT': '['
+    '&left_ringy_tap LPAR': (
+    '&left_ringy_tap N1': '1'
+    '&left_ringy_tap N2': '2'
+    '&left_ringy_tap N3': '3'
+    '&left_ringy_tap N4': '4'
+    '&left_ringy_tap N5': '5'
+    '&left_ringy_tap Q': Q
+    '&left_ringy_tap R': R
+    '&left_ringy_tap RBKT': ']'
+    '&left_ringy_tap RPAR': )
+    '&left_ringy_tap T': T
+    '&left_ringy_tap V': V
+    '&left_ringy_tap W': W
+    '&left_ringy_tap X': X
+    '&left_ringy_tap Z': Z
+    '&linux_magic_sysrq': SysRq
+    '&lower': Lower
+    '&middy_extend_ctrl_hold LCTL': Ctrl
+    '&middy_extend_ctrl_hold_left LCTL': Ctrl
+    '&mkp LCLK': L Click
+    '&mkp MB4': MB4
+    '&mkp MB5': MB5
+    '&mkp MCLK': M Click
+    '&mkp RCLK': R Click
+    '&mmv MOVE_DOWN': Move ↓
+    '&mmv MOVE_LEFT': Move ←
+    '&mmv MOVE_RIGHT': Move →
+    '&mmv MOVE_UP': Move ↑
+    '&mod_tab_chord LALT 16': Alt+Tab
+    '&mod_tab_chord LCTL 16': Ctl+Tab
+    '&mod_tab_chord LGUI 16': Gui+Tab
+    '&msc SCRL_DOWN': Scroll ↓
+    '&msc SCRL_LEFT': Scroll ←
+    '&msc SCRL_RIGHT': Scroll →
+    '&msc SCRL_UP': Scroll ↑
+    '&rgb_ug_status_macro': RGB
+    '&right_index_hold LSFT': Shift
+    '&right_index_hold_linux LSFT': Shift
+    '&right_index_tap': Tap
+    '&right_index_tap COMMA': ','
+    '&right_index_tap DOT': .
+    '&right_index_tap FSLH': /
+    '&right_index_tap H': H
+    '&right_index_tap I': I
+    '&right_index_tap K': K
+    '&right_index_tap L': L
+    '&right_index_tap LG(LEFT)': Gui+←
+    '&right_index_tap LG(RIGHT)': Gui+→
+    '&right_index_tap M': M
+    '&right_index_tap MINUS': '-'
+    '&right_index_tap N': N
+    '&right_index_tap N0': '0'
+    '&right_index_tap N6': '6'
+    '&right_index_tap N7': '7'
+    '&right_index_tap N8': '8'
+    '&right_index_tap N9': '9'
+    '&right_index_tap O': O
+    '&right_index_tap P': P
+    '&right_index_tap PG_DN': PgDn
+    '&right_index_tap SCRL_DOWN': Scroll ↓
+    '&right_index_tap SCRL_UP': Scroll ↑
+    '&right_index_tap SEMI': ;
+    '&right_index_tap SQT': ''''
+    '&right_index_tap U': U
+    '&right_index_tap Y': Y
+    '&right_middy_hold LGUI': Cmd
+    '&right_middy_hold_linux LCTL': Ctrl
+    '&right_middy_tap': Tap
+    '&right_middy_tap COMMA': ','
+    '&right_middy_tap DOT': .
+    '&right_middy_tap FSLH': /
+    '&right_middy_tap H': H
+    '&right_middy_tap I': I
+    '&right_middy_tap J': J
+    '&right_middy_tap L': L
+    '&right_middy_tap LG(LEFT)': Gui+←
+    '&right_middy_tap LG(RIGHT)': Gui+→
+    '&right_middy_tap M': M
+    '&right_middy_tap MINUS': '-'
+    '&right_middy_tap N': N
+    '&right_middy_tap N0': '0'
+    '&right_middy_tap N6': '6'
+    '&right_middy_tap N7': '7'
+    '&right_middy_tap N8': '8'
+    '&right_middy_tap N9': '9'
+    '&right_middy_tap O': O
+    '&right_middy_tap P': P
+    '&right_middy_tap PG_DN': PgDn
+    '&right_middy_tap SCRL_DOWN': Scroll ↓
+    '&right_middy_tap SCRL_UP': Scroll ↑
+    '&right_middy_tap SEMI': ;
+    '&right_middy_tap SQT': ''''
+    '&right_middy_tap U': U
+    '&right_middy_tap Y': Y
+    '&right_pinky_hold LCTL': Ctrl
+    '&right_pinky_hold_linux LGUI': Gui
+    '&right_pinky_tap': Tap
+    '&right_pinky_tap COMMA': ','
+    '&right_pinky_tap DOT': .
+    '&right_pinky_tap FSLH': /
+    '&right_pinky_tap H': H
+    '&right_pinky_tap I': I
+    '&right_pinky_tap J': J
+    '&right_pinky_tap K': K
+    '&right_pinky_tap L': L
+    '&right_pinky_tap LG(LEFT)': Gui+←
+    '&right_pinky_tap LG(RIGHT)': Gui+→
+    '&right_pinky_tap M': M
+    '&right_pinky_tap MINUS': '-'
+    '&right_pinky_tap N': N
+    '&right_pinky_tap N0': '0'
+    '&right_pinky_tap N6': '6'
+    '&right_pinky_tap N7': '7'
+    '&right_pinky_tap N8': '8'
+    '&right_pinky_tap N9': '9'
+    '&right_pinky_tap O': O
+    '&right_pinky_tap P': P
+    '&right_pinky_tap PG_DN': PgDn
+    '&right_pinky_tap SCRL_DOWN': Scroll ↓
+    '&right_pinky_tap SCRL_UP': Scroll ↑
+    '&right_pinky_tap SQT': ''''
+    '&right_pinky_tap U': U
+    '&right_pinky_tap Y': Y
+    '&right_ringy_hold LALT': Alt
+    '&right_ringy_hold_linux LALT': Alt
+    '&right_ringy_tap': Tap
+    '&right_ringy_tap COMMA': ','
+    '&right_ringy_tap DOT': .
+    '&right_ringy_tap FSLH': /
+    '&right_ringy_tap H': H
+    '&right_ringy_tap I': I
+    '&right_ringy_tap J': J
+    '&right_ringy_tap K': K
+    '&right_ringy_tap LG(LEFT)': Gui+←
+    '&right_ringy_tap LG(RIGHT)': Gui+→
+    '&right_ringy_tap M': M
+    '&right_ringy_tap MINUS': '-'
+    '&right_ringy_tap N': N
+    '&right_ringy_tap N0': '0'
+    '&right_ringy_tap N6': '6'
+    '&right_ringy_tap N7': '7'
+    '&right_ringy_tap N8': '8'
+    '&right_ringy_tap N9': '9'
+    '&right_ringy_tap O': O
+    '&right_ringy_tap P': P
+    '&right_ringy_tap PG_DN': PgDn
+    '&right_ringy_tap SCRL_DOWN': Scroll ↓
+    '&right_ringy_tap SCRL_UP': Scroll ↑
+    '&right_ringy_tap SEMI': ;
+    '&right_ringy_tap SQT': ''''
+    '&right_ringy_tap U': U
+    '&right_ringy_tap Y': Y
+    '&select_line_left': Sel Line ←
+    '&select_line_right': Sel Line →
+    '&select_none': Sel Off
+    '&select_word_left': Sel Word ←
+    '&select_word_right': Sel Word →
+    '&sticky_key_oneshot LSFT':
+      t: Shift
+      h: sticky
+    '&sticky_key_oneshot RSFT':
+      t: Shift
+      h: sticky
+    '&sys_reset': Reset
+    '&world_a_acute_lower_macro': á
+    '&world_a_tilde_lower_macro': ã
+    '&world_consonants_cedilla_lower_macro': ç
+    '&world_consonants_eszett_lower_macro': ß
+    '&world_currency_dollar_lower_macro': $
+    '&world_currency_yen_macro': ¥
+    '&world_e_acute_lower_macro': é
+    '&world_e_oe_lower_macro': œ
+    '&world_i_acute_lower_macro': í
+    '&world_i_diaeresis_lower_macro': ï
+    '&world_o_acute_lower_macro': ó
+    '&world_o_tilde_lower_macro': õ
+    '&world_quotes_left_angle_lower_macro': «
+    '&world_quotes_left_corner1_lower_macro': 「
+    '&world_quotes_right_angle_lower_macro': »
+    '&world_quotes_right_corner1_lower_macro': 」
+    '&world_sign_angle_degree_macro': °
+    '&world_sign_angle_pi_macro': π
+    '&world_sign_copyright_regular_macro': ©
+    '&world_sign_dash_emdash_macro': —
+    '&world_sign_dash_endash_macro': –
+    '&world_sign_exclaim_left_macro': ¡
+    '&world_sign_exclaim_right_macro': '!'
+    '&world_sign_landmark_pilcrow_macro': ¶
+    '&world_sign_landmark_section_macro': §
+    '&world_sign_ordinal_a_macro': ª
+    '&world_sign_ordinal_o_macro': º
+    '&world_sign_question_left_macro': ¿
+    '&world_sign_question_right_macro': '?'
+    '&world_sign_trademark_regular_macro': ™
+    '&world_u_acute_lower_macro': ú
+    '&world_u_diaeresis_lower_macro': ü
+    '&world_y_acute_lower_macro': ý
+    '&world_y_diaeresis_lower_macro': ÿ
+

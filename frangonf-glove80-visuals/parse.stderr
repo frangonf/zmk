@@ -1,0 +1,2 @@
+keymap_drawer.dts: [WARNING] preprocessor: app/boards/arm/glove80/includes/custom-nodes.dtsi:16 error: Could not evaluate expression due to SyntaxError("around token '.' type CPP_DOT") (passed to evaluator: '__has_include(<dt-bindings/zmk/rgb_colors.h>)')
+keymap_drawer.dts: [WARNING] preprocessor: app/boards/arm/glove80/includes/custom-nodes.dtsi:16 error: Could not evaluate expression due to SyntaxError("around token '.' type CPP_DOT") (passed to evaluator: '__has_include(<dt-bindings/zmk/rgb_colors.h>)')
