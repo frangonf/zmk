@@ -450,20 +450,6 @@
       };
       #endif
 
-      #ifdef LAYER_Gaming
-      Gaming {
-        bindings = <
-          ORN ___ ___ ___ COR                                             TEA TEA TEA TEA TEA
-          ___ GDN GDN GDN GDN GDN                                     TEA TEA TEA TEA TEA TEA
-          ___ GDN GDN GDN GDN GDN                                     ___ ___ ___ ___ ___ TEA
-          ___ COR ___ AZU ___ ___                                     ___ ___ ___ ___ ___ ___
-          ___ YLW AZU AZU AZU RED     YLW CYN ___     ORN AZU COR     ___ ___ ___ ___ ___ ___
-          ___ GRN ___ ___ RED         COR GRN COR     AZU AZU AZU         ___ ___ ___ ___ ___
-        >;
-        layer-id = <LAYER_Gaming>;
-      };
-      #endif
-
       #ifdef LAYER_Lower
       Lower {
         bindings = <

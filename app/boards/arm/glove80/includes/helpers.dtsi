@@ -33,73 +33,59 @@
 )
 
 /* Automatically generated layer name #define */
-/* macOS layers (0-31) */
+/* macOS layers (0-23) */
 #define LAYER_QWERTY 0
-#define LAYER_Enthium 1
-#define LAYER_Engrammer 2
-#define LAYER_Engram 3
-#define LAYER_Dvorak 4
-#define LAYER_Colemak 5
-#define LAYER_ColemakDH 6
-#define LAYER_Typing 7
-#define LAYER_LeftPinky 8
-#define LAYER_LeftRingy 9
-#define LAYER_LeftMiddy 10
-#define LAYER_LeftIndex 11
-#define LAYER_RightPinky 12
-#define LAYER_RightRingy 13
-#define LAYER_RightMiddy 14
-#define LAYER_RightIndex 15
-#define LAYER_Cursor 16
-#define LAYER_Number 17
-#define LAYER_Function 18
-#define LAYER_Emoji 19
-#define LAYER_World 20
-#define LAYER_Symbol 21
-#define LAYER_System 22
-#define LAYER_Mouse 23
-#define LAYER_MouseFine 24
-#define LAYER_MouseSlow 25
-#define LAYER_MouseFast 26
-#define LAYER_MouseWarp 27
-#define LAYER_Gaming 28
-#define LAYER_Factory 29
-#define LAYER_Lower 30
-#define LAYER_Magic 31
+#define LAYER_Typing 1
+#define LAYER_LeftPinky 2
+#define LAYER_LeftRingy 3
+#define LAYER_LeftMiddy 4
+#define LAYER_LeftIndex 5
+#define LAYER_RightPinky 6
+#define LAYER_RightRingy 7
+#define LAYER_RightMiddy 8
+#define LAYER_RightIndex 9
+#define LAYER_Cursor 10
+#define LAYER_Number 11
+#define LAYER_Function 12
+#define LAYER_Emoji 13
+#define LAYER_World 14
+#define LAYER_Symbol 15
+#define LAYER_System 16
+#define LAYER_Mouse 17
+#define LAYER_MouseFine 18
+#define LAYER_MouseSlow 19
+#define LAYER_MouseFast 20
+#define LAYER_MouseWarp 21
+#define LAYER_Factory 22
+#define LAYER_Lower 23
+#define LAYER_Magic 24
 
-/* Linux layers (32-63) */
-#define LAYER_QWERTY_Linux 32
-#define LAYER_Enthium_Linux 33
-#define LAYER_Engrammer_Linux 34
-#define LAYER_Engram_Linux 35
-#define LAYER_Dvorak_Linux 36
-#define LAYER_Colemak_Linux 37
-#define LAYER_ColemakDH_Linux 38
-#define LAYER_Typing_Linux 39
-#define LAYER_LeftPinky_Linux 40
-#define LAYER_LeftRingy_Linux 41
-#define LAYER_LeftMiddy_Linux 42
-#define LAYER_LeftIndex_Linux 43
-#define LAYER_RightPinky_Linux 44
-#define LAYER_RightRingy_Linux 45
-#define LAYER_RightMiddy_Linux 46
-#define LAYER_RightIndex_Linux 47
-#define LAYER_Cursor_Linux 48
-#define LAYER_Number_Linux 49
-#define LAYER_Function_Linux 50
-#define LAYER_Emoji_Linux 51
-#define LAYER_World_Linux 52
-#define LAYER_Symbol_Linux 53
-#define LAYER_System_Linux 54
-#define LAYER_Mouse_Linux 55
-#define LAYER_MouseFine_Linux 56
-#define LAYER_MouseSlow_Linux 57
-#define LAYER_MouseFast_Linux 58
-#define LAYER_MouseWarp_Linux 59
-#define LAYER_Gaming_Linux 60
-#define LAYER_Factory_Linux 61
-#define LAYER_Lower_Linux 62
-#define LAYER_Magic_Linux 63
+/* Linux layers (25-48) */
+#define LAYER_QWERTY_Linux 25
+#define LAYER_Typing_Linux 26
+#define LAYER_LeftPinky_Linux 27
+#define LAYER_LeftRingy_Linux 28
+#define LAYER_LeftMiddy_Linux 29
+#define LAYER_LeftIndex_Linux 30
+#define LAYER_RightPinky_Linux 31
+#define LAYER_RightRingy_Linux 32
+#define LAYER_RightMiddy_Linux 33
+#define LAYER_RightIndex_Linux 34
+#define LAYER_Cursor_Linux 35
+#define LAYER_Number_Linux 36
+#define LAYER_Function_Linux 37
+#define LAYER_Emoji_Linux 38
+#define LAYER_World_Linux 39
+#define LAYER_Symbol_Linux 40
+#define LAYER_System_Linux 41
+#define LAYER_Mouse_Linux 42
+#define LAYER_MouseFine_Linux 43
+#define LAYER_MouseSlow_Linux 44
+#define LAYER_MouseFast_Linux 45
+#define LAYER_MouseWarp_Linux 46
+#define LAYER_Factory_Linux 47
+#define LAYER_Lower_Linux 48
+#define LAYER_Magic_Linux 49
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
